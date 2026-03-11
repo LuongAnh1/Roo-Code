@@ -1,0 +1,10 @@
+﻿Tình huống dẫn nhập;Tổng kết kiến thức liên quan;Tóm tắt từ khóa;Gợi ý tiếp theo
+Làm sao để phân loại Email Spam?;"Qua câu chuyện này, ta thấy rằng
+Định lý Bayes không chỉ là công thức lý thuyết mà còn được ứng dụng trực tiếp trong đời sống.
+Về ưu điểm, đây không phải thuật toán tĩnh, nó có khả năng học từ dữ liệu mới, giảm thiểu việc đánh nhầm email quan trọng thành Spam cùng tốc độ tính toán nhanh
+Về hạn chế thì Spam ngày nay ngày càng tinh vi.
+Thay vì viết “free”, kẻ gửi có thể viết “fr33”; “f.r.e.e”; “fr€€” làm hệ thống dựa trên từ khóa khó nhận diện.";Từ phương pháp của An, nếu muốn hiểu sâu hơn về cách các hệ thống lọc Spam hoạt động trong thực tế, bạn có thể tìm kiếm cụm từ khóa Naive Bayes Classifier là hệ thống lọc Spam lớn của Google ;"Câu hỏi cuối video dành cho bạn đó là phải xử lý như nào nếu kẻ Spam cố tình viết “free” thành “fr€€”?
+Nếu bạn biết câu trả lời, hãy comment phía dưới.
+"
+Hiện câu hỏi trên cùng kèm hình ảnh biểu tượng Email có mũi tên chĩa ra hai hướng cũng nội dung là Spam và Normal;"Hiện tóm tắt nội dung phần tổng kết kiến thức thực tiễn gồm ưu và nhược điểm
+Hiện ví dụ về cách các đối tượng Spam biến tấu từ free";Hiện từ khóa Naive Bayes Classifier được tìm kiếm trên thanh tìm kiếm của Google ;Hiện câu hỏi kèm dấu hỏi chấm

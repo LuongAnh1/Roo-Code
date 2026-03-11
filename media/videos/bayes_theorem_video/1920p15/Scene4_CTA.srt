@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:04,044
+Câu hỏi cuối video dành cho bạn đó là phải xử lý
+
+2
+00:00:04,144 --> 00:00:08,276
+như nào nếu kẻ Spam cố tình viết free thành fr€€?
+
