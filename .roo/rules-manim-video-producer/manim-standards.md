@@ -103,3 +103,9 @@ self.play(FadeIn(glow))
 - **MARKUPTEXT**: Khi cần tô màu từng từ trong câu hoặc dùng ký tự đặc biệt (như €, $, @), BẮT BUỘC dùng `MarkupText` và thẻ `<span>`.
     - *Ví dụ:* `MarkupText(f'Chữ <span color="{YELLOW}">Vàng</span>', font="Segoe UI")`
 - **KÝ TỰ ĐẶC BIỆT**: Hạn chế dùng các ký tự hiếm gặp trực tiếp trong `Text` nếu định dùng chúng làm mốc để animation, vì dễ lỗi Encoding.
+
+## 8. QUY TẮC DÙNG THƯ VIỆN SKILLS
+- **Kế thừa**: Luôn luôn dùng `class SceneName(FaMIBaseScene):`.
+- **Tiêu đề**: Luôn dùng `title = self.create_title("Dòng 1", "Dòng 2")`. Hàm này đã tự động xử lý font đậm và vị trí dưới logo.
+- **Phụ đề**: Trong mỗi khối `voiceover`, lệnh đầu tiên phải là `self.update_subtitle(nội_dung)`.
+- **Màu sắc**: Sử dụng các biến màu có sẵn: `FAMI_CYAN`, `ACCENT`, `SUCCESS`, `DANGER`.
