@@ -16,8 +16,6 @@
    - **Tự Học:** Nếu Fix thành công một lỗi mới, tự động mở `learning-examples.md` và ghi chú vào Mục 10.
 4. **Nghiệm thu:** Khi Terminal báo render thành công, hiển thị thông báo yêu cầu người dùng xem file mp4 và nhận xét. 🔴 **DỪNG LẠI.**
 
-# BƯỚC 3: LẬP TRÌNH & KIỂM THỬ
-
 **GIAO THỨC TRƯỚC KHI RENDER (Layout-Checklist):**
 1. **Kiểm tra Import**: Đã có `from skills.fami_lib import *` chưa?
 2. **Kiểm tra Subtitle**: Khối `voiceover` đã có `update_subtitle` chưa?
@@ -28,3 +26,8 @@
 Nếu sau khi render mà chữ bị lệch hoặc tràn, BẮT BUỘC:
 - Dùng `print(obj.width)` trong code để xem kích thước thực của đối tượng.
 - Dùng `.match_y()` hoặc `.move_to()` để căn chỉnh lại dựa trên trục Y chuẩn của `fami_lib`.
+
+**VẼ HÌNH KHỐI VÀ CÔNG THỨC**
+Agent có thể tham khảo các: 
+- Manim Core API Cheat Sheet trong file `knowlebge/manim_core_api.md`: 
+- Manim Math & LaTeX Syntax trong file  `knowlebge/manim_math_latex.md`
