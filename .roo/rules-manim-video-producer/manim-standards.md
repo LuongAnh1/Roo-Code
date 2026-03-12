@@ -14,31 +14,26 @@ from skills.fami_lib import *
 - **An toàn (Safe-Guard)**: 
   - Mọi `Text` hoặc `Paragraph` tạo ra BẮT BUỘC kiểm tra độ rộng: `if obj.width > 7.5: obj.scale_to_fit_width(7.5)`.
   - Không bao giờ dùng `to_edge(UP)` cho tiêu đề, hãy dùng `self.create_title()` từ thư viện.
+  - **Tiêu đề**: Luôn dùng `title = self.create_title("Dòng 1", "Dòng 2")`. (Hàm này đã tự định vị đúng chỗ).
+  - **Phụ đề**: Trong mọi khối `with self.voiceover(...)`, dòng lệnh đầu tiên phải là: `self.update_subtitle("Nội dung phụ đề")`.
+  - **Màu sắc**: Dùng các hằng số màu có sẵn: `FAMI_CYAN`, `FAMI_BLUE`, `ACCENT`, `SUCCESS`, `DANGER`.
 
 ## 1. QUY TẮC VOICEOVER & SUBTITLE
 - Mỗi khối `with self.voiceover(text=...)` BẮT BUỘC phải có `self.update_subtitle(...)` ngay dòng đầu tiên.
 - Không được dùng `run_time=tracker.duration` cho mọi hiệu ứng. Phải chia tỉ lệ (ví dụ: `0.4 * tracker.duration`) để tạo nhịp điệu.
 
-## 2. QUY TẮC KIẾN TRÚC FAMI_LIB (MANDATORY)
-CẤM tự viết code cho Logo, Tiêu đề và Phụ đề. BẮT BUỘC tuân thủ:
-- **Import**: Bắt đầu file bằng `from skills.fami_lib import *`
-- **Class**: Luôn kế thừa `class SceneName(FaMIBaseScene):`.
-- **Tiêu đề**: Luôn dùng `title = self.create_title("Dòng 1", "Dòng 2")`. (Hàm này đã tự định vị đúng chỗ).
-- **Phụ đề**: Trong mọi khối `with self.voiceover(...)`, dòng lệnh đầu tiên phải là: `self.update_subtitle("Nội dung phụ đề")`.
-- **Màu sắc**: Dùng các hằng số màu có sẵn: `FAMI_CYAN`, `FAMI_BLUE`, `ACCENT`, `SUCCESS`, `DANGER`.
-
-## 3. QUY ĐỊNH TOÁN HỌC & CÚ PHÁP
+## 2. QUY ĐỊNH TOÁN HỌC & CÚ PHÁP
 - **Toán học**: Luôn có `import math` và `import numpy as np`. CẤM dùng `sin()`, phải dùng `np.sin()` hoặc `math.sin()`.
 - **LaTeX**: Luôn dùng `MathTex(r"...")` (có tiền tố r).
 - **Animation**: Bắt buộc dùng `obj.animate.method(...)`. CẤM dùng `obj.animate(...)`.
 - **Updaters**: KHÔNG khởi tạo `Text` hay Mobject mới bên trong hàm updater (gây tràn RAM). CẤM dùng `self.get_time()`, phải dùng `self.renderer.time`.
 
-## 4. TEXT, MARKUP & ANTI-CRASH
+## 3. TEXT, MARKUP & ANTI-CRASH
 - **CẤM**: Không sử dụng `get_part_by_text()` hoặc `set_color_by_text()` với đối tượng `Text`.
 - **MARKUPTEXT**: Khi cần tô màu 1 từ hoặc có ký tự đặc biệt (€, $, @), BẮT BUỘC dùng `MarkupText` và thẻ `<span>`.
     - *Ví dụ:* `MarkupText(f'Chữ <span color="{ACCENT}">Vàng</span>', font="Segoe UI")`
 
-## 5. QUY TẮC HIỆU ỨNG GÕ CHỮ (CHỐNG LỆCH CHỮ)
+## 4. QUY TẮC HIỆU ỨNG GÕ CHỮ (CHỐNG LỆCH CHỮ)
 Để dòng chữ không bị bay ra ngoài, CẤM dùng `Text(" ")` hoặc `VGroup()` rỗng làm mốc.
 **Bắt buộc bắt chước cấu trúc sau:**
 ```python
@@ -62,24 +57,24 @@ for i, char in enumerate(text_str):
     last_char = new_char
     current_buff = 0.08 # Trả về khoảng cách bình thường
   ```
-## 6. ĐỒNG BỘ THỜI GIAN (TIMING & PACING)
+## 5. ĐỒNG BỘ THỜI GIAN (TIMING & PACING)
 - **CẤM DOUBLE WAIT**: Tuyệt đối KHÔNG dùng `self.wait(tracker.duration)` hay `self.wait(tracker.get_remaining_duration())` ở cuối khối voiceover. Thư viện đã TỰ ĐỘNG CHỜ.
 - **CHIA NHỎ %**: Nếu thoại dài, hãy chia nhỏ Animation: `run_time = tracker.duration * 0.4`.
 
-## 7. NÂNG CẤP THẨM MỸ (PREMIUM LOOK)
+## 6. NÂNG CẤP THẨM MỸ (PREMIUM LOOK)
 - Gradient: `obj.set_color([FAMI_CYAN, ACCENT])`
 - Nền chữ (Layering): Thêm `BackgroundRectangle(my_text, color=BLACK, fill_opacity=0.6, buff=0.2)`
 - Hiệu ứng Juicy (TikTok style): `self.play(FadeIn(obj, scale=0.5, shift=UP*0.5), rate_func=rate_functions.ease_out_back)`
 - Neon Glow (Phát sáng):
 `glow = main_obj.copy().set_stroke(color=ACCENT, width=15, opacity=0.3).set_fill(opacity=0)`
 
-## 8. QUY TẮC BỐ CỤC 9:16 (CHỐNG TRÀN CHỮ)
+## 7. QUY TẮC BỐ CỤC 9:16 (CHỐNG TRÀN CHỮ)
 - **CẤM CHIA CỘT NGANG**: Tuyệt đối không đặt 2 khối văn bản cạnh nhau theo chiều ngang (RIGHT/LEFT). Màn hình dọc quá hẹp sẽ làm chữ bị tràn hoặc bé xíu. 
 - **LUÔN XẾP DỌC**: Mọi danh sách, so sánh phải dùng `arrange(DOWN)`.
 - **FONT TRONG MARKUP**: `MarkupText` không tự nhận font global tốt bằng `Text`. BẮT BUỘC luôn khai báo `font="Segoe UI"` bên trong hàm `MarkupText`.
 - **ANTI-WAIT**: Tuyệt đối không dùng `self.wait(tracker.get_remaining_duration() - x)`. Hãy để Manim tự chờ. Nếu muốn ngắt quãng, dùng `tracker.duration * tỉ_lệ`.
 
-## 9. QUY TẮC VỀ HẰNG SỐ & MÃ HÓA (ENCODING)
+## 8. QUY TẮC VỀ HẰNG SỐ & MÃ HÓA (ENCODING)
 - **Hằng số tọa độ**: TUYỆT ĐỐI KHÔNG dùng `CENTER`. Bắt buộc dùng **`ORIGIN`** cho tọa độ trung tâm `[0,0,0]`.
 - **Căn lề VGroup**: Khi dùng `arrange()`, nếu muốn căn giữa các vật thể, hãy dùng `aligned_edge=ORIGIN`.
 - **Lỗi Tiếng Việt (Encoding)**: 
