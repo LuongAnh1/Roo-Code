@@ -69,20 +69,6 @@ class FaMIBaseScene(VoiceoverScene):
             .move_to(DOWN * 4.5).scale_to_fit_width(8.0)
         )
 
-    # Trong file skills/fami_lib.py
-    # def create_title(self, line1, line2=""):
-    #     """Tạo tiêu đề chuẩn FaMI - Luôn nằm dưới Logo"""
-    #     # Lưu ý: self.logo phải được định nghĩa trong setup()
-    #     title = Paragraph(line1, line2, font="Segoe UI", font_size=45, weight=BOLD, color=WHITE, alignment="center")
-        
-    #     # SỬ DỤNG NEXT_TO THAY VÌ TỌA ĐỘ CỨNG
-    #     title.next_to(self.logo, DOWN, buff=0.8)
-        
-    #     # Ép cứng giới hạn bề ngang
-    #     if title.width > 7.5:
-    #         title.scale_to_fit_width(7.5)
-    #     return title
-
     def finish_scene(self):
         """Skill: Kết thúc scene an toàn"""
         self.wait(1)

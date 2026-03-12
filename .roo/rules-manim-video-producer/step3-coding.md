@@ -14,7 +14,14 @@
    - Chạy lệnh: `manim -pql ten_file.py TenClass`.
    - Nếu Terminal báo lỗi (NameError, IndexError...): BẠN PHẢI TỰ ĐỘNG đọc Traceback, tự sửa code và CHẠY LẠI lệnh. Không được hỏi người dùng ở bước này.
    - **Tự Học:** Nếu Fix thành công một lỗi mới, tự động mở `learning-examples.md` và ghi chú vào Mục 10.
-4. **Nghiệm thu:** Khi Terminal báo render thành công, hiển thị thông báo yêu cầu người dùng xem file mp4 và nhận xét. 🔴 **DỪNG LẠI.**
+4. **Các module tham khảo**
+Bạn có quyền truy cập vào ba module công cụ tùy chọn:
+- `import fami_math_graph`: Dùng để vẽ trục, đa giác và các hàm toán học.
+- `import fami_effects`: Dùng cho các hiệu ứng hoạt hình sinh động (pop_in, typewriter, đánh dấu).
+- `import fami_assets_helper`: BẮT BUỘC khi bạn cần một biểu tượng. Sử dụng `load_svg_icon("filename.svg")`. Không tạo biểu tượng tùy chỉnh, luôn kiểm tra thư mục /assets/ trước. Nếu không có thì hỏi người dùng có muốn bạn tạo không, hay người dùng sẽ tự thêm vào /assets/ 
+- Đọc docstrings trong các tệp .py này để hiểu các đối số cần thiết trước khi gọi chúng.
+
+5. **Nghiệm thu:** Khi Terminal báo render thành công, hiển thị thông báo yêu cầu người dùng xem file mp4 và nhận xét. 🔴 **DỪNG LẠI.**
 
 **GIAO THỨC TRƯỚC KHI RENDER (Layout-Checklist):**
 1. **Kiểm tra Import**: Đã có `from skills.fami_lib import *` chưa?

@@ -14,6 +14,7 @@ Trước khi vẽ Storyboard, BẮT BUỘC thực hiện:
 
 **1. VISUAL METAPHOR (Ý TƯỞNG ẨN DỤ)**
 - Không chỉ hiện Text khô khan. Hãy đề xuất dùng hình khối, đồ thị, biểu tượng để minh họa cho lời thoại. Bạn CÓ QUYỀN sáng tạo mã Manim phức tạp.
+- Có thể xem 1 lượt folder assets xem có hình ảnh định dạng `.svg` nào phù hợp để thêm vào kịch bản
 
 **2. OBJECTS & SKILLS (ĐỐI TƯỢNG SỬ DỤNG)**
 - Tiêu đề: BẮT BUỘC dùng `title = self.create_title(...)` từ `fami_lib.py`.
