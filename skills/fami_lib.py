@@ -4,12 +4,12 @@ from manim_voiceover.services.gtts import GTTSService
 import os
 
 # VỊ TRÍ KHÓA CỨNG (Sử dụng hệ tọa độ chuẩn 9:16)
-POS_TITLE = UP * 5.5       # Luôn nằm dưới logo
-POS_CENTER = UP * 0.5      # Tâm điểm nội dung chính
+POS_TITLE = UP * 4.2      
+POS_CENTER = UP * 0.5 
 POS_LEFT = LEFT * 2.2 + UP * 0.5
 POS_RIGHT = RIGHT * 2.2 + UP * 0.5
-POS_TOP_FOCUS = UP * 3.5   # Vùng tập trung phía trên
-POS_BOTTOM_FOCUS = DOWN * 1.5 # Vùng tập trung phía dưới
+POS_TOP_FOCUS = UP * 2.0   # Vùng tập trung phía trên
+POS_BOTTOM_FOCUS = DOWN * 3.0 # Vùng tập trung phía dưới
 POS_SUBTITLE = DOWN * 4.5  # Vùng phụ đề
 
 # KỸ NĂNG DI CHUYỂN CHUẨN (MOTION SKILLS)
@@ -69,11 +69,19 @@ class FaMIBaseScene(VoiceoverScene):
             .move_to(DOWN * 4.5).scale_to_fit_width(8.0)
         )
 
-    def create_title(self, line1, line2=""):
-        """Skill: Tạo tiêu đề đậm, vị trí chuẩn dưới Logo"""
-        title = Paragraph(line1, line2, font="Segoe UI", font_size=45, weight=BOLD, color=WHITE, alignment="center")
-        title.next_to(self.logo, DOWN, buff=0.6)
-        return title
+    # Trong file skills/fami_lib.py
+    # def create_title(self, line1, line2=""):
+    #     """Tạo tiêu đề chuẩn FaMI - Luôn nằm dưới Logo"""
+    #     # Lưu ý: self.logo phải được định nghĩa trong setup()
+    #     title = Paragraph(line1, line2, font="Segoe UI", font_size=45, weight=BOLD, color=WHITE, alignment="center")
+        
+    #     # SỬ DỤNG NEXT_TO THAY VÌ TỌA ĐỘ CỨNG
+    #     title.next_to(self.logo, DOWN, buff=0.8)
+        
+    #     # Ép cứng giới hạn bề ngang
+    #     if title.width > 7.5:
+    #         title.scale_to_fit_width(7.5)
+    #     return title
 
     def finish_scene(self):
         """Skill: Kết thúc scene an toàn"""
