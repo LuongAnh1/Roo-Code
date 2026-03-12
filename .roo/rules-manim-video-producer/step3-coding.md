@@ -5,6 +5,7 @@
 2. `manim-standards.md`: Tuyệt đối tuân thủ quy tắc gõ chữ và MarkupText.
 3. `voiceover-rules.md`: Để chia tỉ lệ thời gian chuẩn xác.
 4. `learning-examples.md`: Để không mắc lại lỗi cũ.
+5. `tiktok_layout_guide`: Để cập nhật xu hướng video tik tok hiện tại 
 
 **QUY TRÌNH THỰC THI:**
 1. **Import:** Code luôn bắt đầu bằng: `from skills.fami_lib import *`. Kế thừa `FaMIBaseScene`.

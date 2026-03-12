@@ -1,48 +1,40 @@
-# TikTok 9:16 Layout & Aesthetics Guide
+# TikTok 9:16 Layout & Aesthetics Guide (FaMI Version)
 
-## 1. Camera System (Vertical)
-- `frame_height = 16.0`
-- `frame_width = 9.0`
+## 1. Camera System (Vertical Standard)
+- `frame_height = 16.0` | `frame_width = 9.0`
 - Tọa độ Y: Từ `+8.0` (Đỉnh) đến `-8.0` (Đáy).
 - Tọa độ X: Từ `+4.5` (Phải) đến `-4.5` (Trái).
 
-## 2. Safe Zone & Horizontal Constraints (QUAN TRỌNG)
-- **Chiều rộng khả dụng**: Màn hình có `frame_width=9`. Để tránh tràn viền, tổng chiều rộng các đối tượng trong 1 hàng (row) **không được vượt quá 7.0 units**.
-- **Quy tắc dàn hàng ngang**: Luôn sử dụng `VGroup().arrange(RIGHT, buff=0.5)` thay vì dùng `next_to` liên tiếp, vì `arrange` sẽ tự động co giãn nếu bạn kết hợp với `scale_to_fit_width`.
+## 2. Quy tắc Phân vùng Tọa độ (Vertical Zoning)
+Agent BẮT BUỘC phải tuân thủ các mốc tọa độ Y sau để tránh bị UI của TikTok che khuất:
 
-## 3. Typography (Cỡ chữ)
-- **Title (Tiêu đề)**: `font_size=50` đến `60`. Vị trí: `to_edge(UP, buff=1.5)`.
-- **Body (Nội dung)**: `font_size=35` đến `45`.
-- **Note (Ghi chú)**: `font_size=25` đến `30`.
+| Vùng | Khoảng Tọa độ Y | Chức năng | Quy tắc |
+| :--- | :--- | :--- | :--- |
+| **Header** | `+5.5` đến `+7.5` | Logo & Thương hiệu | Dùng `FaMIBaseScene` |
+| **Title** | `+4.5` đến `+5.5` | Tiêu đề bài học | Dùng `self.create_title()` |
+| **Main Content** | `-3.5` đến `+4.0` | **VÙNG AN TOÀN TUYỆT ĐỐI** | Mọi animation chính nằm ở đây |
+| **Subtitle** | `-4.5` | Phụ đề lời thoại | Dùng `self.update_subtitle()` |
+| **Dead Zone Bottom** | `-5.0` đến `-8.0` | **VÙNG CẤM** | Bị che bởi Caption/Username TikTok |
 
-## 4. Màu sắc chuyên nghiệp (HEX)
-- Cyan (Chính): `#00d4ff`
-- Yellow (Nhấn mạnh): `#fffa65`
-- Red (Cảnh báo): `#ff4d4d`
-- Background: `#1a1a1a` (Dark Grey, không dùng Pure Black).
+## 3. Typography & Horizontal Constraints
+- **Ép kích thước ngang**: Mọi `VGroup` nội dung chính KHÔNG ĐƯỢC VƯỢT QUÁ **7.5 units**.
+- **Lệnh thực thi**: `if obj.width > 7.5: obj.scale_to_fit_width(7.5)`
+- **Font chữ**: Luôn dùng `font="Segoe UI"` cho `Text` và `MarkupText`.
 
-## 5. Agent Note
-- Video TikTok cần nhịp điệu nhanh. 
-- Không để màn hình trống quá 0.5 giây.
-- Sử dụng `Indicate()` cho các từ khóa quan trọng khi giọng đọc nhắc đến.
+## 4. Bố cục Thông minh (Relative Positioning)
+Thay vì dùng tọa độ cứng (`UP*3`), hãy sử dụng vị trí tương đối để tránh chồng lấn:
+1. **Title**: Luôn là mốc cao nhất.
+2. **Body**: Luôn đặt dưới Title: `obj.next_to(title, DOWN, buff=0.8)`.
+3. **CTA/Question**: Luôn đặt ở đáy vùng an toàn: `obj.move_to(DOWN * 3.5)`.
 
-## 6. PROTOCOL TỰ ĐỘNG BỐ CỤC (MANDATORY CHECKLIST)
-Trước khi đưa bất kỳ đối tượng nào vào `self.play(...)`, Agent BẮT BUỘC thực hiện quy trình sau để tránh tràn viền:
+## 5. PROTOCOL TỰ ĐỘNG BỐ CỤC (CHECKLIST TRƯỚC KHI CODE)
+Trước khi viết mã nguồn, Agent phải tự trả lời 3 câu hỏi:
 
-### Quy tắc 1: Kiểm soát kích thước ngang (Horizontal Width Limit)
-- Mọi nội dung (Text, VGroup, Mobject) **KHÔNG ĐƯỢC VƯỢT QUÁ 8.0 units** bề ngang. 
-- **Lệnh ép buộc**: Mọi Mobject/VGroup chứa Text hoặc nhiều đối tượng phải đi kèm lệnh:
-  `my_group.scale_to_fit_width(8.0)`
-- Nếu nội dung dài, **BẮT BUỘC** dùng `Paragraph` để ngắt dòng thay vì co bóp Text quá mức làm chữ bị méo.
+1. **Vị trí**: Đối tượng này có nằm dưới Tiêu đề (`next_to`) và trên Subtitle (Y > -4) không?
+2. **Kích thước**: Nếu mình thêm 1 mũi tên vào 2 bên, tổng bề ngang có vượt quá 8.0 không? hoặc câu hỏi tương tự thế trong các trường hợp dàn trải ngang (Nếu có -> phải `.scale_to_fit_width(7.5)`).
+3. **Thứ tự**: Mình đã `arrange()` và `scale()` nhóm đối tượng XONG XUÔI rồi mới vẽ Mũi tên nối chưa? (Mũi tên phải vẽ cuối cùng) và các câu hỏi tương tự vậy.
 
-### Quy tắc 2: Thứ tự logic của Layout (The "Layout-First" Rule)
-- Tuyệt đối không vẽ Arrow, Line nối giữa các vật thể trước khi các vật thể đó được `arrange()` hoặc `scale()`.
-- **Thứ tự đúng:**
-  1. Khai báo đối tượng (Mobject).
-  2. Gom nhóm (VGroup) & Căn lề (`arrange`, `scale_to_fit_width`).
-  3. Định vị cuối cùng (`center`, `to_edge`).
-  4. **CUỐI CÙNG**: Mới tạo Arrow, Line nối giữa các đối tượng (vì lúc này tọa độ của vật thể mới chính xác).
-
-### Quy tắc 3: Kiểm tra Title
-- Title không được dùng `Text()` nếu nó dài hơn 30 ký tự. 
-- **Bắt buộc dùng**: `Paragraph` hoặc tách thành 2 câu trên 2 dòng để giữ font size chuẩn (50-60).
+## 6. Màu sắc Thương hiệu (Brand Colors)
+Sử dụng các hằng số từ `skills/fami_lib.py`:
+- `FAMI_CYAN`, `ACCENT`, `SUCCESS`, `DANGER`, `TEXT_COLOR`.
+- Tránh dùng màu gốc `BLUE`, `RED`, `GREEN` của Manim.
