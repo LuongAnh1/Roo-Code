@@ -1,5 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:D:/Roo Code/media/videos/bayes_theorem_video/1920p15/partial_movie_files/Scene1_Hook/1710730845_1399187229_2006128333.mp4'
-file 'file:D:/Roo Code/media/videos/bayes_theorem_video/1920p15/partial_movie_files/Scene1_Hook/1121882698_2851785527_3821521200.mp4'
-file 'file:D:/Roo Code/media/videos/bayes_theorem_video/1920p15/partial_movie_files/Scene1_Hook/1121882698_2984718950_1960746950.mp4'
-file 'file:D:/Roo Code/media/videos/bayes_theorem_video/1920p15/partial_movie_files/Scene1_Hook/1121882698_2139624605_1085926908.mp4'

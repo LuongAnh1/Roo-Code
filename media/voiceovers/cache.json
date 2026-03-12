@@ -718,5 +718,50 @@
     },
     "original_audio": "cau-hoi-cuoi-video-danh-cho-ban-do-la-phai-xu-ly-420ffe77.mp3",
     "final_audio": "cau-hoi-cuoi-video-danh-cho-ban-do-la-phai-xu-ly-420ffe77.mp3"
+  },
+  {
+    "input_text": "B\u1ea1n c\u00f3 bao gi\u1edd t\u1ef1 h\u1ecfi Gmail ph\u00e1t hi\u1ec7n email spam nh\u01b0 th\u1ebf n\u00e0o?",
+    "input_data": {
+      "input_text": "B\u1ea1n c\u00f3 bao gi\u1edd t\u1ef1 h\u1ecfi Gmail ph\u00e1t hi\u1ec7n email spam nh\u01b0 th\u1ebf n\u00e0o?",
+      "service": "gtts"
+    },
+    "original_audio": "ban-co-bao-gio-tu-hoi-gmail-phat-hien-email-spam-44a2ffc2.mp3",
+    "final_audio": "ban-co-bao-gio-tu-hoi-gmail-phat-hien-email-spam-44a2ffc2.mp3"
+  },
+  {
+    "input_text": "B\u1ea1n c\u00f3 bao gi\u1edd t\u1ef1 h\u1ecfi Gmail ph\u00e1t hi\u1ec7n email spam nh\u01b0 th\u1ebf n\u00e0o?",
+    "input_data": {
+      "input_text": "B\u1ea1n c\u00f3 bao gi\u1edd t\u1ef1 h\u1ecfi Gmail ph\u00e1t hi\u1ec7n email spam nh\u01b0 th\u1ebf n\u00e0o?",
+      "service": "gtts"
+    },
+    "original_audio": "ban-co-bao-gio-tu-hoi-gmail-phat-hien-email-spam-44a2ffc2.mp3",
+    "final_audio": "ban-co-bao-gio-tu-hoi-gmail-phat-hien-email-spam-44a2ffc2.mp3"
+  },
+  {
+    "input_text": "M\u1ed9t email ch\u1ee9a nhi\u1ec1u t\u1eeb nh\u01b0 free, offer ho\u1eb7c click th\u01b0\u1eddng c\u00f3 kh\u1ea3 n\u0103ng l\u00e0 spam.",
+    "input_data": {
+      "input_text": "M\u1ed9t email ch\u1ee9a nhi\u1ec1u t\u1eeb nh\u01b0 free, offer ho\u1eb7c click th\u01b0\u1eddng c\u00f3 kh\u1ea3 n\u0103ng l\u00e0 spam.",
+      "service": "gtts"
+    },
+    "original_audio": "mot-email-chua-nhieu-tu-nhu-free-offer-hoac-click-658e0a7d.mp3",
+    "final_audio": "mot-email-chua-nhieu-tu-nhu-free-offer-hoac-click-658e0a7d.mp3"
+  },
+  {
+    "input_text": "\u0110\u1ec3 t\u00ednh x\u00e1c su\u1ea5t email l\u00e0 spam, h\u1ec7 th\u1ed1ng s\u1eed d\u1ee5ng \u0111\u1ecbnh l\u00fd Bayes.",
+    "input_data": {
+      "input_text": "\u0110\u1ec3 t\u00ednh x\u00e1c su\u1ea5t email l\u00e0 spam, h\u1ec7 th\u1ed1ng s\u1eed d\u1ee5ng \u0111\u1ecbnh l\u00fd Bayes.",
+      "service": "gtts"
+    },
+    "original_audio": "de-tinh-xac-suat-email-la-spam-he-thong-su-dung-523c8a95.mp3",
+    "final_audio": "de-tinh-xac-suat-email-la-spam-he-thong-su-dung-523c8a95.mp3"
+  },
+  {
+    "input_text": "Nh\u1edd \u0111\u1ecbnh l\u00fd Bayes, Gmail c\u00f3 th\u1ec3 t\u00ednh to\u00e1n x\u00e1c su\u1ea5t v\u00e0 t\u1ef1 \u0111\u1ed9ng l\u1ecdc email spam.",
+    "input_data": {
+      "input_text": "Nh\u1edd \u0111\u1ecbnh l\u00fd Bayes, Gmail c\u00f3 th\u1ec3 t\u00ednh to\u00e1n x\u00e1c su\u1ea5t v\u00e0 t\u1ef1 \u0111\u1ed9ng l\u1ecdc email spam.",
+      "service": "gtts"
+    },
+    "original_audio": "nho-dinh-ly-bayes-gmail-co-the-tinh-toan-xac-suat-39be7308.mp3",
+    "final_audio": "nho-dinh-ly-bayes-gmail-co-the-tinh-toan-xac-suat-39be7308.mp3"
   }
 ]
