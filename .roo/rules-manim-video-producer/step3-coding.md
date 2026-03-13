@@ -18,7 +18,7 @@ Chỉ đọc 3 file này để lấy bộ khung và quy tắc gõ:
 Bạn có quyền import thêm 3 module kỹ năng sau từ thư mục `skills/`:
 - `from skills.fami_math_graph import *`: Vẽ trục, đa giác, đồ thị.
 - `from skills.fami_effects import *`: Hiệu ứng sinh động (`pop_in`, `typewriter`).
-- `from skills.fami_assets_helper import *`: BẮT BUỘC dùng `load_svg_icon("name.svg")` khi cần biểu tượng. **CẤM tự vẽ biểu tượng bằng code.** Nếu file `.svg` không tồn tại, hãy dừng lại và hỏi người dùng.
+- `from skills.fami_assets_helper import *`: BẮT BUỘC dùng `load_svg_icon("assets/name.svg")` khi cần biểu tượng. **CẤM tự vẽ biểu tượng bằng code.** Nếu file `.svg` không tồn tại, hãy dừng lại và hỏi người dùng.
 *(Mẹo: Hãy dùng công cụ `read_file` để xem docstrings của các file này nếu bạn không rõ tham số).*
 
 ### 3. Giao thức rà soát trước khi Render (Pre-flight Check)
@@ -33,7 +33,7 @@ Trước khi mở Terminal, tự kiểm tra code của bạn:
    1. BẠN PHẢI TỰ ĐỘNG đọc Traceback.
    2. **Mở và đọc file `learning-examples.md`** để tìm cách giải quyết.
    3. Tự sửa code và CHẠY LẠI lệnh. KHÔNG ĐƯỢC hỏi người dùng ở bước này.
-- **Tự Học:** Nếu fix thành công lỗi mới, cập nhật vào Mục 10 của `learning-examples.md`.
+- **Tự Học:** Nếu fix thành công lỗi mới, cập nhật vào Mục 11 của `learning-examples.md`.
 
 ### 5. Nghiệm thu (Review)
 Khi Terminal báo render thành công, hiển thị thông báo yêu cầu người dùng xem file mp4.

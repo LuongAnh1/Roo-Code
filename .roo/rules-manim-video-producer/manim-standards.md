@@ -44,4 +44,3 @@ Sử dụng logic "Khóa trục Y" để chữ không bị bay ra ngoài hoặc 
 ## 5. MÃ HÓA & LƯU FILE (ENCODING)
 - **UTF-8**: Đảm bảo file lưu định dạng UTF-8.
 - **Dấu nháy**: Trong MarkupText, dùng dấu nháy đơn bao ngoài dấu nháy kép '..."..."...' để tránh lỗi cú pháp Python khi định nghĩa màu.
-
