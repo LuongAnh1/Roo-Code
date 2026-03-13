@@ -1,44 +1,40 @@
 # HƯỚNG DẪN BƯỚC 3: LẬP TRÌNH & KIỂM THỬ
 
-**BẮT BUỘC ĐỌC TRƯỚC KHI CODE:**
-1. `reference_template.py`: Để copy bộ khung chuẩn.
-2. `manim-standards.md`: Tuyệt đối tuân thủ quy tắc gõ chữ và MarkupText.
-3. `voiceover-rules.md`: Để chia tỉ lệ thời gian chuẩn xác.
-4. `learning-examples.md`: Để không mắc lại lỗi cũ.
-5. `tiktok_layout_guide`: Để cập nhật xu hướng video tik tok hiện tại 
+**📚 TÀI LIỆU BẮT BUỘC ĐỌC TRƯỚC KHI CODE:**
+Chỉ đọc 3 file này để lấy bộ khung và quy tắc gõ:
+1. `scene-templates.md`: Copy đúng bộ khung (Blueprint) của Scene bạn đang làm.
+2. `manim-standards.md`: Tuyệt đối tuân thủ quy tắc chống lệch chữ.
+3. `voiceover-rules.md`: Áp dụng quy tắc "Bản vá 80%" để không bị lỗi chờ.
 
-**QUY TRÌNH THỰC THI:**
-1. **Import:** Code luôn bắt đầu bằng: 
-   ```python 
-      import sys
-      import os
+---
 
-      sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+**QUY TRÌNH THỰC THI (5 BƯỚC):**
 
-      from skills.fami_lib import *`. Kế thừa `FaMIBaseScene`.
-   ```
-2. **Các module tham khảo**
-Bạn có quyền truy cập vào ba module công cụ tùy chọn:
-- `import fami_math_graph`: Dùng để vẽ trục, đa giác và các hàm toán học.
-- `import fami_effects`: Dùng cho các hiệu ứng hoạt hình sinh động (pop_in, typewriter, đánh dấu).
-- `import fami_assets_helper`: BẮT BUỘC khi bạn cần một biểu tượng. Sử dụng `load_svg_icon("filename.svg")`. Không tạo biểu tượng tùy chỉnh, luôn kiểm tra thư mục /assets/ trước. Nếu không có thì hỏi người dùng có muốn bạn tạo không, hay người dùng sẽ tự thêm vào /assets/ 
-- Đọc docstrings trong các tệp .py này để hiểu các đối số cần thiết trước khi gọi chúng.
+### 1. Dựng khung (Scaffolding)
+- Dán bộ khung từ `scene-templates.md` vào file làm việc.
+- Đảm bảo dòng 1 luôn có lệnh "Hack Path" (`sys.path.append(...)`) và `from skills.fami_lib import *`.
 
-3. **API Verification:** Nếu định dùng một hàm lạ, hãy dùng công cụ Terminal chạy `python -c "import manim; help(manim.Tên_Hàm)"` để kiểm tra trước.
+### 2. Triệu hồi Tool tùy chọn (Nếu cần)
+Bạn có quyền import thêm 3 module kỹ năng sau từ thư mục `skills/`:
+- `from skills.fami_math_graph import *`: Vẽ trục, đa giác, đồ thị.
+- `from skills.fami_effects import *`: Hiệu ứng sinh động (`pop_in`, `typewriter`).
+- `from skills.fami_assets_helper import *`: BẮT BUỘC dùng `load_svg_icon("name.svg")` khi cần biểu tượng. **CẤM tự vẽ biểu tượng bằng code.** Nếu file `.svg` không tồn tại, hãy dừng lại và hỏi người dùng.
+*(Mẹo: Hãy dùng công cụ `read_file` để xem docstrings của các file này nếu bạn không rõ tham số).*
 
-4. **Auto-Debug Loop (Tự sửa lỗi):**
+### 3. Giao thức rà soát trước khi Render (Pre-flight Check)
+Trước khi mở Terminal, tự kiểm tra code của bạn:
+- [ ] Khối `voiceover` ĐÃ CÓ `self.update_subtitle` ở dòng 1 chưa?
+- [ ] Các nhóm Mobject (`VGroup`) ĐÃ CÓ `.scale_to_fit_width(7.5)` để chống tràn chưa?
+- [ ] Hiệu ứng gõ chữ (Typing) ĐÃ CÓ `.match_y()` để chống lệch chưa?
+
+### 4. Auto-Debug Loop (Vòng lặp tự sửa lỗi)
 - Chạy lệnh: `manim -pql ten_file.py TenClass`.
-- Nếu Terminal báo lỗi (NameError, IndexError...): BẠN PHẢI TỰ ĐỘNG đọc Traceback, tự sửa code và CHẠY LẠI lệnh. Không được hỏi người dùng ở bước này.
-- **Tự Học:** Nếu Fix thành công một lỗi mới, tự động mở `learning-examples.md` và ghi chú vào Mục 10.
+- **Nếu có lỗi (NameError, IndexError, v.v.):** 
+   1. BẠN PHẢI TỰ ĐỘNG đọc Traceback.
+   2. **Mở và đọc file `learning-examples.md`** để tìm cách giải quyết.
+   3. Tự sửa code và CHẠY LẠI lệnh. KHÔNG ĐƯỢC hỏi người dùng ở bước này.
+- **Tự Học:** Nếu fix thành công lỗi mới, cập nhật vào Mục 10 của `learning-examples.md`.
 
-5. **Nghiệm thu:** Khi Terminal báo render thành công, hiển thị thông báo yêu cầu người dùng xem file mp4 và nhận xét. 🔴 **DỪNG LẠI.**
-
-**GIAO THỨC TRƯỚC KHI RENDER (Layout-Checklist):**
-1. **Kiểm tra Subtitle**: Khối `voiceover` đã có `update_subtitle` chưa?
-2. **Kiểm tra Tràn viền**: Đã gọi `.scale_to_fit_width(7.5)` cho các nhóm nội dung (VGroup) chưa?
-3. **Kiểm tra Tọa độ**: Đã dùng `POS_TITLE`, `POS_CENTER` chưa? 
-
-**TỰ ĐỘNG DEBUG:**
-Nếu sau khi render mà chữ bị lệch hoặc tràn, BẮT BUỘC:
-- Dùng `print(obj.width)` trong code để xem kích thước thực của đối tượng.
-- Dùng `.match_y()` hoặc `.move_to()` để căn chỉnh lại dựa trên trục Y chuẩn của `fami_lib`.
+### 5. Nghiệm thu (Review)
+Khi Terminal báo render thành công, hiển thị thông báo yêu cầu người dùng xem file mp4.
+🔴 **DỪNG LẠI (STOP).** Chờ người dùng phản hồi mới làm Scene tiếp theo.
