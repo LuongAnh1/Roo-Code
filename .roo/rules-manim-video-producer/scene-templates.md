@@ -61,8 +61,9 @@ class Scene3_Takeaways(FaMIBaseScene):
         self.finish_scene()
 ```
 
-## 3. TEMPLATE SCENE 4 (CTA - KÊU GỌI HÀNH ĐỘNG)
-Scene này cần sự rõ ràng, dứt khoát. Giữ form chuẩn.
+## 3. TEMPLATE SCENE 4 (CTA - CÂU HỎI MỞ & KÊU GỌI)
+*Đặc điểm: Phần câu hỏi được tự do minh họa bằng hình ảnh. KHÓA CỨNG nút Kêu gọi (Comment) ở dưới đáy.*
+
 ```python
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -70,22 +71,35 @@ from skills.fami_lib import *
 
 class Scene4_CTA(FaMIBaseScene):
     def construct(self):
-        # 1. Câu hỏi lớn (Luôn dùng MarkupText)
-        question = MarkupText(f'Câu hỏi: <span color="{ACCENT}">[Từ khóa nổi bật]</span>?', font="Segoe UI", font_size=42, weight=BOLD)
-        question.next_to(self.logo, DOWN, buff=1.5)
-        if question.width > 7.5: question.scale_to_fit_width(7.5)
+        title = self.create_title("CÂU HỎI CHO BẠN")
 
-        # 🎨 Tùy biến đối tượng minh họa nhỏ ở giữa (nếu cần)
+        # ==========================================
+        # 🎨 VÙNG SÁNG TẠO CÂU HỎI (CREATIVE QUESTION ZONE)
+        # Tự do thiết kế câu hỏi mở tại đây (Y từ -1.0 đến +3.5).
+        # Khuyến khích kết hợp MarkupText và Hình ảnh/Đồ thị minh họa.
+        # Ví dụ: Hiện 2 phương án A và B để người xem chọn.
+        # ==========================================
+        
+        # ... (Tự code nội dung câu hỏi của bạn ở đây) ...
 
-        # 2. Lời kêu gọi (Luôn ở dưới cùng an toàn Y = -3.0)
-        cta_box = RoundedRectangle(height=1.2, width=6.5, color=FAMI_CYAN)
-        cta_text = Text("Comment câu trả lời!", font="Segoe UI", font_size=32).move_to(cta_box)
+        # ==========================================
+        # 🔒 VÙNG KHÓA CỨNG CTA (LOCKED CTA ZONE)
+        # ==========================================
+        # Lời kêu gọi (Luôn ở vùng an toàn Y = -3.0)
+        cta_box = RoundedRectangle(height=1.0, width=6.5, color=FAMI_CYAN)
+        cta_text = Text("Comment câu trả lời của bạn!", font="Segoe UI", font_size=30).move_to(cta_box)
         cta_group = VGroup(cta_box, cta_text).move_to(DOWN * 3.0)
 
-        with self.voiceover(text="[Thoại]") as tracker:
+        # Mũi tên chỉ xuống nút comment
+        arrow = Arrow(cta_group.get_bottom(), cta_group.get_bottom() + DOWN * 1.0, color=SUCCESS)
+
+        with self.voiceover(text="[Thoại từ kịch bản]") as tracker:
             self.update_subtitle("[Phụ đề]")
-            self.play(Write(question))
-            self.play(FadeIn(cta_group, shift=UP*0.5))
+            
+            # ... (Play Animation cho câu hỏi của bạn) ...
+            
+            # Luôn hiện nút CTA ở cuối
+            self.play(FadeIn(cta_group, shift=UP*0.5), GrowArrow(arrow))
 
         self.finish_scene()
 ```
