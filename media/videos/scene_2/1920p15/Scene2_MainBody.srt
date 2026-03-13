@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:04,409
+Qua câu chuyện này, ta thấy rằng Định lý Bayes không chỉ là công
+
+2
+00:00:04,509 --> 00:00:08,708
+thức lý thuyết mà còn được ứng dụng trực tiếp trong đời sống.
+
+3
+00:00:08,800 --> 00:00:12,789
+Về ưu điểm, đây không phải thuật toán tĩnh, nó có khả
+
+4
+00:00:12,889 --> 00:00:17,110
+năng học từ dữ liệu mới, giảm thiểu việc đánh nhầm email
+
+5
+00:00:17,210 --> 00:00:20,892
+quan trọng thành Spam cùng tốc độ tính toán nhanh
+
+6
+00:00:20,933 --> 00:00:26,133
+Về hạn chế thì Spam ngày nay ngày càng tinh vi.
+
+7
+00:00:26,233 --> 00:00:32,674
+Thay vì viết “free”, kẻ gửi có thể viết “fr33”; “f.r.e.e”;
+
+8
+00:00:32,774 --> 00:00:38,425
+“fr€€” làm hệ thống dựa trên từ khóa khó nhận diện.
+

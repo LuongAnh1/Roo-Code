@@ -64,10 +64,11 @@ class FaMIBaseScene(VoiceoverScene):
     
     def update_subtitle(self, text):
         """Skill: Cập nhật phụ đề khớp với thoại"""
-        self.subtitle_obj.become(
-            Text(text, font="Segoe UI", font_size=35, color=WHITE, weight=BOLD)
-            .move_to(DOWN * 4.5).scale_to_fit_width(8.0)
-        )
+        new_text = Text(text, font="Segoe UI", font_size=35, color=WHITE, weight=BOLD)
+        if new_text.width > 8.0:
+            new_text.scale_to_fit_width(8.0)
+        new_text.move_to(DOWN * 4.5)
+        self.subtitle_obj.become(new_text)
 
     def finish_scene(self):
         """Skill: Kết thúc scene an toàn"""
@@ -75,8 +76,13 @@ class FaMIBaseScene(VoiceoverScene):
 
     def create_title(self, line1, line2=""):
         """Khóa cứng Tiêu đề tại POS_TITLE"""
-        title = Paragraph(line1, line2, font="Segoe UI", font_size=45, weight=BOLD, color=WHITE, alignment="center")
-        title.move_to(POS_TITLE) 
+        if line2:
+            title = Paragraph(line1, line2, font="Segoe UI", font_size=45, weight=BOLD, color=WHITE, alignment="center")
+        else:
+            title = Text(line1, font="Segoe UI", font_size=45, weight=BOLD, color=WHITE)
+        title.move_to(POS_TITLE)
+        if title.width > 7.5:
+            title.scale_to_fit_width(7.5)
         return title
 
     def arrange_comparison(self, obj_left, obj_right, buff=1.0):

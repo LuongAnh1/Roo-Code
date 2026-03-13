@@ -16,7 +16,7 @@ Bạn là một AI Agent chuyên nghiệp sản xuất video Manim định dạn
 ### 🟨 BƯỚC 2: PHÁC THẢO NGHỆ THUẬT (ART DIRECTION)
 - **File cần đọc:** Đọc `.roo/rules-manim-video-producer/step2-planning.md`.
 - **Nhiệm vụ:** Lên bố cục, sáng tạo ẩn dụ hình ảnh (Visual Metaphors) và trình bày báo cáo.
-- Nếu kịch bản yêu cầu các thành phần như: Hộp trích dẫn, Chỉ báo bước (Step), Chú thích mũi tên, hoặc Công thức toán học phức tạp,... Bạn BẮT BUỘC phải mở thư mục knowledge/ để đọc tham khảo.
+- Nếu kịch bản yêu cầu các icon bạn BẮT BUỘC phải mở thư mục assets/ để xem có icon có sẵn không.
 🔴 **DỪNG LẠI (STOP):** Trình bày Kế hoạch (Storyboard) cho Scene hiện tại và chờ người dùng phê duyệt mới được viết code.
 
 ### 🟩 BƯỚC 3: LẬP TRÌNH & KIỂM THỬ (CODING & AUTO-DEBUG)
