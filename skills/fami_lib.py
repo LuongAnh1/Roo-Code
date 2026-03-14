@@ -3,7 +3,12 @@ from manim_voiceover import VoiceoverScene
 from manim_voiceover.services.gtts import GTTSService
 import os
 
-from manim.utils.color import ManimColor, interpolate_color
+from manim.utils.color import ManimColor, interpolate_color # Dùng để tạo màu gradient tùy chỉnh nếu cần
+
+from googletrans import Translator # Dùng để dịch text sang tiếng Anh nếu cần (ví dụ cho voiceover tiếng Anh)
+
+# Khởi tạo Translator một lần duy nhất ở đầu file
+translator = Translator()
 
 # VỊ TRÍ KHÓA CỨNG (Sử dụng hệ tọa độ chuẩn 9:16)
 POS_TITLE = UP * 4.2      
@@ -34,6 +39,7 @@ config.frame_width = 9.0
 # BẢNG MÀU THƯƠNG HIỆU
 FAMI_BLUE = "#005BAA"
 FAMI_CYAN = "#45C4D9"
+FAMI_SUB = "#DFE858"
 ACCENT = "#fffa65"
 DANGER = "#ff4d4d"
 SUCCESS = "#00e676"
@@ -81,13 +87,39 @@ class FaMIBaseScene(VoiceoverScene):
 
     # --- CÁC SKILLS (HÀM TIỆN ÍCH) ---
     
-    def update_subtitle(self, text):
-        """Skill: Cập nhật phụ đề khớp với thoại"""
-        new_text = Text(text, font="Segoe UI", font_size=35, color=WHITE, weight=BOLD)
-        if new_text.width > 8.0:
-            new_text.scale_to_fit_width(8.0)
-        new_text.move_to(DOWN * 4.5)
-        self.subtitle_obj.become(new_text)
+    # def update_subtitle(self, text):
+    #     """Skill: Cập nhật phụ đề khớp với thoại"""
+    #     new_text = Text(text, font="Segoe UI", font_size=35, color=WHITE, weight=BOLD)
+    #     if new_text.width > 8.0:
+    #         new_text.scale_to_fit_width(8.0)
+    #     new_text.move_to(DOWN * 4.5)
+    #     self.subtitle_obj.become(new_text)
+
+    def update_subtitle(self, vi_text, max_width=7.5):
+        """
+        Skill: Tự động dịch sang tiếng Anh và cập nhật phụ đề song ngữ.
+        """
+        # Tự động dịch
+        try:
+            en_text = translator.translate(vi_text, src='vi', dest='en').text
+        except:
+            en_text = "" # Nếu lỗi mạng thì để trống
+        
+        # 1. Tiếng Việt (Dòng chính)
+        vi_sub = Paragraph(vi_text, font="Segoe UI", font_size=35, color=WHITE, alignment="center")
+        
+        # 2. Tiếng Anh (Dòng phụ - Nhỏ hơn, màu Cyan, in nghiêng)
+        en_sub = Paragraph(en_text, font="Segoe UI", font_size=28, color=FAMI_SUB, slant=ITALIC, alignment="center")
+        
+        # 3. Gom nhóm và căn lề
+        sub_group = VGroup(vi_sub, en_sub).arrange(DOWN, buff=0.1)
+        
+        # Ép khung
+        if sub_group.width > max_width:
+            sub_group.scale_to_fit_width(max_width)
+            
+        sub_group.move_to(DOWN * 3.8)
+        self.subtitle_obj.become(sub_group)
 
     def finish_scene(self):
         """Skill: Kết thúc scene an toàn"""

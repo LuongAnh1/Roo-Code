@@ -7,26 +7,26 @@ Qua câu chuyện này, ta thấy rằng Định lý Bayes không chỉ là côn
 thức lý thuyết mà còn được ứng dụng trực tiếp trong đời sống.
 
 3
-00:00:08,808 --> 00:00:12,828
+00:00:08,800 --> 00:00:12,820
 Về ưu điểm, đây không phải thuật toán tĩnh, nó có khả
 
 4
-00:00:12,928 --> 00:00:17,181
+00:00:12,920 --> 00:00:17,173
 năng học từ dữ liệu mới, giảm thiểu việc đánh nhầm email
 
 5
-00:00:17,281 --> 00:00:21,068
+00:00:17,273 --> 00:00:21,060
 quan trọng thành Spam cùng tốc độ tính toán nhanh.
 
 6
-00:00:21,141 --> 00:00:24,737
+00:00:21,133 --> 00:00:24,729
 Về hạn chế thì Spam ngày nay ngày càng tinh vi.
 
 7
-00:00:24,808 --> 00:00:32,140
+00:00:24,800 --> 00:00:32,132
 Thay vì viết “free”, kẻ gửi có thể viết “fr33”; “f.r.e.e”;
 
 8
-00:00:32,240 --> 00:00:38,676
+00:00:32,232 --> 00:00:38,668
 “fr€€” làm hệ thống dựa trên từ khóa khó nhận diện.
 
