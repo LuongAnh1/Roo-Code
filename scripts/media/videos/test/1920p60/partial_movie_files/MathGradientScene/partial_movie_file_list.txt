@@ -1,5 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:D:/Roo Code/scripts/media/videos/test/1920p60/partial_movie_files/MathGradientScene/1815621503_3563446097_905834278.mp4'
-file 'file:D:/Roo Code/scripts/media/videos/test/1920p60/partial_movie_files/MathGradientScene/330120484_84581414_2614046995.mp4'
-file 'file:D:/Roo Code/scripts/media/videos/test/1920p60/partial_movie_files/MathGradientScene/330120484_452876133_3708271519.mp4'
-file 'file:D:/Roo Code/scripts/media/videos/test/1920p60/partial_movie_files/MathGradientScene/330120484_4217992463_3076729521.mp4'

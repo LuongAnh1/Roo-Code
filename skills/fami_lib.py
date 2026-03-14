@@ -39,22 +39,22 @@ DANGER = "#ff4d4d"
 SUCCESS = "#00e676"
 TEXT_COLOR = WHITE
 
-# --- THÊM VÀO ĐẦU FILE HOẶC CHỖ KHU VỰC SKILLS ---
+# --- ĐỔ MÀU ---
 
-def skill_apply_gradient(mobject):
+def apply_fami_gradient(mobject, colors=None):
     """
-    Skill: Phủ màu Gradient Xanh FaMI lên bất kỳ đối tượng nào (Text, MathTex, VGroup).
-    Cách dùng: skill_apply_gradient(my_text)
+    Skill: Đổ màu Gradient cho Text, MathTex hoặc VGroup.
+    Sử dụng màu thương hiệu mặc định nếu không truyền tham số.
     """
-    # Đổ màu từ Trái sang Phải: Xanh ngọc (Cyan) -> Trắng -> Xanh dương đậm (Blue)
-    # Thêm màu Trắng ở giữa để chữ sáng và dễ đọc hơn trên nền đen
-    mobject.set_color_by_gradient(FAMI_CYAN, WHITE, FAMI_BLUE)
+    if colors is None:
+        colors = ["#56CCF2","#A8E063"] # Dải màu thương hiệu chuẩn
     
-    # Tùy chọn: Thêm bóng đổ đen nhẹ để chữ tách biệt khỏi nền đen
-    shadow = mobject.copy().set_color(BLACK).set_opacity(0.5).shift(DOWN*0.05 + RIGHT*0.05)
-    shadow.set_z_index(-1) # Cho bóng nằm dưới
-    
-    return VGroup(shadow, mobject)
+    # Lấy tất cả các thành phần con có chứa nét vẽ (glyphs/points)
+    # family_members_with_points() quét cả ký tự trong Tex và chữ trong Text
+    for submob in mobject.family_members_with_points():
+        if len(submob.points) > 0:
+            submob.set_color(colors)
+    return mobject
 
 # ==========================================
 # 2. CLASS CƠ SỞ (BASE SCENE)
@@ -93,15 +93,29 @@ class FaMIBaseScene(VoiceoverScene):
         """Skill: Kết thúc scene an toàn"""
         self.wait(1)
 
-    def create_title(self, line1, line2=""):
-        """Khóa cứng Tiêu đề tại POS_TITLE"""
+    def create_title(self, line1, line2="", apply_gradient=True):
+        """
+        Skill: Tạo tiêu đề chuẩn FaMI.
+        - Tự động đổ màu Gradient nếu apply_gradient=True.
+        - Vị trí luôn cố định dưới Logo.
+        """
         if line2:
-            title = Paragraph(line1, line2, font="Segoe UI", font_size=45, weight=BOLD, color=WHITE, alignment="center")
+            title = Paragraph(line1, line2, font="Segoe UI", font_size=45, weight=BOLD, alignment="center")
         else:
-            title = Text(line1, font="Segoe UI", font_size=45, weight=BOLD, color=WHITE)
+            title = Text(line1, font="Segoe UI", font_size=45, weight=BOLD)
+        
+        # Đặt vị trí
         title.move_to(POS_TITLE)
+        
+        # Ép khung
         if title.width > 7.5:
             title.scale_to_fit_width(7.5)
+            
+        # Tự động áp dụng Gradient nếu được bật
+        if apply_gradient:
+            # Gọi lại skill apply_fami_gradient đã viết ở trên
+            apply_fami_gradient(title)
+            
         return title
 
     def arrange_comparison(self, obj_left, obj_right, buff=1.0):

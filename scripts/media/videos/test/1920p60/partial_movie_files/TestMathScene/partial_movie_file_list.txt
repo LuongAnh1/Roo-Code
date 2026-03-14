@@ -1,3 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:D:/Roo Code/scripts/media/videos/test/1920p60/partial_movie_files/TestMathScene/1815621503_3293236028_359387780.mp4'
-file 'file:D:/Roo Code/scripts/media/videos/test/1920p60/partial_movie_files/TestMathScene/330120484_4217992463_2510591185.mp4'
