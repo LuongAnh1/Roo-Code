@@ -3,6 +3,8 @@ from manim_voiceover import VoiceoverScene
 from manim_voiceover.services.gtts import GTTSService
 import os
 
+from manim.utils.color import ManimColor, interpolate_color
+
 # VỊ TRÍ KHÓA CỨNG (Sử dụng hệ tọa độ chuẩn 9:16)
 POS_TITLE = UP * 4.2      
 POS_CENTER = UP * 0.5 
@@ -36,6 +38,23 @@ ACCENT = "#fffa65"
 DANGER = "#ff4d4d"
 SUCCESS = "#00e676"
 TEXT_COLOR = WHITE
+
+# --- THÊM VÀO ĐẦU FILE HOẶC CHỖ KHU VỰC SKILLS ---
+
+def skill_apply_gradient(mobject):
+    """
+    Skill: Phủ màu Gradient Xanh FaMI lên bất kỳ đối tượng nào (Text, MathTex, VGroup).
+    Cách dùng: skill_apply_gradient(my_text)
+    """
+    # Đổ màu từ Trái sang Phải: Xanh ngọc (Cyan) -> Trắng -> Xanh dương đậm (Blue)
+    # Thêm màu Trắng ở giữa để chữ sáng và dễ đọc hơn trên nền đen
+    mobject.set_color_by_gradient(FAMI_CYAN, WHITE, FAMI_BLUE)
+    
+    # Tùy chọn: Thêm bóng đổ đen nhẹ để chữ tách biệt khỏi nền đen
+    shadow = mobject.copy().set_color(BLACK).set_opacity(0.5).shift(DOWN*0.05 + RIGHT*0.05)
+    shadow.set_z_index(-1) # Cho bóng nằm dưới
+    
+    return VGroup(shadow, mobject)
 
 # ==========================================
 # 2. CLASS CƠ SỞ (BASE SCENE)

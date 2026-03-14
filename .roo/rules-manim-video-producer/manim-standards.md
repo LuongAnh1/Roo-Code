@@ -44,3 +44,20 @@ Sử dụng logic "Khóa trục Y" để chữ không bị bay ra ngoài hoặc 
 ## 5. MÃ HÓA & LƯU FILE (ENCODING)
 - **UTF-8**: Đảm bảo file lưu định dạng UTF-8.
 - **Dấu nháy**: Trong MarkupText, dùng dấu nháy đơn bao ngoài dấu nháy kép '..."..."...' để tránh lỗi cú pháp Python khi định nghĩa màu.
+
+## 6. HIỆU ỨNG GRADIENT CAO CẤP (TIKTOK TREND)
+Để làm chữ và công thức toán học trông rực rỡ như các kênh TikTok triệu view:
+- **CẤM** để công thức toán học màu trắng đơn điệu nếu nó là điểm nhấn chính.
+- **BẮT BUỘC DÙNG SKILL**: Hãy bọc đối tượng chính (Text, MathTex hoặc VGroup) vào hàm `skill_apply_gradient(obj)` từ `fami_lib`.
+- **Cách kết hợp Text và Math:** Nếu một câu có cả chữ và công thức, hãy tạo chúng riêng, nhóm vào VGroup rồi mới phủ gradient lên toàn bộ VGroup để màu chảy mượt mà từ trái sang phải.
+  ```python
+  # Ví dụ chuẩn:
+  text1 = Text("Tìm x biết", font="Segoe UI")
+  math1 = MathTex(r"\frac{1}{x} = 27^x")
+  group = VGroup(text1, math1).arrange(RIGHT)
+  
+  # Phủ màu gradient xanh thương hiệu lên cả cụm
+  fancy_group = skill_apply_gradient(group) 
+  
+  self.play(Write(fancy_group))
+  ```
