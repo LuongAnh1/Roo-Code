@@ -2,6 +2,7 @@
 
 ## 📊 Sơ đồ Khối (Workflow Diagram)
 
+```text 
 =======================================================================
            SƠ ĐỒ LUỒNG LÀM VIỆC: AI MANIM VIDEO PRODUCER
 =======================================================================
@@ -78,6 +79,7 @@ CHÚ THÍCH KÝ HIỆU:
  ⚙️ : Việc của Hệ thống (Render, báo lỗi Terminal).
  🧍 : Việc của CON NGƯỜI (Bạn chỉ cần duyệt tại 3 điểm chốt chặn này).
 -----------------------------------------------------------------------
+```
 
 # 👨‍💻 Vai trò của Người dùng (Human-in-the-loop)
 
