@@ -15,41 +15,41 @@ flowchart TD
     Start([🚀 Bắt đầu Dự án]) --> B1
 
     subgraph BƯỚC 1: TIẾP NHẬN DỮ LIỆU
-        B1[Đọc kịch bản script.csv]:::step1 --> B1_1[Trích xuất 4 Phân cảnh: Thoại & Hình]:::step1
-        B1_1 --> H1{🧍 NGƯỜI DÙNG DUYỆT:\nCó đúng kịch bản chưa?}:::human
+        B1["Đọc kịch bản script.csv"]:::step1 --> B1_1["Trích xuất 4 Phân cảnh:\nThoại & Hình"]:::step1
+        B1_1 --> H1{"🧍 NGƯỜI DÙNG DUYỆT:\nCó đúng kịch bản chưa?"}:::human
     end
 
-    H1 -- "Đồng ý" --> LoopStart((🔄 BẮT ĐẦU VÒNG LẶP\nLàm từng Scene 1 -> 4)):::loop
+    H1 -- "Đồng ý" --> LoopStart(("🔄 BẮT ĐẦU VÒNG LẶP\nLàm từng Scene 1 -> 4")):::loop
     H1 -- "Sửa lại" --> B1
 
     subgraph BƯỚC 2: PHÁC THẢO NGHỆ THUẬT
-        LoopStart --> B2[Đọc step2-planning.md]:::step2
-        B2 --> B2_1[Tìm Icon trong /assets\nLên bố cục Visual Metaphors]:::step2
-        B2_1 --> H2{🧍 NGƯỜI DÙNG DUYỆT:\nKế hoạch hình ảnh OK chưa?}:::human
+        LoopStart --> B2["Đọc step2-planning.md"]:::step2
+        B2 --> B2_1["Tìm Icon trong /assets\nLên bố cục Visual Metaphors"]:::step2
+        B2_1 --> H2{"🧍 NGƯỜI DÙNG DUYỆT:\nKế hoạch hình ảnh OK chưa?"}:::human
     end
 
     subgraph BƯỚC 3: CODE & TỰ ĐỘNG SỬA LỖI
-        H2 -- "Đồng ý" --> B3[Đọc step3-coding.md]:::step3
+        H2 -- "Đồng ý" --> B3["Đọc step3-coding.md"]:::step3
         H2 -- "Sửa lại" --> B2_1
         
-        B3 --> B3_1[Viết Code Python/Manim]:::step3
-        B3_1 --> B3_2[Chạy Terminal: manim -pql]:::step3
-        B3_2 --> CheckError{Terminal\nbáo lỗi?}
+        B3 --> B3_1["Viết Code Python/Manim"]:::step3
+        B3_1 --> B3_2["Chạy Terminal: manim -pql"]:::step3
+        B3_2 --> CheckError{"Terminal\nbáo lỗi?"}
         
-        CheckError -- "CÓ LỖI" --> B3_Fix[Agent TỰ ĐỌC Traceback\n& TỰ SỬA CODE]:::step3
+        CheckError -- "CÓ LỖI" --> B3_Fix["Agent TỰ ĐỌC Traceback\n& TỰ SỬA CODE"]:::step3
         B3_Fix --> B3_2
         
-        CheckError -- "THÀNH CÔNG" --> H3{🧍 NGƯỜI DÙNG DUYỆT:\nXem file video mp4 nháp}:::human
+        CheckError -- "THÀNH CÔNG" --> H3{"🧍 NGƯỜI DÙNG DUYỆT:\nXem file video mp4 nháp"}:::human
     end
 
     H3 -- "Cần sửa (Màu/Chữ/Tốc độ)" --> B3_1
-    H3 -- "Đồng ý (Chốt Scene)" --> CheckLoop{Đã xong\ncả 4 Scene?}
+    H3 -- "Đồng ý (Chốt Scene)" --> CheckLoop{"Đã xong\ncả 4 Scene?"}
 
     CheckLoop -- "Chưa xong" --> LoopStart
     CheckLoop -- "Đã xong 4 Scene" --> B4
 
     subgraph BƯỚC 4: XUẤT BẢN
-        B4[Chạy 4 lệnh render chất lượng cao\n-pqh 1080x1920]:::step4 --> Finish([🎉 HOÀN THÀNH DỰ ÁN])
+        B4["Chạy 4 lệnh render chất lượng cao\n-pqh 1080x1920"]:::step4 --> Finish([🎉 HOÀN THÀNH DỰ ÁN])
     end
 ```
 
