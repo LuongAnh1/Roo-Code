@@ -48,15 +48,19 @@ Nếu Terminal báo lỗi hoặc video bị đứng hình rất lâu sau mỗi c
       self.play(Write(title), run_time=min(1.2, tracker.duration))
   ```
 
-## 6. QUY TẮC SUBTITLE CHIẾN LƯỢC
-Mọi khối `with self.voiceover` bắt buộc phải có `self.update_subtitle(...)`.
-- **Đồng bộ hóa (Mapping)**: 
-    - Phụ đề phải là **tóm tắt** hoặc **cụm từ khóa** của nội dung thoại. 
-    - CẤM đẩy toàn bộ câu thoại dài vào phụ đề (Gây quá tải thị giác).
-    - CẤM dùng `self.update_subtitle` với một nội dung quá dài (nhiều hơn 15 từ). Hãy cắt nhỏ ý chính.
-- **Vị trí (Safety First)**: 
-    - Phụ đề LUÔN PHẢI gọi qua hàm `self.update_subtitle()` trong `fami_lib.py` (hàm này đã khóa cứng tọa độ `Y = -3.8` để né vùng Caption TikTok). 
-    - **CẤM** tự ý dùng `Text` và `.move_to()` thủ công để làm phụ đề.
-- **Tốc độ hiển thị**: 
-    - Phụ đề phải thay đổi ngay khi Animation thay đổi. 
-    - Nếu câu thoại chia làm 3 ý (3 lệnh `play`), bạn phải cập nhật phụ đề 3 lần tương ứng.
+## 6. QUY TẮC SUBTITLE CHIẾN LƯỢC (CHUNK-BASED)
+- **CẤM**: Hiện toàn bộ câu thoại dài trong 1 lệnh `update_subtitle` duy nhất.
+- **BẮT BUỘC (One-to-One Mapping)**: 
+    - Phụ đề phải thay đổi theo nhịp Animation.
+    - Với câu thoại dài, hãy sử dụng cấu trúc:
+    ```python
+    with self.voiceover(text="Câu thoại dài gồm ý 1 và ý 2.") as tracker:
+        # Ý 1
+        self.update_subtitle("Ý 1: ...")
+        self.play(Action_1, run_time=tracker.duration * 0.4)
+        
+        # Ý 2
+        self.update_subtitle("Ý 2: ...")
+        self.play(Action_2, run_time=tracker.duration * 0.4)
+    ```
+- **Tư duy**: Mỗi khi bạn dùng lệnh `self.play(...)` cho một phần nội dung mới, BẮT BUỘC phải gọi `self.update_subtitle()` ngay phía trước. Phụ đề phải là "cái bóng" của hình ảnh.
