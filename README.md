@@ -84,7 +84,7 @@ CHÚ THÍCH KÝ HIỆU:
 
 Hệ thống được thiết kế để tự động hóa 90% công việc lập trình. 10% còn lại là quyết định của bạn. Bạn chỉ cần lên tiếng tại 3 điểm chốt chặn (Nút nét đứt trên sơ đồ):
 
-## 📍 Chốt chặn 1 (Sau Bước 1)**: Duyệt Kịch bản
+## 📍 Chốt chặn 1 (Sau Bước 1): Duyệt Kịch bản
 - **Agent làm gì**: Đọc file CSV, ghép Lời thoại với Mô tả hình ảnh.
 - **Bạn làm gì**: Kiểm tra xem Agent có lấy nhầm dòng tiêu đề làm kịch bản không. Bấm OK để Agent bắt đầu nghĩ ý tưởng cho Phân cảnh 1.
 
