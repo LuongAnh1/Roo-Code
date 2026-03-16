@@ -1,7 +1,5 @@
 # 🗺️ SƠ ĐỒ LUỒNG LÀM VIỆC: AI MANIM VIDEO PRODUCER
 
-Sơ đồ dưới đây mô tả cách AI Agent tương tác với hệ thống và con người để tự động hóa việc sản xuất 4 phân cảnh video dọc (9:16).
-
 ## 📊 Sơ đồ Khối (Workflow Diagram)
 
 ```mermaid
