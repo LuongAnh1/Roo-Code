@@ -2,56 +2,82 @@
 
 ## 📊 Sơ đồ Khối (Workflow Diagram)
 
-```mermaid
-flowchart TD
-    %% Định nghĩa màu sắc
-    classDef step1 fill:#1e3a8a,stroke:#4fb0ff,stroke-width:2px,color:#fff;
-    classDef step2 fill:#b45309,stroke:#ffd000,stroke-width:2px,color:#fff;
-    classDef step3 fill:#14532d,stroke:#00ff00,stroke-width:2px,color:#fff;
-    classDef step4 fill:#7f1d1d,stroke:#ff4d4d,stroke-width:2px,color:#fff;
-    classDef human fill:#4b5563,stroke:#fff,stroke-width:2px,color:#fff,stroke-dasharray: 5 5;
-    classDef loop fill:#4c1d95,stroke:#c084fc,stroke-width:2px,color:#fff;
+=======================================================================
+           SƠ ĐỒ LUỒNG LÀM VIỆC: AI MANIM VIDEO PRODUCER
+=======================================================================
 
-    Start([🚀 Bắt đầu Dự án]) --> B1
+   [ 🚀 BẮT ĐẦU DỰ ÁN ]
+            │
+            ▼
+ ┌──────────────────────────────────────┐
+ │ 🟦 BƯỚC 1: TIẾP NHẬN DỮ LIỆU         │
+ │ 🤖 Đọc kịch bản script.csv           │
+ │ 🤖 Trích xuất Thoại & Hình ảnh       │
+ └──────────────────┬───────────────────┘
+                    │
+           { 🧍 BẠN DUYỆT KỊCH BẢN } ──────(Sai)─────┐
+                    │                                │
+                 (Đồng ý)                            │
+                    │                                │
+   ╭────────────────▼───────────────────────────╮    │
+   │ 🔄 BẮT ĐẦU VÒNG LẶP: LÀM TỪNG SCENE (1->4) │    │
+   ╰────────────────┬───────────────────────────╯    │
+                    │                                │
+ ┌──────────────────▼───────────────────┐            │
+ │ 🟨 BƯỚC 2: PHÁC THẢO NGHỆ THUẬT      │<───────────┘
+ │ 🤖 Đề xuất ý tưởng (Visual Metaphor) │
+ │ 🤖 Xác định Layout (Y-coordinates)   │
+ └──────────────────┬───────────────────┘
+                    │
+           { 🧍 BẠN DUYỆT Ý TƯỞNG } ───────(Đổi ý)───┐
+                    │                                │
+                 (Đồng ý)                            │
+                    │                                │
+ ┌──────────────────▼───────────────────┐            │
+ │ 🟩 BƯỚC 3: LẬP TRÌNH & KIỂM THỬ      │<───────────┘
+ │ 🤖 Viết Code (Dùng fami_lib)         │
+ │ ⚙️ Chạy Terminal: manim -pql         │
+ └──────────────────┬───────────────────┘
+                    │
+             [ Lỗi Terminal? ]
+                    ├──────────(CÓ LỖI)─────────┐
+                    │                           │
+               (Thành công)           [ 🤖 AI TỰ ĐỌC LOG ]
+                    │                 [ & TỰ SỬA CODE    ]
+                    ▼                           │
+          [ 🎬 XUẤT VIDEO NHÁP ] <──────────────┘
+                    │
+           { 🧍 BẠN DUYỆT VIDEO } ────────(Sửa code)─┐
+                    │                                │
+               (Chốt Scene)                          │
+                    │                                │
+   ╭────────────────▼───────────────────╮            │
+   │      Đã xong cả 4 Scene chưa?      │            │
+   ╰────────┬───────────────────┬───────╯            │
+            │                   │                    │
+          (Chưa)              (Xong)                 │
+            │                   │                    │
+   [ Quay lại BƯỚC 2 ]<─────────┴────────────────────┘
+   [ Làm Scene tiếp  ]
 
-    subgraph BƯỚC 1: TIẾP NHẬN DỮ LIỆU
-        B1["Đọc kịch bản script.csv"]:::step1 --> B1_1["Trích xuất 4 Phân cảnh:\nThoại & Hình"]:::step1
-        B1_1 --> H1{"🧍 NGƯỜI DÙNG DUYỆT:\nCó đúng kịch bản chưa?"}:::human
-    end
+            │
+            ▼
+ ┌──────────────────────────────────────┐
+ │ 🟥 BƯỚC 4: XUẤT BẢN HOÀN THIỆN       │
+ │ 🤖 Chạy 4 lệnh render nét căng       │
+ │    (-pqh 1080x1920)                  │
+ └──────────────────┬───────────────────┘
+                    │
+                    ▼
+         [ 🎉 HOÀN THÀNH DỰ ÁN ]
 
-    H1 -- "Đồng ý" --> LoopStart(("🔄 BẮT ĐẦU VÒNG LẶP\nLàm từng Scene 1 -> 4")):::loop
-    H1 -- "Sửa lại" --> B1
 
-    subgraph BƯỚC 2: PHÁC THẢO NGHỆ THUẬT
-        LoopStart --> B2["Đọc step2-planning.md"]:::step2
-        B2 --> B2_1["Tìm Icon trong /assets\nLên bố cục Visual Metaphors"]:::step2
-        B2_1 --> H2{"🧍 NGƯỜI DÙNG DUYỆT:\nKế hoạch hình ảnh OK chưa?"}:::human
-    end
-
-    subgraph BƯỚC 3: CODE & TỰ ĐỘNG SỬA LỖI
-        H2 -- "Đồng ý" --> B3["Đọc step3-coding.md"]:::step3
-        H2 -- "Sửa lại" --> B2_1
-        
-        B3 --> B3_1["Viết Code Python/Manim"]:::step3
-        B3_1 --> B3_2["Chạy Terminal: manim -pql"]:::step3
-        B3_2 --> CheckError{"Terminal\nbáo lỗi?"}
-        
-        CheckError -- "CÓ LỖI" --> B3_Fix["Agent TỰ ĐỌC Traceback\n& TỰ SỬA CODE"]:::step3
-        B3_Fix --> B3_2
-        
-        CheckError -- "THÀNH CÔNG" --> H3{"🧍 NGƯỜI DÙNG DUYỆT:\nXem file video mp4 nháp"}:::human
-    end
-
-    H3 -- "Cần sửa (Màu/Chữ/Tốc độ)" --> B3_1
-    H3 -- "Đồng ý (Chốt Scene)" --> CheckLoop{"Đã xong\ncả 4 Scene?"}
-
-    CheckLoop -- "Chưa xong" --> LoopStart
-    CheckLoop -- "Đã xong 4 Scene" --> B4
-
-    subgraph BƯỚC 4: XUẤT BẢN
-        B4["Chạy 4 lệnh render chất lượng cao\n-pqh 1080x1920"]:::step4 --> Finish([🎉 HOÀN THÀNH DỰ ÁN])
-    end
-```
+-----------------------------------------------------------------------
+CHÚ THÍCH KÝ HIỆU:
+ 🤖 : Việc của AI Agent (Tự động làm, tự động nghĩ).
+ ⚙️ : Việc của Hệ thống (Render, báo lỗi Terminal).
+ 🧍 : Việc của CON NGƯỜI (Bạn chỉ cần duyệt tại 3 điểm chốt chặn này).
+-----------------------------------------------------------------------
 
 # 👨‍💻 Vai trò của Người dùng (Human-in-the-loop)
 
