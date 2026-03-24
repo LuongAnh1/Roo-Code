@@ -2644,5 +2644,806 @@
     },
     "original_audio": "ban-da-san-sang-chua-d8f3727f.mp3",
     "final_audio": "ban-da-san-sang-chua-d8f3727f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "T\u00f3m l\u1ea1i, c\u00f4ng th\u1ee9c ch\u1ed1t h\u1ea1 \u0111\u1ec3 \u0111o l\u01b0\u1eddng k\u00eanh truy\u1ec1n ch\u00ednh l\u00e0:",
+    "input_data": {
+      "input_text": "T\u00f3m l\u1ea1i, c\u00f4ng th\u1ee9c ch\u1ed1t h\u1ea1 \u0111\u1ec3 \u0111o l\u01b0\u1eddng k\u00eanh truy\u1ec1n ch\u00ednh l\u00e0:",
+      "service": "gtts"
+    },
+    "original_audio": "tom-lai-cong-thuc-chot-ha-de-do-luong-kenh-truyen-8cd69c9a.mp3",
+    "final_audio": "tom-lai-cong-thuc-chot-ha-de-do-luong-kenh-truyen-8cd69c9a.mp3"
+  },
+  {
+    "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+    "input_data": {
+      "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+      "service": "gtts"
+    },
+    "original_audio": "mo-phong-monte-carlo-6f2815f0.mp3",
+    "final_audio": "mo-phong-monte-carlo-6f2815f0.mp3"
+  },
+  {
+    "input_text": "c\u1ed9ng v\u1edbi ph\u00e2n ph\u1ed1i Bernoulli, Nh\u1ecb th\u1ee9c",
+    "input_data": {
+      "input_text": "c\u1ed9ng v\u1edbi ph\u00e2n ph\u1ed1i Bernoulli, Nh\u1ecb th\u1ee9c",
+      "service": "gtts"
+    },
+    "original_audio": "cong-voi-phan-phoi-bernoulli-nhi-thuc-7a4e39a5.mp3",
+    "final_audio": "cong-voi-phan-phoi-bernoulli-nhi-thuc-7a4e39a5.mp3"
+  },
+  {
+    "input_text": "v\u00e0 Lu\u1eadt s\u1ed1 l\u1edbn!",
+    "input_data": {
+      "input_text": "v\u00e0 Lu\u1eadt s\u1ed1 l\u1edbn!",
+      "service": "gtts"
+    },
+    "original_audio": "va-luat-so-lon-eef4f45d.mp3",
+    "final_audio": "va-luat-so-lon-eef4f45d.mp3"
+  },
+  {
+    "input_text": "K\u1ebft qu\u1ea3? Ta \u01b0\u1edbc l\u01b0\u1ee3ng \u0111\u01b0\u1ee3c ch\u00ednh x\u00e1c X\u00e1c su\u1ea5t l\u1ed7i bit - BER!",
+    "input_data": {
+      "input_text": "K\u1ebft qu\u1ea3? Ta \u01b0\u1edbc l\u01b0\u1ee3ng \u0111\u01b0\u1ee3c ch\u00ednh x\u00e1c X\u00e1c su\u1ea5t l\u1ed7i bit - BER!",
+      "service": "gtts"
+    },
+    "original_audio": "ket-qua-ta-uoc-luong-duoc-chinh-xac-xac-suat-loi-8a8e0a5b.mp3",
+    "final_audio": "ket-qua-ta-uoc-luong-duoc-chinh-xac-xac-suat-loi-8a8e0a5b.mp3"
+  },
+  {
+    "input_text": "V\u00e0 4 t\u1eeb kh\u00f3a b\u1ea1n c\u1ea7n 'b\u1ecf t\u00fai' h\u00f4m nay l\u00e0:",
+    "input_data": {
+      "input_text": "V\u00e0 4 t\u1eeb kh\u00f3a b\u1ea1n c\u1ea7n 'b\u1ecf t\u00fai' h\u00f4m nay l\u00e0:",
+      "service": "gtts"
+    },
+    "original_audio": "va-4-tu-khoa-ban-can-bo-tui-hom-nay-la-9261e95b.mp3",
+    "final_audio": "va-4-tu-khoa-ban-can-bo-tui-hom-nay-la-9261e95b.mp3"
+  },
+  {
+    "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+    "input_data": {
+      "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+      "service": "gtts"
+    },
+    "original_audio": "mo-phong-monte-carlo-6f2815f0.mp3",
+    "final_audio": "mo-phong-monte-carlo-6f2815f0.mp3"
+  },
+  {
+    "input_text": "Lu\u1eadt s\u1ed1 l\u1edbn,",
+    "input_data": {
+      "input_text": "Lu\u1eadt s\u1ed1 l\u1edbn,",
+      "service": "gtts"
+    },
+    "original_audio": "luat-so-lon-7406ded6.mp3",
+    "final_audio": "luat-so-lon-7406ded6.mp3"
+  },
+  {
+    "input_text": "Ph\u00e2n ph\u1ed1i Nh\u1ecb th\u1ee9c",
+    "input_data": {
+      "input_text": "Ph\u00e2n ph\u1ed1i Nh\u1ecb th\u1ee9c",
+      "service": "gtts"
+    },
+    "original_audio": "phan-phoi-nhi-thuc-380f8a0d.mp3",
+    "final_audio": "phan-phoi-nhi-thuc-380f8a0d.mp3"
+  },
+  {
+    "input_text": "v\u00e0 Bernoulli.",
+    "input_data": {
+      "input_text": "v\u00e0 Bernoulli.",
+      "service": "gtts"
+    },
+    "original_audio": "va-bernoulli-0067ac6c.mp3",
+    "final_audio": "va-bernoulli-0067ac6c.mp3"
+  },
+  {
+    "input_text": "L\u01b0u l\u1ea1i video v\u00e0 tra c\u1ee9u ngay \u0111\u1ec3 th\u1ea5y x\u00e1c su\u1ea5t \u1ee9ng d\u1ee5ng \u0111\u1ec9nh c\u1ee1 n\u00e0o nh\u00e9!",
+    "input_data": {
+      "input_text": "L\u01b0u l\u1ea1i video v\u00e0 tra c\u1ee9u ngay \u0111\u1ec3 th\u1ea5y x\u00e1c su\u1ea5t \u1ee9ng d\u1ee5ng \u0111\u1ec9nh c\u1ee1 n\u00e0o nh\u00e9!",
+      "service": "gtts"
+    },
+    "original_audio": "luu-lai-video-va-tra-cuu-ngay-de-thay-xac-suat-ung-6b6b4865.mp3",
+    "final_audio": "luu-lai-video-va-tra-cuu-ngay-de-thay-xac-suat-ung-6b6b4865.mp3"
+  },
+  {
+    "input_text": "\u0110\u00f3 l\u00e0 b\u00e0i to\u00e1n h\u00f4m nay. C\u00f2n g\u1ee3i \u00fd cho Level ti\u1ebfp theo:",
+    "input_data": {
+      "input_text": "\u0110\u00f3 l\u00e0 b\u00e0i to\u00e1n h\u00f4m nay. C\u00f2n g\u1ee3i \u00fd cho Level ti\u1ebfp theo:",
+      "service": "gtts"
+    },
+    "original_audio": "do-la-bai-toan-hom-nay-con-goi-y-cho-level-tiep-dec4858e.mp3",
+    "final_audio": "do-la-bai-toan-hom-nay-con-goi-y-cho-level-tiep-dec4858e.mp3"
+  },
+  {
+    "input_text": "M\u00f4 ph\u1ecfng Nhi\u1ec5u tr\u1eafng Gaussian",
+    "input_data": {
+      "input_text": "M\u00f4 ph\u1ecfng Nhi\u1ec5u tr\u1eafng Gaussian",
+      "service": "gtts"
+    },
+    "original_audio": "mo-phong-nhieu-trang-gaussian-9c2aadb7.mp3",
+    "final_audio": "mo-phong-nhieu-trang-gaussian-9c2aadb7.mp3"
+  },
+  {
+    "input_text": "b\u1eb1ng Ph\u00e2n ph\u1ed1i chu\u1ea9n.",
+    "input_data": {
+      "input_text": "b\u1eb1ng Ph\u00e2n ph\u1ed1i chu\u1ea9n.",
+      "service": "gtts"
+    },
+    "original_audio": "bang-phan-phoi-chuan-c6e9e017.mp3",
+    "final_audio": "bang-phan-phoi-chuan-c6e9e017.mp3"
+  },
+  {
+    "input_text": "B\u1ea1n \u0111\u00e3 s\u1eb5n s\u00e0ng ch\u01b0a?",
+    "input_data": {
+      "input_text": "B\u1ea1n \u0111\u00e3 s\u1eb5n s\u00e0ng ch\u01b0a?",
+      "service": "gtts"
+    },
+    "original_audio": "ban-da-san-sang-chua-d8f3727f.mp3",
+    "final_audio": "ban-da-san-sang-chua-d8f3727f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "T\u00f3m l\u1ea1i, c\u00f4ng th\u1ee9c ch\u1ed1t h\u1ea1 \u0111\u1ec3 \u0111o l\u01b0\u1eddng k\u00eanh truy\u1ec1n ch\u00ednh l\u00e0:",
+    "input_data": {
+      "input_text": "T\u00f3m l\u1ea1i, c\u00f4ng th\u1ee9c ch\u1ed1t h\u1ea1 \u0111\u1ec3 \u0111o l\u01b0\u1eddng k\u00eanh truy\u1ec1n ch\u00ednh l\u00e0:",
+      "service": "gtts"
+    },
+    "original_audio": "tom-lai-cong-thuc-chot-ha-de-do-luong-kenh-truyen-8cd69c9a.mp3",
+    "final_audio": "tom-lai-cong-thuc-chot-ha-de-do-luong-kenh-truyen-8cd69c9a.mp3"
+  },
+  {
+    "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+    "input_data": {
+      "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+      "service": "gtts"
+    },
+    "original_audio": "mo-phong-monte-carlo-6f2815f0.mp3",
+    "final_audio": "mo-phong-monte-carlo-6f2815f0.mp3"
+  },
+  {
+    "input_text": "c\u1ed9ng v\u1edbi ph\u00e2n ph\u1ed1i Bernoulli, Nh\u1ecb th\u1ee9c",
+    "input_data": {
+      "input_text": "c\u1ed9ng v\u1edbi ph\u00e2n ph\u1ed1i Bernoulli, Nh\u1ecb th\u1ee9c",
+      "service": "gtts"
+    },
+    "original_audio": "cong-voi-phan-phoi-bernoulli-nhi-thuc-7a4e39a5.mp3",
+    "final_audio": "cong-voi-phan-phoi-bernoulli-nhi-thuc-7a4e39a5.mp3"
+  },
+  {
+    "input_text": "v\u00e0 Lu\u1eadt s\u1ed1 l\u1edbn!",
+    "input_data": {
+      "input_text": "v\u00e0 Lu\u1eadt s\u1ed1 l\u1edbn!",
+      "service": "gtts"
+    },
+    "original_audio": "va-luat-so-lon-eef4f45d.mp3",
+    "final_audio": "va-luat-so-lon-eef4f45d.mp3"
+  },
+  {
+    "input_text": "K\u1ebft qu\u1ea3? Ta \u01b0\u1edbc l\u01b0\u1ee3ng \u0111\u01b0\u1ee3c ch\u00ednh x\u00e1c X\u00e1c su\u1ea5t l\u1ed7i bit - BER!",
+    "input_data": {
+      "input_text": "K\u1ebft qu\u1ea3? Ta \u01b0\u1edbc l\u01b0\u1ee3ng \u0111\u01b0\u1ee3c ch\u00ednh x\u00e1c X\u00e1c su\u1ea5t l\u1ed7i bit - BER!",
+      "service": "gtts"
+    },
+    "original_audio": "ket-qua-ta-uoc-luong-duoc-chinh-xac-xac-suat-loi-8a8e0a5b.mp3",
+    "final_audio": "ket-qua-ta-uoc-luong-duoc-chinh-xac-xac-suat-loi-8a8e0a5b.mp3"
+  },
+  {
+    "input_text": "V\u00e0 4 t\u1eeb kh\u00f3a b\u1ea1n c\u1ea7n 'b\u1ecf t\u00fai' h\u00f4m nay l\u00e0:",
+    "input_data": {
+      "input_text": "V\u00e0 4 t\u1eeb kh\u00f3a b\u1ea1n c\u1ea7n 'b\u1ecf t\u00fai' h\u00f4m nay l\u00e0:",
+      "service": "gtts"
+    },
+    "original_audio": "va-4-tu-khoa-ban-can-bo-tui-hom-nay-la-9261e95b.mp3",
+    "final_audio": "va-4-tu-khoa-ban-can-bo-tui-hom-nay-la-9261e95b.mp3"
+  },
+  {
+    "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+    "input_data": {
+      "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+      "service": "gtts"
+    },
+    "original_audio": "mo-phong-monte-carlo-6f2815f0.mp3",
+    "final_audio": "mo-phong-monte-carlo-6f2815f0.mp3"
+  },
+  {
+    "input_text": "Lu\u1eadt s\u1ed1 l\u1edbn,",
+    "input_data": {
+      "input_text": "Lu\u1eadt s\u1ed1 l\u1edbn,",
+      "service": "gtts"
+    },
+    "original_audio": "luat-so-lon-7406ded6.mp3",
+    "final_audio": "luat-so-lon-7406ded6.mp3"
+  },
+  {
+    "input_text": "Ph\u00e2n ph\u1ed1i Nh\u1ecb th\u1ee9c",
+    "input_data": {
+      "input_text": "Ph\u00e2n ph\u1ed1i Nh\u1ecb th\u1ee9c",
+      "service": "gtts"
+    },
+    "original_audio": "phan-phoi-nhi-thuc-380f8a0d.mp3",
+    "final_audio": "phan-phoi-nhi-thuc-380f8a0d.mp3"
+  },
+  {
+    "input_text": "v\u00e0 Bernoulli.",
+    "input_data": {
+      "input_text": "v\u00e0 Bernoulli.",
+      "service": "gtts"
+    },
+    "original_audio": "va-bernoulli-0067ac6c.mp3",
+    "final_audio": "va-bernoulli-0067ac6c.mp3"
+  },
+  {
+    "input_text": "L\u01b0u l\u1ea1i video v\u00e0 tra c\u1ee9u ngay \u0111\u1ec3 th\u1ea5y x\u00e1c su\u1ea5t \u1ee9ng d\u1ee5ng \u0111\u1ec9nh c\u1ee1 n\u00e0o nh\u00e9!",
+    "input_data": {
+      "input_text": "L\u01b0u l\u1ea1i video v\u00e0 tra c\u1ee9u ngay \u0111\u1ec3 th\u1ea5y x\u00e1c su\u1ea5t \u1ee9ng d\u1ee5ng \u0111\u1ec9nh c\u1ee1 n\u00e0o nh\u00e9!",
+      "service": "gtts"
+    },
+    "original_audio": "luu-lai-video-va-tra-cuu-ngay-de-thay-xac-suat-ung-6b6b4865.mp3",
+    "final_audio": "luu-lai-video-va-tra-cuu-ngay-de-thay-xac-suat-ung-6b6b4865.mp3"
+  },
+  {
+    "input_text": "\u0110\u00f3 l\u00e0 b\u00e0i to\u00e1n h\u00f4m nay. C\u00f2n g\u1ee3i \u00fd cho Level ti\u1ebfp theo:",
+    "input_data": {
+      "input_text": "\u0110\u00f3 l\u00e0 b\u00e0i to\u00e1n h\u00f4m nay. C\u00f2n g\u1ee3i \u00fd cho Level ti\u1ebfp theo:",
+      "service": "gtts"
+    },
+    "original_audio": "do-la-bai-toan-hom-nay-con-goi-y-cho-level-tiep-dec4858e.mp3",
+    "final_audio": "do-la-bai-toan-hom-nay-con-goi-y-cho-level-tiep-dec4858e.mp3"
+  },
+  {
+    "input_text": "M\u00f4 ph\u1ecfng Nhi\u1ec5u tr\u1eafng Gaussian",
+    "input_data": {
+      "input_text": "M\u00f4 ph\u1ecfng Nhi\u1ec5u tr\u1eafng Gaussian",
+      "service": "gtts"
+    },
+    "original_audio": "mo-phong-nhieu-trang-gaussian-9c2aadb7.mp3",
+    "final_audio": "mo-phong-nhieu-trang-gaussian-9c2aadb7.mp3"
+  },
+  {
+    "input_text": "b\u1eb1ng Ph\u00e2n ph\u1ed1i chu\u1ea9n.",
+    "input_data": {
+      "input_text": "b\u1eb1ng Ph\u00e2n ph\u1ed1i chu\u1ea9n.",
+      "service": "gtts"
+    },
+    "original_audio": "bang-phan-phoi-chuan-c6e9e017.mp3",
+    "final_audio": "bang-phan-phoi-chuan-c6e9e017.mp3"
+  },
+  {
+    "input_text": "B\u1ea1n \u0111\u00e3 s\u1eb5n s\u00e0ng ch\u01b0a?",
+    "input_data": {
+      "input_text": "B\u1ea1n \u0111\u00e3 s\u1eb5n s\u00e0ng ch\u01b0a?",
+      "service": "gtts"
+    },
+    "original_audio": "ban-da-san-sang-chua-d8f3727f.mp3",
+    "final_audio": "ban-da-san-sang-chua-d8f3727f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "T\u00f3m l\u1ea1i, c\u00f4ng th\u1ee9c ch\u1ed1t h\u1ea1 \u0111\u1ec3 \u0111o l\u01b0\u1eddng k\u00eanh truy\u1ec1n ch\u00ednh l\u00e0:",
+    "input_data": {
+      "input_text": "T\u00f3m l\u1ea1i, c\u00f4ng th\u1ee9c ch\u1ed1t h\u1ea1 \u0111\u1ec3 \u0111o l\u01b0\u1eddng k\u00eanh truy\u1ec1n ch\u00ednh l\u00e0:",
+      "service": "gtts"
+    },
+    "original_audio": "tom-lai-cong-thuc-chot-ha-de-do-luong-kenh-truyen-8cd69c9a.mp3",
+    "final_audio": "tom-lai-cong-thuc-chot-ha-de-do-luong-kenh-truyen-8cd69c9a.mp3"
+  },
+  {
+    "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+    "input_data": {
+      "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+      "service": "gtts"
+    },
+    "original_audio": "mo-phong-monte-carlo-6f2815f0.mp3",
+    "final_audio": "mo-phong-monte-carlo-6f2815f0.mp3"
+  },
+  {
+    "input_text": "c\u1ed9ng v\u1edbi ph\u00e2n ph\u1ed1i Bernoulli, Nh\u1ecb th\u1ee9c",
+    "input_data": {
+      "input_text": "c\u1ed9ng v\u1edbi ph\u00e2n ph\u1ed1i Bernoulli, Nh\u1ecb th\u1ee9c",
+      "service": "gtts"
+    },
+    "original_audio": "cong-voi-phan-phoi-bernoulli-nhi-thuc-7a4e39a5.mp3",
+    "final_audio": "cong-voi-phan-phoi-bernoulli-nhi-thuc-7a4e39a5.mp3"
+  },
+  {
+    "input_text": "v\u00e0 Lu\u1eadt s\u1ed1 l\u1edbn!",
+    "input_data": {
+      "input_text": "v\u00e0 Lu\u1eadt s\u1ed1 l\u1edbn!",
+      "service": "gtts"
+    },
+    "original_audio": "va-luat-so-lon-eef4f45d.mp3",
+    "final_audio": "va-luat-so-lon-eef4f45d.mp3"
+  },
+  {
+    "input_text": "K\u1ebft qu\u1ea3? Ta \u01b0\u1edbc l\u01b0\u1ee3ng \u0111\u01b0\u1ee3c ch\u00ednh x\u00e1c X\u00e1c su\u1ea5t l\u1ed7i bit - BER!",
+    "input_data": {
+      "input_text": "K\u1ebft qu\u1ea3? Ta \u01b0\u1edbc l\u01b0\u1ee3ng \u0111\u01b0\u1ee3c ch\u00ednh x\u00e1c X\u00e1c su\u1ea5t l\u1ed7i bit - BER!",
+      "service": "gtts"
+    },
+    "original_audio": "ket-qua-ta-uoc-luong-duoc-chinh-xac-xac-suat-loi-8a8e0a5b.mp3",
+    "final_audio": "ket-qua-ta-uoc-luong-duoc-chinh-xac-xac-suat-loi-8a8e0a5b.mp3"
+  },
+  {
+    "input_text": "V\u00e0 4 t\u1eeb kh\u00f3a b\u1ea1n c\u1ea7n 'b\u1ecf t\u00fai' h\u00f4m nay l\u00e0:",
+    "input_data": {
+      "input_text": "V\u00e0 4 t\u1eeb kh\u00f3a b\u1ea1n c\u1ea7n 'b\u1ecf t\u00fai' h\u00f4m nay l\u00e0:",
+      "service": "gtts"
+    },
+    "original_audio": "va-4-tu-khoa-ban-can-bo-tui-hom-nay-la-9261e95b.mp3",
+    "final_audio": "va-4-tu-khoa-ban-can-bo-tui-hom-nay-la-9261e95b.mp3"
+  },
+  {
+    "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+    "input_data": {
+      "input_text": "M\u00f4 ph\u1ecfng Monte Carlo,",
+      "service": "gtts"
+    },
+    "original_audio": "mo-phong-monte-carlo-6f2815f0.mp3",
+    "final_audio": "mo-phong-monte-carlo-6f2815f0.mp3"
+  },
+  {
+    "input_text": "Lu\u1eadt s\u1ed1 l\u1edbn,",
+    "input_data": {
+      "input_text": "Lu\u1eadt s\u1ed1 l\u1edbn,",
+      "service": "gtts"
+    },
+    "original_audio": "luat-so-lon-7406ded6.mp3",
+    "final_audio": "luat-so-lon-7406ded6.mp3"
+  },
+  {
+    "input_text": "Ph\u00e2n ph\u1ed1i Nh\u1ecb th\u1ee9c",
+    "input_data": {
+      "input_text": "Ph\u00e2n ph\u1ed1i Nh\u1ecb th\u1ee9c",
+      "service": "gtts"
+    },
+    "original_audio": "phan-phoi-nhi-thuc-380f8a0d.mp3",
+    "final_audio": "phan-phoi-nhi-thuc-380f8a0d.mp3"
+  },
+  {
+    "input_text": "v\u00e0 Bernoulli.",
+    "input_data": {
+      "input_text": "v\u00e0 Bernoulli.",
+      "service": "gtts"
+    },
+    "original_audio": "va-bernoulli-0067ac6c.mp3",
+    "final_audio": "va-bernoulli-0067ac6c.mp3"
+  },
+  {
+    "input_text": "L\u01b0u l\u1ea1i video v\u00e0 tra c\u1ee9u ngay \u0111\u1ec3 th\u1ea5y x\u00e1c su\u1ea5t \u1ee9ng d\u1ee5ng \u0111\u1ec9nh c\u1ee1 n\u00e0o nh\u00e9!",
+    "input_data": {
+      "input_text": "L\u01b0u l\u1ea1i video v\u00e0 tra c\u1ee9u ngay \u0111\u1ec3 th\u1ea5y x\u00e1c su\u1ea5t \u1ee9ng d\u1ee5ng \u0111\u1ec9nh c\u1ee1 n\u00e0o nh\u00e9!",
+      "service": "gtts"
+    },
+    "original_audio": "luu-lai-video-va-tra-cuu-ngay-de-thay-xac-suat-ung-6b6b4865.mp3",
+    "final_audio": "luu-lai-video-va-tra-cuu-ngay-de-thay-xac-suat-ung-6b6b4865.mp3"
+  },
+  {
+    "input_text": "\u0110\u00f3 l\u00e0 b\u00e0i to\u00e1n h\u00f4m nay. C\u00f2n g\u1ee3i \u00fd cho Level ti\u1ebfp theo:",
+    "input_data": {
+      "input_text": "\u0110\u00f3 l\u00e0 b\u00e0i to\u00e1n h\u00f4m nay. C\u00f2n g\u1ee3i \u00fd cho Level ti\u1ebfp theo:",
+      "service": "gtts"
+    },
+    "original_audio": "do-la-bai-toan-hom-nay-con-goi-y-cho-level-tiep-dec4858e.mp3",
+    "final_audio": "do-la-bai-toan-hom-nay-con-goi-y-cho-level-tiep-dec4858e.mp3"
+  },
+  {
+    "input_text": "M\u00f4 ph\u1ecfng Nhi\u1ec5u tr\u1eafng Gaussian",
+    "input_data": {
+      "input_text": "M\u00f4 ph\u1ecfng Nhi\u1ec5u tr\u1eafng Gaussian",
+      "service": "gtts"
+    },
+    "original_audio": "mo-phong-nhieu-trang-gaussian-9c2aadb7.mp3",
+    "final_audio": "mo-phong-nhieu-trang-gaussian-9c2aadb7.mp3"
+  },
+  {
+    "input_text": "b\u1eb1ng Ph\u00e2n ph\u1ed1i chu\u1ea9n.",
+    "input_data": {
+      "input_text": "b\u1eb1ng Ph\u00e2n ph\u1ed1i chu\u1ea9n.",
+      "service": "gtts"
+    },
+    "original_audio": "bang-phan-phoi-chuan-c6e9e017.mp3",
+    "final_audio": "bang-phan-phoi-chuan-c6e9e017.mp3"
+  },
+  {
+    "input_text": "B\u1ea1n \u0111\u00e3 s\u1eb5n s\u00e0ng ch\u01b0a?",
+    "input_data": {
+      "input_text": "B\u1ea1n \u0111\u00e3 s\u1eb5n s\u00e0ng ch\u01b0a?",
+      "service": "gtts"
+    },
+    "original_audio": "ban-da-san-sang-chua-d8f3727f.mp3",
+    "final_audio": "ban-da-san-sang-chua-d8f3727f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
+  },
+  {
+    "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+    "input_data": {
+      "input_text": "Tin nh\u1eafn g\u1eedi \u0111i r\u1ea5t d\u1ec5 b\u1ecb nhi\u1ec5u s\u00f3ng.",
+      "service": "gtts"
+    },
+    "original_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3",
+    "final_audio": "tin-nhan-gui-di-rat-de-bi-nhieu-song-be6bd060.mp3"
+  },
+  {
+    "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+    "input_data": {
+      "input_text": "V\u1eady l\u1ea5y g\u00ec \u0111\u1ec3 \u0111o l\u01b0\u1eddng ch\u1ea5t l\u01b0\u1ee3ng \u0111\u01b0\u1eddng truy\u1ec1n?",
+      "service": "gtts"
+    },
+    "original_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3",
+    "final_audio": "vay-lay-gi-de-do-luong-chat-luong-duong-truyen-fd28dc5f.mp3"
   }
 ]

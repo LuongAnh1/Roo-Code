@@ -5,8 +5,8 @@ Agent có thể import các hàm từ đây để không phải tự viết lạ
 """
 
 # Giả định import từ thư viện gốc (Ví dụ: Manim)
-# from manim import * 
-# from fami_lib import *
+from manim import * 
+from fami_lib import *
 
 def create_standard_axes(x_range=[-5, 5, 1], y_range=[-5, 5, 1], width=10, height=6):
     """
@@ -21,10 +21,10 @@ def create_standard_axes(x_range=[-5, 5, 1], y_range=[-5, 5, 1], width=10, heigh
     Returns:
         Axes object: Đối tượng hệ trục tọa độ đã được thiết lập sẵn.
     """
-    # Pseudo-code / Manim logic
-    # axes = Axes(x_range=x_range, y_range=y_range, x_length=width, y_length=height)
-    # axes.add_coordinates()
-    # return axes
+    Pseudo-code / Manim logic
+    axes = Axes(x_range=x_range, y_range=y_range, x_length=width, y_length=height)
+    axes.add_coordinates()
+    return axes
     pass
 
 def plot_custom_function(axes, func, color="#FF0000", stroke_width=3):
@@ -39,8 +39,8 @@ def plot_custom_function(axes, func, color="#FF0000", stroke_width=3):
     Returns:
         VGroup/Mobject: Đường cong đồ thị (Graph curve).
     """
-    # graph = axes.plot(func, color=color, stroke_width=stroke_width)
-    # return graph
+    graph = axes.plot(func, color=color, stroke_width=stroke_width)
+    return graph
     pass
 
 def create_geometric_polygon(*points, color="#00FF00", fill_opacity=0.3):
@@ -55,6 +55,6 @@ def create_geometric_polygon(*points, color="#00FF00", fill_opacity=0.3):
     Returns:
         Polygon object.
     """
-    # poly = Polygon(*points, color=color, fill_opacity=fill_opacity)
-    # return poly
+    poly = Polygon(*points, color=color, fill_opacity=fill_opacity)
+    return poly
     pass

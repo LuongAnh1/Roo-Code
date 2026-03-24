@@ -15,10 +15,10 @@ def animate_pop_in(mobject, scale_factor=1.2, run_time=0.8):
     Returns:
         Animation object (Dùng chung với self.play()).
     """
-    # return Succession(
-    #     mobject.animate.scale(scale_factor).set_run_time(run_time/2),
-    #     mobject.animate.scale(1/scale_factor).set_run_time(run_time/2)
-    # )
+    return Succession(
+        mobject.animate.scale(scale_factor).set_run_time(run_time/2),
+        mobject.animate.scale(1/scale_factor).set_run_time(run_time/2)
+    )
     pass
 
 def animate_highlight_text(text_mobject, highlight_color="#FFFF00"):
@@ -32,7 +32,7 @@ def animate_highlight_text(text_mobject, highlight_color="#FFFF00"):
     Returns:
         Animation object.
     """
-    # return text_mobject.animate.set_color(highlight_color).scale(1.1)
+    return text_mobject.animate.set_color(highlight_color).scale(1.1)
     pass
 
 def animate_typewriter(text_str, font_size=36, run_time=2.0):
@@ -46,7 +46,7 @@ def animate_typewriter(text_str, font_size=36, run_time=2.0):
     Returns:
         Tuple (Text Mobject, Animation). Agent phải add Text Mobject vào scene.
     """
-    # text_obj = Text(text_str, font_size=font_size)
-    # animation = AddTextLetterByLetter(text_obj, run_time=run_time)
-    # return text_obj, animation
+    text_obj = Text(text_str, font_size=font_size)
+    animation = AddTextLetterByLetter(text_obj, run_time=run_time)
+    return text_obj, animation
     pass

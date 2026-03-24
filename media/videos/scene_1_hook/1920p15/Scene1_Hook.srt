@@ -3,6 +3,6 @@
 Tin nhắn gửi đi rất dễ bị nhiễu sóng.
 
 2
-00:00:03,148 --> 00:00:06,384
+00:00:03,133 --> 00:00:06,369
 Vậy lấy gì để đo lường chất lượng đường truyền?
 

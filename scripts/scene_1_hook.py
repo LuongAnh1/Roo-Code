@@ -24,7 +24,7 @@ class Scene1_Hook(FaMIBaseScene):
             clock.scale(1.5).move_to(UP * 0.5)
         
         with self.voiceover(text="Tin nhắn gửi đi rất dễ bị nhiễu sóng.") as tracker:
-            self.update_subtitle("Tin nhắn gửi đi rất dễ bị nhiễu sóng.")
+            self.update_subtitle("Tin nhắn gửi đi rất dễ bị nhiễu sóng.", 'neon')
             self.play(Write(title), run_time=min(1.0, tracker.duration * 0.3))
             
             if tin_nhan:
@@ -39,7 +39,7 @@ class Scene1_Hook(FaMIBaseScene):
                 )
             
         with self.voiceover(text="Vậy lấy gì để đo lường chất lượng đường truyền?") as tracker:
-            self.update_subtitle("Vậy lấy gì để đo lường chất lượng đường truyền?")
+            self.update_subtitle("Vậy lấy gì để đo lường chất lượng đường truyền?", 'neon')
             
             anims_out = []
             if tin_nhan: anims_out.append(FadeOut(tin_nhan, shift=LEFT))
