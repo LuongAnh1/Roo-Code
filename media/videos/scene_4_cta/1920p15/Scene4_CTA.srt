@@ -1,12 +1,16 @@
 1
-00:00:00,000 --> 00:00:04,485
-Câu hỏi cuối video dành cho bạn đó là phải xử lý
+00:00:00,000 --> 00:00:04,604
+Đó là bài toán hôm nay. Còn gợi ý cho Level tiếp theo:
 
 2
-00:00:04,585 --> 00:00:09,548
-như nào nếu kẻ Spam cố tình viết “free” thành “fr€€”?
+00:00:04,704 --> 00:00:07,172
+Mô phỏng Nhiễu trắng Gaussian
 
 3
-00:00:09,633 --> 00:00:13,397
-Nếu bạn biết câu trả lời, hãy comment phía dưới.
+00:00:07,237 --> 00:00:08,769
+bằng Phân phối chuẩn.
+
+4
+00:00:08,837 --> 00:00:10,801
+Bạn đã sẵn sàng chưa?
 

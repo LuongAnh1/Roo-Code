@@ -51,7 +51,7 @@ Nếu Terminal báo lỗi hoặc video bị đứng hình rất lâu sau mỗi c
 ## 6. QUY TẮC SUBTITLE CHIẾN LƯỢC (CHUNK-BASED)
 - **CẤM**: Hiện toàn bộ câu thoại dài trong 1 lệnh `update_subtitle` duy nhất.
 - **BẮT BUỘC (One-to-One Mapping)**: 
-    - Phụ đề phải thay đổi theo nhịp Animation.
+    - Phụ đề phải thay đổi theo nhịp Animation và chuẩn theo thoại.
     - Với câu thoại dài, hãy sử dụng cấu trúc:
     ```python
     with self.voiceover(text="Câu thoại dài gồm ý 1 và ý 2.") as tracker:

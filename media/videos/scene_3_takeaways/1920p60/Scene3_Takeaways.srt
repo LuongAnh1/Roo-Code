@@ -1,12 +1,28 @@
 1
-00:00:00,000 --> 00:00:04,569
-Từ phương pháp của An, nếu muốn hiểu sâu hơn về cách các hệ
+00:00:00,000 --> 00:00:04,220
+Và 4 từ khóa bạn cần 'bỏ túi' hôm nay là:
 
 2
-00:00:04,669 --> 00:00:09,556
-thống lọc Spam hoạt động trong thực tế, bạn có thể tìm kiếm cụm
+00:00:04,316 --> 00:00:06,496
+Mô phỏng Monte Carlo,
 
 3
-00:00:09,656 --> 00:00:14,780
-từ khóa Naive Bayes Classifier là hệ thống lọc Spam lớn của Google
+00:00:06,583 --> 00:00:07,851
+Luật số lớn,
+
+4
+00:00:07,950 --> 00:00:09,410
+Phân phối Nhị thức
+
+5
+00:00:09,500 --> 00:00:10,768
+và Bernoulli.
+
+6
+00:00:10,866 --> 00:00:13,755
+Lưu lại video và tra cứu ngay để thấy
+
+7
+00:00:13,855 --> 00:00:16,502
+xác suất ứng dụng đỉnh cỡ nào nhé!
 

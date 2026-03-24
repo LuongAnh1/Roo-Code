@@ -1,0 +1,18 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+    <!-- Đường cong chuông: Vẽ bằng Bezier Path đơn giản để Manim dễ đọc -->
+    <path 
+        d="M 10,110 C 60,110 80,10 100,10 C 120,10 140,110 190,110" 
+        fill="none" 
+        stroke="white" 
+        stroke-width="6" 
+        stroke-linecap="round"
+    />
+    <!-- Đường kẻ ngang cơ sở -->
+    <path 
+        d="M 5,110 L 195,110" 
+        fill="none" 
+        stroke="white" 
+        stroke-width="2" 
+        stroke-dasharray="4"
+    />
+</svg>

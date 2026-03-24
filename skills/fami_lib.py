@@ -50,7 +50,7 @@ class FaMIBaseScene(VoiceoverScene):
         # Logo FaMI (Đã thu nhỏ và đẩy cao)
         logo_path = "assets/fami_logo.png"
         if os.path.exists(logo_path):
-            self.logo = ImageMobject(logo_path).scale_to_fit_width(1.6) # Thu nhỏ 2.5 -> 1.6
+            self.logo = ImageMobject(logo_path).scale_to_fit_width(1.2) # Thu nhỏ 2.5 -> 1.6
             self.logo.to_edge(UP, buff=0.4) # Đẩy sát lên (0.8 -> 0.4)
         else:
             self.logo = Text("FaMI 1956", font_size=25, color=FAMI_BLUE, weight=BOLD).to_edge(UP, buff=0.4)
@@ -82,16 +82,22 @@ class FaMIBaseScene(VoiceoverScene):
     def create_title(self, line1, line2="", apply_gradient=True):
         """Skill: Tạo tiêu đề (Tự động Gradient & Đúng vị trí)"""
         if line2:
-            title = Paragraph(line1, line2, font="Segoe UI", font_size=45, weight=BOLD, alignment="center")
+            # Tách thành 2 đối tượng Text riêng biệt để dễ kiểm soát khoảng cách
+            t1 = Text(line1, font="Segoe UI", font_size=45, weight=BOLD)
+            t2 = Text(line2, font="Segoe UI", font_size=45, weight=BOLD)
+            
+            # Dùng arrange(DOWN, buff=...) để chỉnh khoảng cách. 
+            # Bạn có thể tăng buff lên 0.4 hoặc 0.5 nếu muốn giãn ra thêm nữa.
+            title = VGroup(t1, t2).arrange(DOWN, buff=0.05) 
         else:
             title = Text(line1, font="Segoe UI", font_size=45, weight=BOLD)
         
         # Định vị tiêu đề
         title.move_to(POS_TITLE)
         
-        # Ép khung ngang
-        if title.width > 7.5:
-            title.scale_to_fit_width(7.5)
+        # Ép khung ngang để không bị tràn màn hình
+        if title.width > 8.0: # Nới lên 8.0 cho video dọc để chữ to hơn chút
+            title.scale_to_fit_width(8.0)
             
         # Áp dụng màu thương hiệu
         if apply_gradient:
