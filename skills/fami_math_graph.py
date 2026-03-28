@@ -21,7 +21,7 @@ def create_standard_axes(x_range=[-5, 5, 1], y_range=[-5, 5, 1], width=10, heigh
     Returns:
         Axes object: Đối tượng hệ trục tọa độ đã được thiết lập sẵn.
     """
-    Pseudo-code / Manim logic
+    # Pseudo-code / Manim logic
     axes = Axes(x_range=x_range, y_range=y_range, x_length=width, y_length=height)
     axes.add_coordinates()
     return axes
