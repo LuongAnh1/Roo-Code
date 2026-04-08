@@ -1,20 +1,16 @@
 1
-00:00:00,000 --> 00:00:04,916
-Tóm lại, công thức chốt hạ để đo lường kênh truyền chính là:
+00:00:00,000 --> 00:00:03,748
+Tóm lại, hồi quy tuyến tính giúp ta tìm ra quy
 
 2
-00:00:05,000 --> 00:00:07,180
-Mô phỏng Monte Carlo,
+00:00:03,848 --> 00:00:07,680
+luật từ dữ liệu quá khứ, bằng cách vẽ các đường
 
 3
-00:00:07,266 --> 00:00:10,334
-cộng với phân phối Bernoulli, Nhị thức
+00:00:07,780 --> 00:00:11,612
+hoặc mặt phẳng, để tự tin dự báo cho tương lai.
 
 4
-00:00:10,400 --> 00:00:11,836
-và Luật số lớn!
-
-5
-00:00:11,933 --> 00:00:17,497
-Kết quả? Ta ước lượng được chính xác Xác suất lỗi bit - BER!
+00:00:11,666 --> 00:00:16,534
+Thông qua đó ta có thể dữ đoán giá nhà với sai lệch nhỏ nhất.
 

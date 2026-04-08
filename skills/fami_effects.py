@@ -3,6 +3,8 @@ Module: fami_effects.py
 Cung cấp các animation làm sẵn giúp video sinh động hơn.
 """
 
+from manim import Succession, AddTextLetterByLetter, Text
+
 def animate_pop_in(mobject, scale_factor=1.2, run_time=0.8):
     """
     Hiệu ứng "Nảy": Đối tượng phóng to lên một chút rồi thu về kích thước gốc.

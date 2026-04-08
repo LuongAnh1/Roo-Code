@@ -1,8 +1,4 @@
 1
-00:00:00,000 --> 00:00:03,092
-Tin nhắn gửi đi rất dễ bị nhiễu sóng.
-
-2
-00:00:03,133 --> 00:00:06,369
-Vậy lấy gì để đo lường chất lượng đường truyền?
+00:00:00,000 --> 00:00:05,444
+Làm sao để dự đoán giá một căn nhà khi bạn chỉ biết diện tích của nó?
 

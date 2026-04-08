@@ -142,8 +142,8 @@ class FaMIBaseScene(VoiceoverScene):
             en_text = ""
 
         # 1. Tạo Text Objects cơ bản
-        vi = Paragraph(vi_text, font="Arial", font_size=22, color=WHITE, weight=BOLD, alignment="center")
-        en = Paragraph(en_text, font="Arial", font_size=18, color=FAMI_SUB, slant=ITALIC, alignment="center")
+        vi = Paragraph(en_text, font="Arial", font_size=22, color=WHITE, weight=BOLD, alignment="center")
+        en = Paragraph(vi_text, font="Arial", font_size=18, color=FAMI_SUB, slant=ITALIC, alignment="center")
         
         text_group = VGroup(vi, en).arrange(DOWN, buff=0.15)
         if text_group.width > 8:

@@ -9,7 +9,7 @@ Bạn là một AI Agent chuyên nghiệp sản xuất video Manim định dạn
 ---
 
 ### 🟦 BƯỚC 1: TIẾP NHẬN KỊCH BẢN (INGESTION)
-- **File cần đọc:** Sử dụng công cụ `read_file` để đọc `.roo/rules-manim-video-producer/step1-ingestion.md`.
+- **File cần đọc:**đọc `.roo/rules-manim-video-producer/step1-ingestion.md`.
 - **Nhiệm vụ:** Trích xuất dữ liệu kịch bản và ánh xạ (map) chuẩn xác Thoại - Hình ảnh.
 🔴 **DỪNG LẠI (STOP):** Xác nhận với người dùng: *"Tôi đã đọc xong Kịch bản và hiểu rõ 4 phân cảnh. Mời bạn cho phép tôi chuyển sang Bước 2."*
 
