@@ -1,0 +1,132 @@
+1
+00:00:00,000 --> 00:00:03,977
+Chỉ số cốt lõi để đo lường độ chính xác của dữ
+
+2
+00:00:04,077 --> 00:00:08,852
+liệu là BEP (Bit Error Probability - Xác suất lỗi bit).
+
+3
+00:00:08,950 --> 00:00:14,009
+BEP được định nghĩa là xác suất để một bit bất kỳ bị sai trạng
+
+4
+00:00:14,109 --> 00:00:19,002
+thái từ 0 thành 1 hoặc ngược lại sau khi đi qua kênh truyền.
+
+5
+00:00:19,100 --> 00:00:22,552
+Hãy quan sát một mô hình truyền dữ liệu thực tế.
+
+6
+00:00:22,650 --> 00:00:25,327
+Dữ liệu gốc được gửi đi từ bộ phát và
+
+7
+00:00:25,427 --> 00:00:28,406
+nhận được ở bộ thu thông qua kênh truyền.
+
+8
+00:00:28,800 --> 00:00:34,124
+Khi truyền một chuỗi bit, nhiễu có thể làm thay đổi giá trị của chúng.
+
+9
+00:00:34,216 --> 00:00:39,972
+Ở ví dụ này, chuỗi 8 bit sau khi truyền đi đã xuất hiện các lỗi sai.
+
+10
+00:00:40,066 --> 00:00:44,862
+Ta so sánh chuỗi gửi và nhận để đếm số bit lỗi cụ thể.
+
+11
+00:00:44,950 --> 00:00:52,626
+Trong 8 bit có 3 bit bị lỗi. Tần suất lỗi bit mẫu ở đây là 0.375.
+
+12
+00:00:52,716 --> 00:00:55,855
+Tuy nhiên, để đo lường chính xác, ta cần
+
+13
+00:00:55,955 --> 00:00:58,688
+một mô hình toán học tổng quát hơn.
+
+14
+00:00:58,783 --> 00:01:02,231
+Việc truyền tải N bit dữ liệu có thể được mô
+
+15
+00:01:02,331 --> 00:01:05,619
+hình hóa thành một dãy N phép thử độc lập.
+
+16
+00:01:05,716 --> 00:01:08,534
+Định nghĩa X i là biến ngẫu nhiên chỉ
+
+17
+00:01:08,634 --> 00:01:11,136
+thị trạng thái lỗi của bit thứ i.
+
+18
+00:01:11,233 --> 00:01:15,131
+X i tuân theo Phân phối Bernoulli: nhận giá trị 1
+
+19
+00:01:15,231 --> 00:01:18,477
+nếu bit bị lỗi và 0 nếu được truyền đúng.
+
+20
+00:01:18,566 --> 00:01:24,010
+Khi đó, tổng số bit lỗi E chính là tổng của các biến ngẫu nhiên này.
+
+21
+00:01:24,566 --> 00:01:29,543
+Biến ngẫu nhiên E sẽ tuân theo Phân phối Nhị thức với tham
+
+22
+00:01:29,643 --> 00:01:33,394
+số là tổng số bit N và xác suất lỗi bit BEP.
+
+23
+00:01:33,483 --> 00:01:37,134
+Theo Luật số lớn, tần suất lỗi sẽ hội tụ về
+
+24
+00:01:37,234 --> 00:01:40,799
+xác suất lý thuyết khi N tiến tới vô cùng.
+
+25
+00:01:40,883 --> 00:01:44,069
+Tuy nhiên, với các hệ thống phức tạp, việc
+
+26
+00:01:44,169 --> 00:01:46,807
+tính toán lý thuyết là bất khả thi.
+
+27
+00:01:46,900 --> 00:01:51,057
+Lúc này, mô phỏng Monte Carlo giúp ta xấp xỉ BEP
+
+28
+00:01:51,157 --> 00:01:54,960
+bằng tần suất lỗi thông qua lấy mẫu lặp lại.
+
+29
+00:01:55,050 --> 00:02:00,563
+Khi đó, Mô phỏng Monte Carlo được sử dụng như một công cụ
+
+30
+00:02:00,663 --> 00:02:05,390
+mạnh mẽ: lấy mẫu lặp lại nhiều lần để xấp xỉ BEP.
+
+31
+00:02:05,500 --> 00:02:10,776
+Dưới đây là bảng kết quả mô phỏng với các kích thước mẫu N khác nhau.
+
+32
+00:02:10,866 --> 00:02:16,449
+Phương pháp Monte Carlo khẳng định: với N đủ lớn, ta có thể dùng
+
+33
+00:02:16,549 --> 00:02:21,422
+tần suất xuất hiện lỗi để xấp xỉ chính xác xác suất lỗi.
+

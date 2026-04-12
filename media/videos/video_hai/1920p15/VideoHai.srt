@@ -1,0 +1,176 @@
+1
+00:00:00,000 --> 00:00:03,208
+Hãy nhìn vào dữ liệu lịch sử. Trục ngang
+
+2
+00:00:03,308 --> 00:00:06,020
+là diện tích, trục dọc là giá nhà.
+
+3
+00:00:06,066 --> 00:00:09,589
+Mỗi dấu chấm ở đây là một căn nhà đã bán.
+
+4
+00:00:09,689 --> 00:00:14,006
+Ta thấy một xu hướng: nhà càng rộng, giá càng cao.
+
+5
+00:00:14,066 --> 00:00:17,941
+Nhưng làm sao để tạo ra một công thức chung? Giải pháp
+
+6
+00:00:18,041 --> 00:00:21,622
+là vẽ một đường thẳng đi xuyên qua đám mây dữ liệu
+
+7
+00:00:21,722 --> 00:00:24,934
+này. Nó được gọi là Đường Hồi quy tuyến tính.
+
+8
+00:00:25,000 --> 00:00:28,195
+Để hiểu rõ hơn, chúng ta hãy cùng nhau xây
+
+9
+00:00:28,295 --> 00:00:31,020
+dựng mô hình dự đoán từ dữ liệu này.
+
+10
+00:00:31,066 --> 00:00:34,014
+Gọi X là diện tích theo mét vuông, Y
+
+11
+00:00:34,114 --> 00:00:37,230
+là giá nhà tính bằng Tỷ Việt Nam Đồng.
+
+12
+00:00:37,266 --> 00:00:42,914
+Ta giả định rằng giữa X, Y có mối quan hệ tuyến tính. Giá nhà xấp
+
+13
+00:00:43,014 --> 00:00:48,662
+xỉ beta 0 cộng beta 1 nhân với diện tích cộng với sai số epsilon.
+
+14
+00:00:48,800 --> 00:00:53,668
+Nhiệm vụ của ta là ước lượng các tham số beta 0, beta 1
+
+15
+00:00:53,768 --> 00:00:58,276
+để có thể dự đoán giá nhà với một diện tích cụ thể.
+
+16
+00:01:01,866 --> 00:01:05,162
+Mục tiêu là làm sao cho tổng khoảng cách từ các
+
+17
+00:01:05,262 --> 00:01:08,702
+điểm thực tế đến đường thẳng dự đoán là nhỏ nhất.
+
+18
+00:01:08,800 --> 00:01:13,788
+Khoảng chênh lệch giữa thực tế và dự đoán được gọi là một phần dư.
+
+19
+00:01:13,866 --> 00:01:17,769
+Có một vài cách để ước lượng các tham số, thường gặp
+
+20
+00:01:17,869 --> 00:01:22,387
+nhất là phương pháp bình phương tối thiểu. Chính là cực tiểu
+
+21
+00:01:22,487 --> 00:01:26,390
+hóa giá trị MSE: trung bình của bình phương phần dư.
+
+22
+00:01:26,466 --> 00:01:30,491
+Bằng một vài phương pháp giải tích, ta tìm ra được
+
+23
+00:01:30,591 --> 00:01:34,286
+chuỗi công thức để đồ thị có MSE đạt cực tiểu.
+
+24
+00:01:34,333 --> 00:01:37,142
+Chúng ta có thể quan sát giá trị MSE
+
+25
+00:01:37,242 --> 00:01:40,617
+thay đổi khi đường thẳng dự đoán di chuyển.
+
+26
+00:01:40,666 --> 00:01:45,035
+Và đây là vị trí tối ưu khi thay các tham số vào công
+
+27
+00:01:45,135 --> 00:01:50,262
+thức giải tích, đường hồi quy cuối cùng giảm thiểu tối đa MSE.
+
+28
+00:01:51,333 --> 00:01:54,300
+Dựa vào kết quả này, chúng ta có thể dễ
+
+29
+00:01:54,400 --> 00:01:57,761
+dàng ước tính giá nhà cho một diện tích mới.
+
+30
+00:01:57,800 --> 00:02:01,430
+Với 10, 20 hoặc thậm chí 60 mét vuông, các
+
+31
+00:02:01,530 --> 00:02:05,428
+dự đoán đều được tính toán một cách hệ thống.
+
+32
+00:02:05,466 --> 00:02:09,014
+Nhưng khoan đã, thực tế không chỉ có diện tích!
+
+33
+00:02:09,200 --> 00:02:12,415
+Nếu ta thêm số phòng ngủ để đánh giá,
+
+34
+00:02:12,515 --> 00:02:15,820
+không gian 2D lúc này sẽ trở thành 3D.
+
+35
+00:02:15,866 --> 00:02:18,964
+Trong không gian 3 chiều, các điểm dữ liệu
+
+36
+00:02:19,064 --> 00:02:21,934
+lơ lửng khắp nơi trong trục không gian.
+
+37
+00:02:22,000 --> 00:02:25,036
+Lúc này, đường thẳng hồi quy tuyến tính
+
+38
+00:02:25,136 --> 00:02:27,852
+biến thành một 'mặt phẳng' dự đoán.
+
+39
+00:02:27,933 --> 00:02:31,049
+Đó chính là Hồi quy tuyến tính đa biến!
+
+40
+00:02:31,133 --> 00:02:35,315
+Để tính toán cho Hồi quy đa biến, ta cần chuyển dạng phương
+
+41
+00:02:35,415 --> 00:02:39,961
+trình đại số Y đại lượng thành dạng Phương trình Vector ma trận.
+
+42
+00:02:40,000 --> 00:02:43,788
+Công thức lúc này chuyển sang phương trình Vector ma trận.
+
+43
+00:02:43,866 --> 00:02:48,976
+Nhờ dạng Vector, thuật toán có thể xử lý hàng nghìn biến số thay
+
+44
+00:02:49,076 --> 00:02:53,534
+vì chỉ 1 hay 2 biến. Thật tuyệt vời phải không toán học?
+
