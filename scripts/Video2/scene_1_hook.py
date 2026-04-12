@@ -14,7 +14,7 @@ class Scene1_Hook(FaMIBaseScene):
         # ==========================================
         
         # Biểu tượng căn nhà (trái)
-        house_icon = load_svg_icon("assets/Hoi_Quy_TT/Hook/house.svg")
+        house_icon = load_svg_icon("Hoi_Quy_TT/Hook/house.svg")
         house_icon.scale_to_fit_width(2.0)
         house_icon.set_stroke(width=10)
         apply_fami_gradient(house_icon)

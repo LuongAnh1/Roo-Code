@@ -3841,5 +3841,158 @@
     },
     "original_audio": "vay-chung-ta-se-thuc-hien-nhu-nao-hay-xem-video-8ff76c44.mp3",
     "final_audio": "vay-chung-ta-se-thuc-hien-nhu-nao-hay-xem-video-8ff76c44.mp3"
+  },
+  {
+    "input_text": "\u0110\u1ec3 tr\u1ea3 l\u1eddi, ch\u00fang ta c\u1ea7n nh\u00ecn b\u00e0i to\u00e1n b\u1eb1ng ng\u00f4n ng\u1eef x\u00e1c su\u1ea5t th\u1ed1ng k\u00ea.",
+    "input_data": {
+      "input_text": "\u0110\u1ec3 tr\u1ea3 l\u1eddi, ch\u00fang ta c\u1ea7n nh\u00ecn b\u00e0i to\u00e1n b\u1eb1ng ng\u00f4n ng\u1eef x\u00e1c su\u1ea5t th\u1ed1ng k\u00ea.",
+      "service": "gtts"
+    },
+    "original_audio": "de-tra-loi-chung-ta-can-nhin-bai-toan-bang-ngon-4dbbc88b.mp3",
+    "final_audio": "de-tra-loi-chung-ta-can-nhin-bai-toan-bang-ngon-4dbbc88b.mp3"
+  },
+  {
+    "input_text": "\u0110i\u1ec3m th\u1ef1c t\u1ebf m\u00e0 robot d\u1eebng l\u1ea1i kh\u00f4ng ph\u1ea3i m\u1ed9t \u0111i\u1ec3m c\u1ed1 \u0111\u1ecbnh m\u00e0 l\u00e0 m\u1ed9t bi\u1ebfn ng\u1eabu nhi\u00ean.",
+    "input_data": {
+      "input_text": "\u0110i\u1ec3m th\u1ef1c t\u1ebf m\u00e0 robot d\u1eebng l\u1ea1i kh\u00f4ng ph\u1ea3i m\u1ed9t \u0111i\u1ec3m c\u1ed1 \u0111\u1ecbnh m\u00e0 l\u00e0 m\u1ed9t bi\u1ebfn ng\u1eabu nhi\u00ean.",
+      "service": "gtts"
+    },
+    "original_audio": "diem-thuc-te-ma-robot-dung-lai-khong-phai-mot-diem-ed4e4843.mp3",
+    "final_audio": "diem-thuc-te-ma-robot-dung-lai-khong-phai-mot-diem-ed4e4843.mp3"
+  },
+  {
+    "input_text": "Nguy\u00ean nh\u00e2n l\u00e0 do nhi\u1ec5u \u0111\u1ed9ng c\u01a1, ma s\u00e1t s\u00e0n, rung l\u1eafc c\u01a1 kh\u00ed.",
+    "input_data": {
+      "input_text": "Nguy\u00ean nh\u00e2n l\u00e0 do nhi\u1ec5u \u0111\u1ed9ng c\u01a1, ma s\u00e1t s\u00e0n, rung l\u1eafc c\u01a1 kh\u00ed.",
+      "service": "gtts"
+    },
+    "original_audio": "nguyen-nhan-la-do-nhieu-dong-co-ma-sat-san-rung-7ee4f265.mp3",
+    "final_audio": "nguyen-nhan-la-do-nhieu-dong-co-ma-sat-san-rung-7ee4f265.mp3"
+  },
+  {
+    "input_text": "Ta bi\u1ec3u di\u1ec5n v\u1ecb tr\u00ed \u0111\u00f3",
+    "input_data": {
+      "input_text": "Ta bi\u1ec3u di\u1ec5n v\u1ecb tr\u00ed \u0111\u00f3",
+      "service": "gtts"
+    },
+    "original_audio": "ta-bieu-dien-vi-tri-do-90fe2337.mp3",
+    "final_audio": "ta-bieu-dien-vi-tri-do-90fe2337.mp3"
+  },
+  {
+    "input_text": "b\u1eb1ng m\u1ed9t vect\u01a1 ng\u1eabu nhi\u00ean hai chi\u1ec1u:",
+    "input_data": {
+      "input_text": "b\u1eb1ng m\u1ed9t vect\u01a1 ng\u1eabu nhi\u00ean hai chi\u1ec1u:",
+      "service": "gtts"
+    },
+    "original_audio": "bang-mot-vecto-ngau-nhien-hai-chieu-f3bc2c47.mp3",
+    "final_audio": "bang-mot-vecto-ngau-nhien-hai-chieu-f3bc2c47.mp3"
+  },
+  {
+    "input_text": "X l\u00e0 to\u1ea1 \u0111\u1ed9 tr\u1ee5c ho\u00e0nh,",
+    "input_data": {
+      "input_text": "X l\u00e0 to\u1ea1 \u0111\u1ed9 tr\u1ee5c ho\u00e0nh,",
+      "service": "gtts"
+    },
+    "original_audio": "x-la-toa-do-truc-hoanh-9866fdb4.mp3",
+    "final_audio": "x-la-toa-do-truc-hoanh-9866fdb4.mp3"
+  },
+  {
+    "input_text": "Y l\u00e0 to\u1ea1 \u0111\u1ed9 tr\u1ee5c tung.",
+    "input_data": {
+      "input_text": "Y l\u00e0 to\u1ea1 \u0111\u1ed9 tr\u1ee5c tung.",
+      "service": "gtts"
+    },
+    "original_audio": "y-la-toa-do-truc-tung-5e17167c.mp3",
+    "final_audio": "y-la-toa-do-truc-tung-5e17167c.mp3"
+  },
+  {
+    "input_text": "\u0110i\u1ec3m m\u1ee5c ti\u00eau l\u00fd thuy\u1ebft \u2014",
+    "input_data": {
+      "input_text": "\u0110i\u1ec3m m\u1ee5c ti\u00eau l\u00fd thuy\u1ebft \u2014",
+      "service": "gtts"
+    },
+    "original_audio": "diem-muc-tieu-ly-thuyet-747b7d19.mp3",
+    "final_audio": "diem-muc-tieu-ly-thuyet-747b7d19.mp3"
+  },
+  {
+    "input_text": "n\u01a1i robot l\u1ebd ra ph\u1ea3i \u0111\u1ebfn \u2014",
+    "input_data": {
+      "input_text": "n\u01a1i robot l\u1ebd ra ph\u1ea3i \u0111\u1ebfn \u2014",
+      "service": "gtts"
+    },
+    "original_audio": "noi-robot-le-ra-phai-den-3c34bb24.mp3",
+    "final_audio": "noi-robot-le-ra-phai-den-3c34bb24.mp3"
+  },
+  {
+    "input_text": "ch\u00ednh l\u00e0 vect\u01a1 k\u1ef3 v\u1ecdng mu.",
+    "input_data": {
+      "input_text": "ch\u00ednh l\u00e0 vect\u01a1 k\u1ef3 v\u1ecdng mu.",
+      "service": "gtts"
+    },
+    "original_audio": "chinh-la-vecto-ky-vong-mu-9aa42287.mp3",
+    "final_audio": "chinh-la-vecto-ky-vong-mu-9aa42287.mp3"
+  },
+  {
+    "input_text": "V\u00e0 sai s\u1ed1 v\u1ecb tr\u00ed epsilon",
+    "input_data": {
+      "input_text": "V\u00e0 sai s\u1ed1 v\u1ecb tr\u00ed epsilon",
+      "service": "gtts"
+    },
+    "original_audio": "va-sai-so-vi-tri-epsilon-fac9112d.mp3",
+    "final_audio": "va-sai-so-vi-tri-epsilon-fac9112d.mp3"
+  },
+  {
+    "input_text": "l\u00e0 hi\u1ec7u gi\u1eefa v\u1ecb tr\u00ed th\u1ef1c t\u1ebf v\u00e0 k\u1ef3 v\u1ecdng,",
+    "input_data": {
+      "input_text": "l\u00e0 hi\u1ec7u gi\u1eefa v\u1ecb tr\u00ed th\u1ef1c t\u1ebf v\u00e0 k\u1ef3 v\u1ecdng,",
+      "service": "gtts"
+    },
+    "original_audio": "la-hieu-giua-vi-tri-thuc-te-va-ky-vong-ac97d217.mp3",
+    "final_audio": "la-hieu-giua-vi-tri-thuc-te-va-ky-vong-ac97d217.mp3"
+  },
+  {
+    "input_text": "g\u1ed3m th\u00e0nh ph\u1ea7n epsilon X",
+    "input_data": {
+      "input_text": "g\u1ed3m th\u00e0nh ph\u1ea7n epsilon X",
+      "service": "gtts"
+    },
+    "original_audio": "gom-thanh-phan-epsilon-x-383b94b2.mp3",
+    "final_audio": "gom-thanh-phan-epsilon-x-383b94b2.mp3"
+  },
+  {
+    "input_text": "v\u00e0 th\u00e0nh ph\u1ea7n epsilon Y.",
+    "input_data": {
+      "input_text": "v\u00e0 th\u00e0nh ph\u1ea7n epsilon Y.",
+      "service": "gtts"
+    },
+    "original_audio": "va-thanh-phan-epsilon-y-baa9a671.mp3",
+    "final_audio": "va-thanh-phan-epsilon-y-baa9a671.mp3"
+  },
+  {
+    "input_text": "Ta gi\u1ea3 thi\u1ebft vect\u01a1 sai s\u1ed1",
+    "input_data": {
+      "input_text": "Ta gi\u1ea3 thi\u1ebft vect\u01a1 sai s\u1ed1",
+      "service": "gtts"
+    },
+    "original_audio": "ta-gia-thiet-vecto-sai-so-a780a7e3.mp3",
+    "final_audio": "ta-gia-thiet-vecto-sai-so-a780a7e3.mp3"
+  },
+  {
+    "input_text": "tu\u00e2n theo ph\u00e2n ph\u1ed1i chu\u1ea9n hai chi\u1ec1u",
+    "input_data": {
+      "input_text": "tu\u00e2n theo ph\u00e2n ph\u1ed1i chu\u1ea9n hai chi\u1ec1u",
+      "service": "gtts"
+    },
+    "original_audio": "tuan-theo-phan-phoi-chuan-hai-chieu-cd9bad3e.mp3",
+    "final_audio": "tuan-theo-phan-phoi-chuan-hai-chieu-cd9bad3e.mp3"
+  },
+  {
+    "input_text": "v\u1edbi ma tr\u1eadn hi\u1ec7p ph\u01b0\u01a1ng sai Sigma.",
+    "input_data": {
+      "input_text": "v\u1edbi ma tr\u1eadn hi\u1ec7p ph\u01b0\u01a1ng sai Sigma.",
+      "service": "gtts"
+    },
+    "original_audio": "voi-ma-tran-hiep-phuong-sai-sigma-b5386fc1.mp3",
+    "final_audio": "voi-ma-tran-hiep-phuong-sai-sigma-b5386fc1.mp3"
   }
 ]

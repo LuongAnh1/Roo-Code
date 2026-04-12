@@ -1,0 +1,20 @@
+[
+  {
+    "input_text": "L\u00e0m sao \u0111\u1ec3 d\u1ef1 \u0111o\u00e1n gi\u00e1 m\u1ed9t c\u0103n nh\u00e0 khi b\u1ea1n ch\u1ec9 bi\u1ebft di\u1ec7n t\u00edch c\u1ee7a n\u00f3?",
+    "input_data": {
+      "input_text": "L\u00e0m sao \u0111\u1ec3 d\u1ef1 \u0111o\u00e1n gi\u00e1 m\u1ed9t c\u0103n nh\u00e0 khi b\u1ea1n ch\u1ec9 bi\u1ebft di\u1ec7n t\u00edch c\u1ee7a n\u00f3?",
+      "service": "gtts"
+    },
+    "original_audio": "lam-sao-de-du-doan-gia-mot-can-nha-khi-ban-chi-45281cab.mp3",
+    "final_audio": "lam-sao-de-du-doan-gia-mot-can-nha-khi-ban-chi-45281cab.mp3"
+  },
+  {
+    "input_text": "L\u00e0m sao \u0111\u1ec3 d\u1ef1 \u0111o\u00e1n gi\u00e1 m\u1ed9t c\u0103n nh\u00e0 khi b\u1ea1n ch\u1ec9 bi\u1ebft di\u1ec7n t\u00edch c\u1ee7a n\u00f3?",
+    "input_data": {
+      "input_text": "L\u00e0m sao \u0111\u1ec3 d\u1ef1 \u0111o\u00e1n gi\u00e1 m\u1ed9t c\u0103n nh\u00e0 khi b\u1ea1n ch\u1ec9 bi\u1ebft di\u1ec7n t\u00edch c\u1ee7a n\u00f3?",
+      "service": "gtts"
+    },
+    "original_audio": "lam-sao-de-du-doan-gia-mot-can-nha-khi-ban-chi-45281cab.mp3",
+    "final_audio": "lam-sao-de-du-doan-gia-mot-can-nha-khi-ban-chi-45281cab.mp3"
+  }
+]

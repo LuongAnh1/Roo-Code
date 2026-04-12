@@ -7,7 +7,7 @@ import os
 from manim import *
 
 # Cố định đường dẫn để Agent không tìm lung tung
-ASSETS_DIR = "./assets/"
+ASSETS_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
 
 def load_svg_icon(icon_name, size=1.0, color=None):
     """

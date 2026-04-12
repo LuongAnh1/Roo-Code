@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/doman/Downloads/Project1-main/Roo-Code/scripts/Video2/media/videos/scene_1_hook/1920p15/partial_movie_files/Scene1_Hook/1710730845_2658669297_2587834403.mp4'
+file 'file:C:/Users/doman/Downloads/Project1-main/Roo-Code/scripts/Video2/media/videos/scene_1_hook/1920p15/partial_movie_files/Scene1_Hook/1121882698_335309647_2063442196.mp4'
+file 'file:C:/Users/doman/Downloads/Project1-main/Roo-Code/scripts/Video2/media/videos/scene_1_hook/1920p15/partial_movie_files/Scene1_Hook/1121882698_1018208118_2929836347.mp4'
+file 'file:C:/Users/doman/Downloads/Project1-main/Roo-Code/scripts/Video2/media/videos/scene_1_hook/1920p15/partial_movie_files/Scene1_Hook/1121882698_1497815126_3043433759.mp4'
+file 'file:C:/Users/doman/Downloads/Project1-main/Roo-Code/scripts/Video2/media/videos/scene_1_hook/1920p15/partial_movie_files/Scene1_Hook/1121882698_1014150711_393160655.mp4'
+file 'file:C:/Users/doman/Downloads/Project1-main/Roo-Code/scripts/Video2/media/videos/scene_1_hook/1920p15/partial_movie_files/Scene1_Hook/1121882698_1839128356_1932983136.mp4'

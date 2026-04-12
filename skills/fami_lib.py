@@ -3,6 +3,7 @@ from manim_voiceover import VoiceoverScene
 from manim_voiceover.services.gtts import GTTSService
 from googletrans import Translator
 import os
+import asyncio
 
 # Khởi tạo Translator
 translator = Translator()
@@ -14,7 +15,7 @@ POS_TITLE = UP * 5.8          # Đẩy cao hơn (từ 4.2 -> 5.8)
 POS_TOP_FOCUS = UP * 3.2      # Nới rộng vùng trên
 POS_CENTER = UP * 0.2         # Tâm điểm chính
 POS_BOTTOM_FOCUS = DOWN * 2.5 # Hạ thấp vùng dưới
-POS_SUBTITLE = DOWN * 3.8     # Vị trí phụ đề an toàn TikTok
+POS_SUBTITLE = DOWN * 4.5     # Vị trí phụ đề an toàn TikTok (đã hạ thấp thêm 0.7 đơn vị)
 
 # ==========================================
 # 2. CẤU HÌNH & MÀU SẮC THƯƠNG HIỆU
@@ -137,7 +138,7 @@ class FaMIBaseScene(VoiceoverScene):
         Styles: 'default', 'neon', 'banner', 'minimal', 'cinema'
         """
         try:
-            en_text = translator.translate(vi_text, src='vi', dest='en').text
+            en_text = asyncio.run(translator.translate(vi_text, src='vi', dest='en')).text
         except:
             en_text = ""
 
