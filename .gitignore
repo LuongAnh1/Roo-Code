@@ -1,0 +1,51 @@
+﻿# Ignore local Python virtual environments
+manim_env/
+
+# Ignore temporary and editor files
+*.tmp
+*.temp
+*.log
+*.aux
+*.out
+*.bak
+*.swp
+*.swo
+*.lock
+*.DS_Store
+Thumbs.db
+~$*
+
+# Ignore Python build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore local IDE/project settings
+.vscode/
+.idea/
+
+# Ignore media and generated asset directories
+/media/
+**/media/
+/Roo-Code/media/
+/Roo-Code/assets/
+
+# Ignore common media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.mp3
+*.ogg
+*.webm
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*._
