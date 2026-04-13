@@ -1,0 +1,19 @@
+# Ignore generated and temporary files
+media/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Editor and OS files
+.vscode/
+.idea/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
