@@ -312,8 +312,12 @@ class mainScene(FaMIBaseScene):
                 "By logaritizing both sides: ln(X) = Y, \nwe transform the problem to a normal distribution.",
                 "Bằng cách logarit cả hai vế: ln(X) = Y, \nta đưa bài toán về phân phối chuẩn.",
             )
-            self.play(FadeOut(def_grp, shift=UP), run_time=min(0.8, tracker.duration * 0.5))
-
+            ln_math = MathTex(r"\ln(X) = \mu + \sigma Y \sim N(\mu,\, \sigma^2)", font_size=42, color=YELLOW)
+            ln_box  = self.soft_box(ln_math, YELLOW)
+            ln_grp  = VGroup(ln_math, ln_box).next_to(def_grp, DOWN, buff=0.5)
+            self.play(FadeIn(ln_grp, shift=DOWN), run_time=min(1.0, tracker.duration * 0.35))
+            self.wait(4.0)
+            self.play(FadeOut(def_grp, shift=UP), FadeOut(ln_grp, shift=UP), run_time=min(0.8, tracker.duration * 0.4))
         # ══════════════════════════════════════════════════════
         # SCENE 5 — Formulas: μ, σ², PDF, CDF
         # ══════════════════════════════════════════════════════
@@ -351,11 +355,11 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 10 ── (~6s)
         with self.voiceover(
-            text="Tiếp theo, ta có một số công thức quan trọng trong phân phối Log-chuẩn mà các bạn có thể thấy trên màn hình. Đầu tiên là công thức kỳ vọng và phương sai của ln(X)."
+            text="Tiếp theo, ta có các công thức quan trọng trên màn hình. Đầu tiên là công thức kỳ vọng và phương sai của ln(X)."
         ) as tracker:
             self.show_subtitle(
                 "Next, we have some formulas you guys can see on the screen.\n First is the formula for mean and variance of ln(X).",
-                "Tiếp theo, ta có một số công thức quan trọng trên màn hình. \n Đầu tiên là công thức kỳ vọng và phương sai của ln(X).",
+                "Tiếp theo, ta có các công thức quan trọng trên màn hình. \n Đầu tiên là công thức kỳ vọng và phương sai của ln(X).",
             )
             self.play(FadeIn(item_1, shift=DOWN), run_time=min(1.2, tracker.duration * 0.6))
 
@@ -446,19 +450,76 @@ class mainScene(FaMIBaseScene):
         # ══════════════════════════════════════════════════════
         # SCENE 7 — Final graph: safety lower bound
         # ══════════════════════════════════════════════════════
+        title2 = self.create_title(
+            "ƯỚC LƯỢNG ĐỘ BỀN LINH KIỆN PISTON"
+        )
+        # ── Vẽ cờ lê và mỏ lết bằng Manim shapes ──
+        def make_wrench(color=WHITE):
+            # Cán cờ lê
+            handle = Rectangle(width=2.2, height=0.22, color=color, fill_opacity=1).set_fill(color)
+            # Đầu cờ lê (hình chữ C)
+            jaw_outer = Arc(radius=0.38, start_angle=PI/6, angle=4*PI/3, color=color).set_stroke(color, width=8)
+            jaw_outer.next_to(handle, RIGHT, buff=0)
+            # Hàm dưới
+            jaw_inner = Arc(radius=0.22, start_angle=PI/6, angle=4*PI/3, color=BLACK).set_stroke(BLACK, width=6)
+            jaw_inner.move_to(jaw_outer.get_center())
+            return VGroup(handle, jaw_outer, jaw_inner)
+
+        def make_adjustable_wrench(color=GRAY_B):
+            # Cán dài
+            handle = Rectangle(width=2.8, height=0.2, color=color, fill_opacity=1).set_fill(color)
+            # Đầu mỏ lết — 2 hàm song song
+            jaw_fixed = Rectangle(width=0.55, height=0.18, color=color, fill_opacity=1).set_fill(color)
+            jaw_move  = Rectangle(width=0.55, height=0.18, color=color, fill_opacity=1).set_fill(color)
+            jaw_body  = Rectangle(width=0.55, height=0.52, color=color, fill_opacity=1).set_fill(color)
+            jaw_body.next_to(handle, RIGHT, buff=0)
+            jaw_fixed.next_to(jaw_body, UP, buff=0)
+            jaw_move.next_to(jaw_body, DOWN, buff=0).shift(DOWN * 0.1)
+            return VGroup(handle, jaw_body, jaw_fixed, jaw_move)
+
+        wrench1 = make_wrench(color=YELLOW_D)
+        wrench1.rotate(-PI/5).move_to(LEFT * 1.0 + DOWN * 0.3)
+
+        wrench2 = make_adjustable_wrench(color=GRAY_B)
+        wrench2.rotate(PI/6).move_to(RIGHT * 1.0 + UP * 0.1)
+
+        # Hiệu ứng ánh sáng lấp lánh
+        shine1 = Star(n=4, outer_radius=0.18, inner_radius=0.06, color=WHITE, fill_opacity=1).move_to(wrench1.get_corner(UR) + UP*0.1 + LEFT*0.1)
+        shine2 = Star(n=4, outer_radius=0.14, inner_radius=0.05, color=WHITE, fill_opacity=1).move_to(wrench2.get_corner(UL) + UP*0.1 + RIGHT*0.1)
+
+        tools_grp = VGroup(wrench1, wrench2, shine1, shine2)
+
         with self.voiceover(
             text="Với tất cả các công cụ đã sẵn sàng — nhà máy tính toán, đưa ra quyết định và khuyến cáo người dùng làm theo hướng dẫn.",
         ) as tracker:
             self.show_subtitle(
-                "With all tools ready — the factory calculates, decides, and advises the users.",
-                "Với tất cả các công cụ đã sẵn sàng — nhà máy tính toán, \nđưa ra quyết định và khuyến cáo người dùng làm theo hướng dẫn.",
+                "With all tools ready — the factory calculates,\ndecides, and advises the users.",
+                "Với tất cả các công cụ đã sẵn sàng — nhà máy tính toán,\nđưa ra quyết định và khuyến cáo người dùng làm theo hướng dẫn.",
             )
-            self.play(FadeOut(*self.mobjects), run_time=min(0.7, tracker.duration * 0.4))
-
-        title2 = self.create_title(
-            "ƯỚC LƯỢNG ĐỘ BỀN LINH KIỆN PISTON"
-        )
-        self.play(Write(title2), run_time=0.8)
+            self.play(FadeOut(item_e1, item_e2), run_time=0.5)
+            self.play(Write(title2), run_time=0.6)
+            self.play(
+                FadeIn(wrench1, shift=RIGHT*0.3),
+                FadeIn(wrench2, shift=LEFT*0.3),
+                run_time=min(0.9, tracker.duration * 0.3),
+            )
+            self.play(
+                FadeIn(shine1, scale=1.5),
+                FadeIn(shine2, scale=1.5),
+                run_time=min(0.5, tracker.duration * 0.15),
+            )
+            self.play(
+                wrench1.animate.rotate(PI/12),
+                wrench2.animate.rotate(-PI/12),
+                run_time=min(0.6, tracker.duration * 0.2),
+            )
+            self.play(
+                wrench1.animate.rotate(-PI/12),
+                wrench2.animate.rotate(PI/12),
+                run_time=min(0.6, tracker.duration * 0.2),
+            )
+            self.wait(min(1.0, tracker.duration * 0.4))
+            self.play(FadeOut(tools_grp), run_time=0.5)
 
         outro_axes = Axes(
             x_range=[0, 10, 2], y_range=[0, 1.4, 0.4],
