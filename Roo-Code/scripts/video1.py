@@ -79,11 +79,11 @@ class mainScene(FaMIBaseScene):
         # SCENE 1 — Normal distribution is the wrong tool
         # ══════════════════════════════════════════════════════
         title = self.create_title(
-            "ƯỚC LƯỢNG ĐỘ BỀN LINH KIỆN PISTON TRONG ĐỘNG CƠ Ô TÔ"
+            "ƯỚC LƯỢNG ĐỘ BỀN LINH KIỆN PISTON"
         )
 
         text_title = Tex(
-            r"Phân phối chuẩn có phù hợp để ước lượng \\độ bền linh kiện piston không?",
+            r"Sử dụng phân phối chuẩn ok không? nah",
             font_size=38,
         )
         axes = Axes(
@@ -104,11 +104,11 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 1 ── (~7s)
         with self.voiceover(
-            text="Phân phối chuẩn có thực sự phù hợp để ước lượng độ bền linh kiện piston không?"
+            text="Sử dụng phân phối chuẩn có ok không?"
         ) as tracker:
             self.show_subtitle(
-                "Normal dist. right for piston durability?",
-                "Phân phối chuẩn có phù hợp bài toán này?",
+                "Does normal dist. straight?",
+                "Sử dụng phân phối chuẩn có ok không?",
             )
             self.play(Write(title), run_time=min(1.2, tracker.duration * 0.35))
             self.play(
@@ -120,11 +120,11 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 2 ── (~7s)
         with self.voiceover(
-            text="Vấn đề nghiêm trọng: phân phối chuẩn nhận giá trị âm — vô lý với tuổi thọ!"
+            text="Có vẻ là không, phân phối chuẩn nhận giá trị âm, nghĩa là piston đã hỏng trước khi được sản xuất!"
         ) as tracker:
             self.show_subtitle(
-                "Normal accepts negatives — impossible!",
-                "Phân phối chuẩn nhận giá trị âm — vô lý!",
+                "Nah, lil bro accepts negative values, which is beta ToT!",
+                "Có vẻ là không, phân phối chuẩn nhận giá trị âm, nghĩa là piston đã hỏng trước khi được sản xuất!",
             )
             self.play(DrawBorderThenFill(negative_area), run_time=min(1.0, tracker.duration * 0.3))
             math_logic = MathTex(
@@ -176,11 +176,11 @@ class mainScene(FaMIBaseScene):
         ])
         # ── VO 3 ── (~5s)
         with self.voiceover(
-            text="Người kỹ sư thông minh tìm ra giải pháp: phân phối Log-Chuẩn!"
+            text="Người thông minh như bạn đã nghĩ ra cách: sử dụng phân phối Log-Chuẩn!"
         ) as tracker:
             self.show_subtitle(
-                "Solution: Log-Normal distribution!",
-                "Giải pháp: Phân phối Log-Chuẩn!",
+                "A genius like you have figured a way: using log-normal distribution!",
+                "Người thông minh như bạn đã nghĩ ra cách: sử dụng phân phối Log-Chuẩn!",
             )
             self.play(FadeIn(student, shift=UP), run_time=min(0.7, tracker.duration * 0.25))
             self.play(
@@ -206,11 +206,11 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 4 ── (~6s)
         with self.voiceover(
-            text="Ba lý do khiến Log-Chuẩn là lựa chọn tối ưu cho bài toán này."
+            text="Vậy tại sao phân phối log-chuẩn phù hợp với bài toán này?"
         ) as tracker:
             self.show_subtitle(
-                "3 reasons Log-Normal is optimal here.",
-                "3 lý do Log-Chuẩn là lựa chọn tối ưu.",
+                "But why log-norm. was born for this problem?",
+                "Vậy tại sao phân phối log-chuẩn phù hợp với bài toán này?",
             )
             self.play(Write(log_tex), run_time=min(1.0, tracker.duration * 0.4))
             chot_ha = Tex(r"Tại sao chọn Log-Chuẩn?", color=WHITE, font_size=40)
@@ -233,11 +233,11 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 5 — Reason 1 ── (~6s)
         with self.voiceover(
-            text="Một — bản chất: vết nứt mỏi tích lũy theo cấp số nhân."
+            text="Đầu tiên — bản chất: vết nứt mỏi tích lũy theo cấp số nhân."
         ) as tracker:
             self.show_subtitle(
-                "Reason 1: fatigue cracks grow exponentially.",
-                "Lý do 1: vết nứt tích lũy cấp số nhân.",
+                "Firstly: fatigue cracks grow exponentially.",
+                "Đầu tiên — bản chất: vết nứt mỏi tích lũy theo cấp số nhân.",
             )
             r1 = Tex(r"1. Vết nứt tích lũy theo cấp số nhân", color=YELLOW_E, font_size=32).move_to(tex_pos)
             c1 = axes3.plot(lambda x: 0.1 * np.exp(0.45 * x), x_range=[0.1, 8.5], color=YELLOW_E)
@@ -246,11 +246,11 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 6 — Reason 2 ── (~6s)
         with self.voiceover(
-            text="Hai — logic: tuổi thọ luôn dương, Log-Chuẩn không sinh giá trị âm."
+            text="Thứ hai — logic: tuổi thọ luôn dương, Log-Chuẩn không nhận giá trị âm."
         ) as tracker:
             self.show_subtitle(
-                "Reason 2: lifespan always positive (t > 0).",
-                "Lý do 2: tuổi thọ luôn dương (t > 0).",
+                "Secondly: lifespan always positive (t > 0).",
+                "Thứ hai — logic: tuổi thọ luôn dương, Log-Chuẩn không nhận giá trị âm.",
             )
             r2 = Tex(r"2. Tuổi thọ luôn dương ($t > 0$)", color=RED_E, font_size=32).move_to(tex_pos)
             c2 = axes3.plot(
@@ -261,11 +261,11 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 7 — Reason 3 ── (~7s)
         with self.voiceover(
-            text="Ba — thực tế: đồ thị lệch phải khớp hoàn hảo với dữ liệu piston thật."
+            text="Thứ ba — thực tế: đồ thị lệch phải phù hợp với dữ liệu piston thật."
         ) as tracker:
             self.show_subtitle(
-                "Reason 3: right tail fits real piston data.",
-                "Lý do 3: đuôi phải khớp dữ liệu piston.",
+                "Thirdly: right skewed graph fits real piston data.",
+                "Thứ ba — thực tế: đồ thị lệch phải phù hợp với dữ liệu piston thật.",
             )
             r3 = Tex(r"3. Khớp hoàn hảo dữ liệu Piston", color=ORANGE, font_size=32).move_to(tex_pos)
 
@@ -295,22 +295,22 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 8 ── (~7s)
         with self.voiceover(
-            text="Định nghĩa: X bằng e mũ mu cộng sigma Y, với Y là biến chuẩn tắc."
+            text="Phân phối Log-chuẩn và chuẩn có đôi chút khác biệt, nên hãy cùng đi vào phần định nghĩa: X bằng e mũ mu cộng sigma Y, với Y là biến chuẩn tắc."
         ) as tracker:
             self.show_subtitle(
-                "Definition: X = e^(μ+σY), Y ~ N(0,1).",
-                "Định nghĩa: X = e^(μ+σY), Y chuẩn tắc.",
+                "There are differences between these, so let's just say less\n and jump right in to the definition: X = e^(μ+σY), Y ~ N(0,1).",
+                "Phân phối Log-chuẩn và chuẩn có đôi chút khác biệt,\n nên hãy cùng đi vào phần định nghĩa: X = e^(μ+σY), Y ~ N(0,1).",
             )
             self.play(Write(intro_lbl), run_time=min(0.8, tracker.duration * 0.25))
             self.play(FadeIn(def_math, scale=1.2), Create(def_box), run_time=min(1.2, tracker.duration * 0.4))
 
         # ── VO 9 ── (~7s)
         with self.voiceover(
-            text="Lấy logarit cả hai vế: ln X bằng Y, đưa bài toán về phân phối chuẩn."
+            text="Bằng cách logarit cả hai vế: ln X bằng Y, ta đưa bài toán về phân phối chuẩn."
         ) as tracker:
             self.show_subtitle(
-                "ln(X) = Y ~ Normal — the core insight.",
-                "ln(X) = Y chuẩn — ý tưởng then chốt.",
+                "By logaritizing both sides: ln(X) = Y, \nwe transform the problem to a normal distribution.",
+                "Bằng cách logarit cả hai vế: ln(X) = Y, \nta đưa bài toán về phân phối chuẩn.",
             )
             self.play(FadeOut(def_grp, shift=UP), run_time=min(0.8, tracker.duration * 0.5))
 
@@ -351,21 +351,21 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 10 ── (~6s)
         with self.voiceover(
-            text="Công thức kỳ vọng và phương sai mu, sigma bình phương của ln X."
+            text="Tiếp theo, ta có một số công thức quan trọng trong phân phối Log-chuẩn mà các bạn có thể thấy trên màn hình. Đầu tiên là công thức kỳ vọng và phương sai của ln(X)."
         ) as tracker:
             self.show_subtitle(
-                "Formulas: μ and σ² of ln(X).",
-                "Công thức: μ và σ² của ln(X).",
+                "Next, we have some formulas you guys can see on the screen.\n First is the formula for mean and variance of ln(X).",
+                "Tiếp theo, ta có một số công thức quan trọng trên màn hình. \n Đầu tiên là công thức kỳ vọng và phương sai của ln(X).",
             )
             self.play(FadeIn(item_1, shift=DOWN), run_time=min(1.2, tracker.duration * 0.6))
 
         # ── VO 11 ── (~7s)
         with self.voiceover(
-            text="Hàm mật độ PDF và phân phối tích lũy CDF — ngôn ngữ kỹ sư độ bền."
+            text="Tiếp theo là hàm mật độ xác suất (PDF) và hàm phân phối tích lũy (CDF) của X."
         ) as tracker:
             self.show_subtitle(
-                "PDF & CDF — engineer's lifespan language.",
-                "PDF & CDF — ngôn ngữ kỹ sư độ bền.",
+                "Next is the PDF and CDF of X.",
+                "Tiếp theo là hàm mật độ xác suất (PDF) và hàm phân phối tích lũy (CDF) của X.",
             )
             self.play(
                 item_1.animate.shift(UP * 2.2).scale(0.85),
@@ -407,11 +407,11 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 12 ── (~7s)
         with self.voiceover(
-            text="Đặt y i bằng logarit x i để chuẩn hóa dữ liệu, rồi áp dụng thống kê đại cương."
+            text="Khi đã có đủ các công cụ, ta đặt y i bằng logarit x i để chuẩn hóa dữ liệu, rồi áp dụng thống kê đại cương."
         ) as tracker:
             self.show_subtitle(
-                "Set y_i=ln(x_i) → normalize data.",
-                "Đặt y_i=ln(x_i) → chuẩn hóa dữ liệu.",
+                "When all things are set, we set y_i = ln(x_i)\nto normalize the data, then apply general statistics.",
+                "Khi đã có đủ các công cụ, ta đặt y i bằng logarit x i \nđể chuẩn hóa dữ liệu, rồi áp dụng thống kê đại cương.",
             )
             self.play(
                 Write(label_e1), Create(box_e1), Write(math_e1),
@@ -430,8 +430,8 @@ class mainScene(FaMIBaseScene):
             text="Kỳ vọng dùng phân phối Student; phương sai dùng Chi-bình phương."
         ) as tracker:
             self.show_subtitle(
-                "Mean→Student's t; Variance→Chi-squared.",
-                "Kỳ vọng→Student; Phương sai→Chi²",
+                "Student distrubution for mean, Chi-squared for variance and so on.",
+                "Kỳ vọng dùng phân phối Student; phương sai dùng Chi-bình phương",
             )
             self.play(
                 Write(label_e2), Create(box_e2), Write(math_e2),
@@ -447,16 +447,16 @@ class mainScene(FaMIBaseScene):
         # SCENE 7 — Final graph: safety lower bound
         # ══════════════════════════════════════════════════════
         with self.voiceover(
-            text="Sau khi có đủ công cụ, nhà máy đưa ra quyết định bảo trì cuối cùng."
+            text="Với tất cả các công cụ đã sẵn sàng — nhà máy tính toán, đưa ra quyết định và khuyến cáo người dùng làm theo hướng dẫn.",
         ) as tracker:
             self.show_subtitle(
-                "With all tools ready — the factory decides.",
-                "Đủ công cụ — nhà máy đưa ra quyết định.",
+                "With all tools ready — the factory calculates, decides, and advises the users.",
+                "Với tất cả các công cụ đã sẵn sàng — nhà máy tính toán, \nđưa ra quyết định và khuyến cáo người dùng làm theo hướng dẫn.",
             )
             self.play(FadeOut(*self.mobjects), run_time=min(0.7, tracker.duration * 0.4))
 
         title2 = self.create_title(
-            "ƯỚC LƯỢNG ĐỘ BỀN LINH KIỆN PISTON TRONG ĐỘNG CƠ Ô TÔ"
+            "ƯỚC LƯỢNG ĐỘ BỀN LINH KIỆN PISTON"
         )
         self.play(Write(title2), run_time=0.8)
 
@@ -487,11 +487,11 @@ class mainScene(FaMIBaseScene):
 
         # ── VO 14 ── (~6s)
         with self.voiceover(
-            text="Đường cong Log-Chuẩn: xanh là cận dưới an toàn, đỏ là giá trị trung bình."
+            text="Ta minh họa khả năng hỏng sau một khoảng thời gian nhất định bằng đồ thị trên màn hình, mốc xanh là mốc an toàn, đỏ là trung bình."
         ) as tracker:
             self.show_subtitle(
-                "Green=lower bound (safe); Red=mean.",
-                "Xanh=cận dưới an toàn; Đỏ=trung bình.",
+                "As you can see on the screen, \n green means you're safe, red means you're done.",
+                "Ta minh họa khả năng hỏng sau một khoảng thời gian nhất định \nbằng đồ thị trên màn hình, mốc xanh là mốc an toàn, đỏ là trung bình.",
             )
             self.play(
                 Create(outro_axes), Write(VGroup(y_unit, x_unit)),
@@ -513,8 +513,8 @@ class mainScene(FaMIBaseScene):
             text="Kỹ sư luôn chọn cận dưới làm mốc bảo trì — ngăn chặn hỏng hóc trước khi nó xảy ra."
         ) as tracker:
             self.show_subtitle(
-                "Lower bound = maintenance threshold.",
-                "Cận dưới = mốc bảo trì — ngăn hỏng hóc.",
+                "The one with elite ball knowledge always chooses the lower bound \nto prevent failures before they occur.",
+                "Kỹ sư luôn chọn cận dưới làm mốc bảo trì — ngăn chặn hỏng hóc trước khi nó xảy ra.",
             )
             self.play(FadeIn(risk_area), run_time=min(0.8, tracker.duration * 0.2))
             self.play(
