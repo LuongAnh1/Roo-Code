@@ -49,7 +49,7 @@ class FaMIBaseScene(VoiceoverScene):
         self.set_speech_service(GTTSService(lang="vi"))
         
         # Logo FaMI (Đã thu nhỏ và đẩy cao)
-        logo_path = "assets/fami_logo.png"
+        logo_path = "assets/fami_logo_1.png"
         if os.path.exists(logo_path):
             self.logo = ImageMobject(logo_path).scale_to_fit_width(1.2) # Thu nhỏ 2.5 -> 1.6
             self.logo.to_edge(UP, buff=0.4) # Đẩy sát lên (0.8 -> 0.4)
