@@ -1,12 +1,3 @@
-1
-00:00:00,000 --> 00:00:04,485
-Câu hỏi cuối video dành cho bạn đó là phải xử lý
-
-2
-00:00:04,585 --> 00:00:09,548
-như nào nếu kẻ Spam cố tình viết “free” thành “fr€€”?
-
-3
-00:00:09,633 --> 00:00:13,397
-Nếu bạn biết câu trả lời, hãy comment phía dưới.
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8862e95ee3214df79b07cf5aa248dd0d95cd98245884f99a30661d4d2a98b6b
+size 319

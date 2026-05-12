@@ -1,17 +1,3 @@
-# This file is used internally by FFMPEG.
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/1815621503_1236510971_369616884.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_1062834711_2327141985.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_504770552_2376565036.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_2628787737_3451842765.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_750017335_2018662277.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_1953265948_2521327441.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_2654866836_1585891137.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_1047503865_4084796678.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_3050417916_1093199839.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_3841809020_2786680294.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_388907930_1270115078.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_2630974334_2901446097.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_697679875_2901446097.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_3525879691_1344631414.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_434927360_787944227.mp4'
-file 'file:D:/Roo Code/media/videos/scene_4_cta/1920p60/partial_movie_files/Scene4_CTA/330120484_4217992463_1468671029.mp4'
+version https://git-lfs.github.com/spec/v1
+oid sha256:758398f67f7c0d75e47f4872377fc7fa5e2393b8b74e0bf247b0904d0865a32d
+size 2037

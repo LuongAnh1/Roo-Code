@@ -1,4 +1,3 @@
-1
-00:00:00,000 --> 00:00:05,444
-Làm sao để dự đoán giá một căn nhà khi bạn chỉ biết diện tích của nó?
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b1279a4d25e526a1344474795c1dce97ca524111a9acebf5ccf60c5f99d88b1d
+size 132

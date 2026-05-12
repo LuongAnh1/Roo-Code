@@ -1,9 +1,3 @@
-# This file is used internally by FFMPEG.
-file 'file:D:/Roo Code/media/videos/scene_2_main_body/1920p60/partial_movie_files/Scene2_MainBody/1815621503_2185683303_2286314658.mp4'
-file 'file:D:/Roo Code/media/videos/scene_2_main_body/1920p60/partial_movie_files/Scene2_MainBody/330120484_2196151638_1545308110.mp4'
-file 'file:D:/Roo Code/media/videos/scene_2_main_body/1920p60/partial_movie_files/Scene2_MainBody/330120484_861816304_271771721.mp4'
-file 'file:D:/Roo Code/media/videos/scene_2_main_body/1920p60/partial_movie_files/Scene2_MainBody/330120484_882018981_1635886677.mp4'
-file 'file:D:/Roo Code/media/videos/scene_2_main_body/1920p60/partial_movie_files/Scene2_MainBody/330120484_4047892368_2123798791.mp4'
-file 'file:D:/Roo Code/media/videos/scene_2_main_body/1920p60/partial_movie_files/Scene2_MainBody/330120484_931306852_663034418.mp4'
-file 'file:D:/Roo Code/media/videos/scene_2_main_body/1920p60/partial_movie_files/Scene2_MainBody/330120484_933911671_3949764476.mp4'
-file 'file:D:/Roo Code/media/videos/scene_2_main_body/1920p60/partial_movie_files/Scene2_MainBody/330120484_4217992463_4073131898.mp4'
+version https://git-lfs.github.com/spec/v1
+oid sha256:df08dc592b7759bb46b6b3818d8a94aecc71c39a016ea78b49e8521e330d5d6a
+size 1126

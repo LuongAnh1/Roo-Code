@@ -1,16 +1,3 @@
-1
-00:00:00,000 --> 00:00:03,748
-Tóm lại, hồi quy tuyến tính giúp ta tìm ra quy
-
-2
-00:00:03,848 --> 00:00:07,680
-luật từ dữ liệu quá khứ, bằng cách vẽ các đường
-
-3
-00:00:07,780 --> 00:00:11,612
-hoặc mặt phẳng, để tự tin dự báo cho tương lai.
-
-4
-00:00:11,700 --> 00:00:16,568
-Thông qua đó ta có thể dữ đoán giá nhà với sai lệch nhỏ nhất.
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:149b33dfb3029eee65e6a884e8b9a47c55ee999531fe271606e448227bc2250d
+size 420

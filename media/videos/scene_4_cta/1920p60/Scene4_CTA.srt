@@ -1,24 +1,3 @@
-1
-00:00:00,000 --> 00:00:03,516
-Ở video trước chúng ta đã nói đến BEP dùng để
-
-2
-00:00:03,616 --> 00:00:07,052
-kiểm tra độ chính xác của dữ liệu truyền đi.
-
-3
-00:00:07,152 --> 00:00:10,751
-Và có 1 thứ liên quan mật thiết đến BEP đó
-
-4
-00:00:10,851 --> 00:00:14,804
-là SNR dùng để xác định chất lượng môi trường.
-
-5
-00:00:14,903 --> 00:00:20,323
-Về cách xác định thì chúng ta sẽ dùng Hồi quy tuyến tính + OLS.
-
-6
-00:00:20,419 --> 00:00:26,415
-Vậy chúng ta sẽ thực hiện như nào, hãy xem video tiếp theo về SNR nhé!
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3dc8f3597f8677961966643b9b9195ccf473d33f543011cca3e57e7d8b1dcee
+size 636

@@ -1,32 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" width="100%" height="100%">
-  <!-- Nền phát sáng (Glow effect) -->
-  <ellipse cx="150" cy="75" rx="100" ry="50" fill="#064E3B" opacity="0.3" filter="blur(10px)" />
-  
-  <!-- Chữ BER -->
-  <g id="ber-text" transform="translate(150, 50)" text-anchor="middle">
-    <text x="0" y="0" font-family="'Courier New', Courier, monospace" font-weight="900" font-size="50" fill="#10B981">BER</text>
-    <text x="0" y="20" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#6EE7B7" letter-spacing="2">BIT ERROR RATE</text>
-  </g>
-
-  <!-- Dãy nhị phân -->
-  <g id="binary-stream" transform="translate(30, 110)" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="28">
-    <!-- Các bit bình thường (Màu xanh) -->
-    <text x="0" y="0" fill="#10B981">0</text>
-    <text x="40" y="0" fill="#10B981">1</text>
-    <text x="80" y="0" fill="#10B981">0</text>
-    <text x="120" y="0" fill="#10B981">1</text>
-    
-    <!-- Khung cảnh báo và Bit bị lỗi (Màu đỏ) -->
-    <g id="error-bit" transform="translate(150, -25)">
-      <!-- Box nhấp nháy -->
-      <rect x="0" y="0" width="30" height="35" fill="#EF4444" opacity="0.2" rx="4" />
-      <rect x="0" y="0" width="30" height="35" fill="none" stroke="#EF4444" stroke-width="2" rx="4" stroke-dasharray="4" />
-      <!-- Số 1 bị lỗi -->
-      <text x="5" y="25" fill="#EF4444">1</text>
-    </g>
-
-    <!-- Bit bình thường cuối cùng -->
-    <text x="200" y="0" fill="#10B981">0</text>
-    <text x="240" y="0" fill="#10B981" opacity="0.5">1</text>
-  </g>
-</svg>
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4748556ad1b7afd6d92e50804e06bd498bc3240b433902afaab116f357d9676
+size 1669

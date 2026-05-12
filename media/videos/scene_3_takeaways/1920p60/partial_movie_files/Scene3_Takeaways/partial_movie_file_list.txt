@@ -1,10 +1,3 @@
-# This file is used internally by FFMPEG.
-file 'file:D:/Roo Code/media/videos/scene_3_takeaways/1920p60/partial_movie_files/Scene3_Takeaways/1815621503_571627730_3531071489.mp4'
-file 'file:D:/Roo Code/media/videos/scene_3_takeaways/1920p60/partial_movie_files/Scene3_Takeaways/330120484_1978464482_3483340457.mp4'
-file 'file:D:/Roo Code/media/videos/scene_3_takeaways/1920p60/partial_movie_files/Scene3_Takeaways/330120484_2499791536_2602174551.mp4'
-file 'file:D:/Roo Code/media/videos/scene_3_takeaways/1920p60/partial_movie_files/Scene3_Takeaways/330120484_3406086341_2019536663.mp4'
-file 'file:D:/Roo Code/media/videos/scene_3_takeaways/1920p60/partial_movie_files/Scene3_Takeaways/330120484_2053842146_4086854705.mp4'
-file 'file:D:/Roo Code/media/videos/scene_3_takeaways/1920p60/partial_movie_files/Scene3_Takeaways/330120484_680006192_4278722256.mp4'
-file 'file:D:/Roo Code/media/videos/scene_3_takeaways/1920p60/partial_movie_files/Scene3_Takeaways/330120484_2859613159_2144645321.mp4'
-file 'file:D:/Roo Code/media/videos/scene_3_takeaways/1920p60/partial_movie_files/Scene3_Takeaways/330120484_1025494380_1034568130.mp4'
-file 'file:D:/Roo Code/media/videos/scene_3_takeaways/1920p60/partial_movie_files/Scene3_Takeaways/330120484_4217992463_4199467001.mp4'
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc174a8b57a4ae87dd17e99ea5ef1ffe55a065e27a5adf71e5712eb06857e0b3
+size 1275

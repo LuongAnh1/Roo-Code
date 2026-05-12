@@ -1,2 +1,3 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/doman/Downloads/Project1-main/Roo-Code/media/videos/Roo-Code/1280p30/partial_movie_files/mainScene/680521154_112422160_2287846480.mp4'
+version https://git-lfs.github.com/spec/v1
+oid sha256:7f20b249441b11975cfc1bfb9b0dbbcea23f07e77872a3524bb67b3519003e15
+size 199
