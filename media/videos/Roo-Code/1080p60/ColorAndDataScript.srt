@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:04,244
+Tiếp theo, ta sẽ cùng đi phủ màu cho hình ảnh này.
+
+2
+00:00:04,333 --> 00:00:09,705
+Về mặt toán học, thay vì một ma trận 2 chiều đơn lẻ, một bức ảnh
+
+3
+00:00:09,805 --> 00:00:15,177
+màu là một cấu trúc dữ liệu ba chiều, hay còn gọi là một Tensor.
+
+4
+00:00:15,266 --> 00:00:19,937
+Nó bao gồm 3 ma trận xếp chồng lên nhau tương ứng với dải
+
+5
+00:00:20,037 --> 00:00:24,958
+cường độ ánh sáng của ba kênh màu: Đỏ, Xanh lục và Xanh lam.
+
+6
+00:00:25,050 --> 00:00:29,915
+Sự phối hợp cường độ của 3 kênh này tại cùng một tọa độ sẽ đánh lừa
+
+7
+00:00:30,015 --> 00:00:35,030
+tế bào hình nón trong mắt bạn, tạo ra cảm giác về hàng triệu màu sắc.
+
+8
+00:00:36,116 --> 00:00:41,392
+Tuy nhiên, quy mô dữ liệu ngày càng phình to đã đặt ra một nghịch lý.
+
+9
+00:00:41,483 --> 00:00:48,572
+Nếu giữ nguyên ở dạng ma trận RGB nguyên bản, một bức ảnh laptop đã
+
+10
+00:00:48,672 --> 00:00:55,975
+nặng 47MB, và một giây video 60fps sẽ nặng gần 3GB. Thật khủng khiếp!
+
+11
+00:00:56,066 --> 00:01:00,503
+Đó là lý do các tiêu chuẩn như JPG và PNG ra đời. Chúng
+
+12
+00:01:00,603 --> 00:01:05,782
+đại diện cho hai trường phái toán học hoàn toàn trái ngược nhau!
+

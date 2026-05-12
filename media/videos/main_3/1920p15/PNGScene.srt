@@ -1,0 +1,100 @@
+1
+00:00:00,000 --> 00:00:02,492
+PNG sử dụng cơ chế nén không tổn hao
+
+2
+00:00:02,592 --> 00:00:05,444
+– bảo toàn nguyên trạng từng bit dữ liệu.
+
+3
+00:00:05,533 --> 00:00:10,418
+Thay vì dùng phương trình tần số và cắt xén dữ liệu, PNG phân
+
+4
+00:00:10,518 --> 00:00:14,913
+tích cấu trúc bức ảnh bằng các Màng lọc nội suy dự báo.
+
+5
+00:00:15,000 --> 00:00:19,770
+Nguyên lý của nó rất thanh lịch: Trong một mảng màu thực tế,
+
+6
+00:00:19,870 --> 00:00:24,236
+các pixel kề nhau thường có cường độ gần như bằng nhau.
+
+7
+00:00:24,333 --> 00:00:29,017
+Thuật toán của PNG sẽ chạy phương trình phỏng đoán giá trị của
+
+8
+00:00:29,117 --> 00:00:33,338
+pixel tiếp theo. Sau đó, hệ thống chỉ lưu trữ hiệu số vi
+
+9
+00:00:33,438 --> 00:00:37,505
+phân Delta giữa giá trị thực tế và giá trị phỏng đoán.
+
+10
+00:00:40,600 --> 00:00:45,049
+Sau đó, chuỗi số vi phân này được nén chặt bằng thuật
+
+11
+00:00:45,149 --> 00:00:50,028
+toán DEFLATE. Bước đầu tiên là LZ77: một cửa sổ trượt quét
+
+12
+00:00:50,128 --> 00:00:54,492
+qua toàn bộ chuỗi byte và tìm kiếm các đoạn lặp lại.
+
+13
+00:00:54,533 --> 00:00:59,030
+Các đoạn trùng lặp được thay thế bằng một cặp số nhỏ gọn:
+
+14
+00:00:59,130 --> 00:01:03,385
+khoảng cách và độ dài, thay vì sao chép toàn bộ chuỗi.
+
+15
+00:01:04,466 --> 00:01:08,923
+Bước thứ hai của DEFLATE là mã hóa Huffman: Xây dựng một cây
+
+16
+00:01:09,023 --> 00:01:13,329
+nhị phân dựa trên tần suất xuất hiện của từng giá trị. Giá
+
+17
+00:01:13,429 --> 00:01:17,734
+trị nào xuất hiện nhiều nhất sẽ được gán mã bit ngắn nhất.
+
+18
+00:01:18,800 --> 00:01:24,409
+Kết quả cuối cùng: Thuật toán PNG có thể co ngót kích thước tệp từ 25
+
+19
+00:01:24,509 --> 00:01:29,788
+đến 50 phần trăm mà không đánh rơi dù chỉ một hạt nhiễu nhỏ nhất.
+
+20
+00:01:29,866 --> 00:01:34,545
+PNG còn hỗ trợ kênh Alpha, cho phép tách nền trong suốt
+
+21
+00:01:34,645 --> 00:01:38,889
+với độ sắc nét tuyệt đối, không viền mờ. Đây là lý
+
+22
+00:01:38,989 --> 00:01:42,798
+do PNG không thể thiếu trong đồ họa thiết kế.
+
+23
+00:01:43,866 --> 00:01:48,210
+Tóm lại: JPG và PNG là hai trường phái hoàn toàn khác nhau
+
+24
+00:01:48,310 --> 00:01:52,883
+phục vụ những mục tiêu khác nhau. Hiểu bản chất toán học phía
+
+25
+00:01:52,983 --> 00:01:57,326
+sau giúp bạn lựa chọn định dạng phù hợp cho từng bài toán.
+

@@ -1,0 +1,128 @@
+1
+00:00:00,000 --> 00:00:04,190
+Có lẽ bạn đã biết các bức ảnh kỹ thuật số, thực ra
+
+2
+00:00:04,290 --> 00:00:08,996
+là các pixel, nhưng bạn có thực sự hiểu các pixel là gì?
+
+3
+00:00:09,066 --> 00:00:14,294
+Tại sao lại có thể chuyển từ hình ảnh từ thế giới thực trở thành
+
+4
+00:00:14,394 --> 00:00:19,622
+các bức ảnh nằm trong máy tính? Các file JPG, PNG thực ra là gì?
+
+5
+00:00:19,722 --> 00:00:23,529
+Trong video này, tôi sẽ giải thích cho các bạn về
+
+6
+00:00:23,629 --> 00:00:27,515
+các khái niệm này! Đầu tiên, ta cùng tìm hiểu định
+
+7
+00:00:27,615 --> 00:00:31,262
+nghĩa cơ bản nhất của một hình ảnh kỹ thuật số.
+
+8
+00:00:31,362 --> 00:00:35,901
+Một hình ảnh ở không gian vật lý có thể được định nghĩa
+
+9
+00:00:36,001 --> 00:00:39,864
+là một hàm số f(x,y) trong đó x và y là các tọa
+
+10
+00:00:39,964 --> 00:00:44,840
+độ không gian liên tục trong thế giới thực, giá trị của hàm
+
+11
+00:00:44,940 --> 00:00:49,310
+số tại x,y được gọi là cường độ ánh sáng hay mức xám.
+
+12
+00:00:49,362 --> 00:00:54,453
+Và ta đều biết, máy tính chỉ có thể lưu trữ các tập hợp
+
+13
+00:00:54,553 --> 00:01:00,021
+hữu hạn. Do nguyên nhân đó, ta xấp xỉ không gian x,y và hàm
+
+14
+00:01:00,121 --> 00:01:05,966
+số f(x,y) bằng các đại lượng rời rạc, cách đều nhau và hữu hạn.
+
+15
+00:01:06,029 --> 00:01:10,012
+Hàm số không gian liên tục - Hình ảnh vật lý này từ đó
+
+16
+00:01:10,112 --> 00:01:14,473
+chuyển đổi thành Hàm số rời rạc - một hình ảnh kỹ thuật số.
+
+17
+00:01:14,562 --> 00:01:18,658
+Và magic bắt đầu ở đây, quá trình chuyển đổi từ liên tục
+
+18
+00:01:18,758 --> 00:01:23,078
+sang rời rạc này được thực hiện thông qua hai bước cốt lõi:
+
+19
+00:01:23,162 --> 00:01:27,701
+1. Lấy mẫu - Sự ra đời của Pixel: Hãy tưởng tượng bạn
+
+20
+00:01:27,801 --> 00:01:31,990
+đặt một tấm lưới lên trên bức ảnh vật lý thực tế.
+
+21
+00:01:32,029 --> 00:01:35,398
+Mỗi ô vuông nhỏ trên tấm lưới đó sẽ đại diện
+
+22
+00:01:35,498 --> 00:01:38,945
+cho một tọa độ không gian rời rạc. Ta gọi mỗi
+
+23
+00:01:39,045 --> 00:01:43,281
+ô vuông này là một Pixel, viết tắt của Picture Element.
+
+24
+00:01:43,362 --> 00:01:49,022
+2. Lượng tử hóa: Ta thực hiện gán một số nguyên đại diện cho
+
+25
+00:01:49,122 --> 00:01:55,070
+cường độ tại pixel đó, thông thường nằm trong khoảng 0 đến 255.
+
+26
+00:01:55,162 --> 00:02:00,331
+Vậy là một bức ảnh đen trắng trong máy tính, thực chất chỉ
+
+27
+00:02:00,431 --> 00:02:04,782
+là một ma trận 2 chiều chứa các con số 0 đến 255.
+
+28
+00:02:04,829 --> 00:02:09,532
+Và nếu bạn tăng số ô chia lưới lên, lưới càng được chia nhỏ,
+
+29
+00:02:09,632 --> 00:02:14,654
+số lượng pixel càng nhiều, thì bức ảnh kỹ thuật số càng chi tiết
+
+30
+00:02:14,754 --> 00:02:18,817
+và xấp xỉ càng sát với hình ảnh trong thế giới thực.
+
+31
+00:02:18,896 --> 00:02:21,514
+Đó chính là lý do ta gọi số lượng ô
+
+32
+00:02:21,614 --> 00:02:24,700
+chiều ngang và chiều dọc là độ phân giải.
+

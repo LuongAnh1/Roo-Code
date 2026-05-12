@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:04,244
+Tiếp theo, ta sẽ cùng đi phủ màu cho hình ảnh này.
+
+2
+00:00:04,333 --> 00:00:08,878
+Về mặt toán học, thay vì một ma trận 2 chiều đơn lẻ, một
+
+3
+00:00:08,978 --> 00:00:13,689
+bức ảnh màu là một cấu trúc dữ liệu ba chiều – một Tensor.
+
+4
+00:00:13,733 --> 00:00:18,282
+Nó bao gồm 3 ma trận xếp chồng lên nhau tương ứng với ba
+
+5
+00:00:18,382 --> 00:00:22,849
+kênh màu Đỏ, Xanh lục và Xanh lam – không gian màu RGB.
+
+6
+00:00:22,933 --> 00:00:27,421
+Sự phối hợp cường độ của 3 kênh này tại cùng một tọa độ x,y
+
+7
+00:00:27,521 --> 00:00:32,553
+đánh lừa tế bào hình nón trong mắt bạn, tạo ra hàng triệu màu sắc.
+
+8
+00:00:32,600 --> 00:00:35,641
+Khối dữ liệu ba chiều này gọi là Tensor –
+
+9
+00:00:35,741 --> 00:00:38,476
+nền tảng của mọi ảnh màu kỹ thuật số.
+
+10
+00:00:38,533 --> 00:00:42,704
+Nhưng nếu chúng ta nhìn kỹ hơn, ta sẽ thấy rằng các
+
+11
+00:00:42,804 --> 00:00:46,976
+ma trận thực chất vẫn lưu trữ độc lập. Bây giờ, hãy
+
+12
+00:00:47,076 --> 00:00:50,745
+xem điều gì xảy ra khi độ phân giải tăng lên.
+
+13
+00:00:51,400 --> 00:00:58,724
+Tuy nhiên, nếu giữ nguyên một bức ảnh độ phân giải 2880 nhân 1800 ở
+
+14
+00:00:58,824 --> 00:01:05,484
+dạng ma trận RGB nguyên bản, nó đã có kích thước xấp xỉ 47MB.
+
+15
+00:01:05,533 --> 00:01:09,420
+Tức là một video 60fps dài một giây với độ
+
+16
+00:01:09,520 --> 00:01:13,977
+phân giải này sẽ nặng gần 3GB. Thật khủng khiếp!
+
+17
+00:01:14,066 --> 00:01:18,598
+Đó là lý do các tiêu chuẩn nén ảnh như JPG và PNG ra đời.
+
+18
+00:01:18,698 --> 00:01:24,286
+Chúng đại diện cho hai trường phái toán học hoàn toàn trái ngược nhau!
+

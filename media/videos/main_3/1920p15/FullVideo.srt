@@ -1,0 +1,392 @@
+1
+00:00:00,000 --> 00:00:04,190
+Có lẽ bạn đã biết các bức ảnh kỹ thuật số, thực ra
+
+2
+00:00:04,290 --> 00:00:08,996
+là các pixel, nhưng bạn có thực sự hiểu các pixel là gì?
+
+3
+00:00:09,066 --> 00:00:15,132
+Tại sao lại có thể chuyển từ hình ảnh từ thế giới thực trở thành các bức
+
+4
+00:00:15,232 --> 00:00:20,270
+ảnh nằm trong máy tính? Các file J P G, P N G thực ra là gì?
+
+5
+00:00:20,333 --> 00:00:24,139
+Trong video này, tôi sẽ giải thích cho các bạn về
+
+6
+00:00:24,239 --> 00:00:28,126
+các khái niệm này! Đầu tiên, ta cùng tìm hiểu định
+
+7
+00:00:28,226 --> 00:00:31,873
+nghĩa cơ bản nhất của một hình ảnh kỹ thuật số.
+
+8
+00:00:31,933 --> 00:00:36,471
+Một hình ảnh ở không gian vật lý có thể được định nghĩa
+
+9
+00:00:36,571 --> 00:00:40,435
+là một hàm số f(x,y) trong đó x và y là các tọa
+
+10
+00:00:40,535 --> 00:00:45,411
+độ không gian liên tục trong thế giới thực, giá trị của hàm
+
+11
+00:00:45,511 --> 00:00:49,881
+số tại x,y được gọi là cường độ ánh sáng hay mức xám.
+
+12
+00:00:49,933 --> 00:00:55,023
+Và ta đều biết, máy tính chỉ có thể lưu trữ các tập hợp
+
+13
+00:00:55,123 --> 00:01:00,591
+hữu hạn. Do nguyên nhân đó, ta xấp xỉ không gian x,y và hàm
+
+14
+00:01:00,691 --> 00:01:06,537
+số f(x,y) bằng các đại lượng rời rạc, cách đều nhau và hữu hạn.
+
+15
+00:01:06,600 --> 00:01:10,582
+Hàm số không gian liên tục - Hình ảnh vật lý này từ đó
+
+16
+00:01:10,682 --> 00:01:15,044
+chuyển đổi thành Hàm số rời rạc - một hình ảnh kỹ thuật số.
+
+17
+00:01:15,133 --> 00:01:19,228
+Và magic bắt đầu ở đây, quá trình chuyển đổi từ liên tục
+
+18
+00:01:19,328 --> 00:01:23,649
+sang rời rạc này được thực hiện thông qua hai bước cốt lõi:
+
+19
+00:01:23,733 --> 00:01:28,272
+1. Lấy mẫu - Sự ra đời của Pixel: Hãy tưởng tượng bạn
+
+20
+00:01:28,372 --> 00:01:32,561
+đặt một tấm lưới lên trên bức ảnh vật lý thực tế.
+
+21
+00:01:32,600 --> 00:01:35,968
+Mỗi ô vuông nhỏ trên tấm lưới đó sẽ đại diện
+
+22
+00:01:36,068 --> 00:01:39,516
+cho một tọa độ không gian rời rạc. Ta gọi mỗi
+
+23
+00:01:39,616 --> 00:01:43,852
+ô vuông này là một Pixel, viết tắt của Picture Element.
+
+24
+00:01:43,933 --> 00:01:49,593
+2. Lượng tử hóa: Ta thực hiện gán một số nguyên đại diện cho
+
+25
+00:01:49,693 --> 00:01:55,641
+cường độ tại pixel đó, thông thường nằm trong khoảng 0 đến 255.
+
+26
+00:01:55,733 --> 00:02:00,902
+Vậy là một bức ảnh đen trắng trong máy tính, thực chất chỉ
+
+27
+00:02:01,002 --> 00:02:05,353
+là một ma trận 2 chiều chứa các con số 0 đến 255.
+
+28
+00:02:05,400 --> 00:02:10,102
+Và nếu bạn tăng số ô chia lưới lên, lưới càng được chia nhỏ,
+
+29
+00:02:10,202 --> 00:02:15,225
+số lượng pixel càng nhiều, thì bức ảnh kỹ thuật số càng chi tiết
+
+30
+00:02:15,325 --> 00:02:19,388
+và xấp xỉ càng sát với hình ảnh trong thế giới thực.
+
+31
+00:02:19,466 --> 00:02:22,085
+Đó chính là lý do ta gọi số lượng ô
+
+32
+00:02:22,185 --> 00:02:25,270
+chiều ngang và chiều dọc là độ phân giải.
+
+33
+00:02:25,366 --> 00:02:29,610
+Tiếp theo, ta sẽ cùng đi phủ màu cho hình ảnh này.
+
+34
+00:02:29,700 --> 00:02:34,245
+Về mặt toán học, thay vì một ma trận 2 chiều đơn lẻ, một
+
+35
+00:02:34,345 --> 00:02:39,056
+bức ảnh màu là một cấu trúc dữ liệu ba chiều – một Tensor.
+
+36
+00:02:39,100 --> 00:02:43,649
+Nó bao gồm 3 ma trận xếp chồng lên nhau tương ứng với ba
+
+37
+00:02:43,749 --> 00:02:48,216
+kênh màu Đỏ, Xanh lục và Xanh lam – không gian màu RGB.
+
+38
+00:02:48,300 --> 00:02:52,787
+Sự phối hợp cường độ của 3 kênh này tại cùng một tọa độ x,y
+
+39
+00:02:52,887 --> 00:02:57,920
+đánh lừa tế bào hình nón trong mắt bạn, tạo ra hàng triệu màu sắc.
+
+40
+00:02:57,966 --> 00:03:01,007
+Khối dữ liệu ba chiều này gọi là Tensor –
+
+41
+00:03:01,107 --> 00:03:03,842
+nền tảng của mọi ảnh màu kỹ thuật số.
+
+42
+00:03:03,900 --> 00:03:08,071
+Nhưng nếu chúng ta nhìn kỹ hơn, ta sẽ thấy rằng các
+
+43
+00:03:08,171 --> 00:03:12,343
+ma trận thực chất vẫn lưu trữ độc lập. Bây giờ, hãy
+
+44
+00:03:12,443 --> 00:03:16,112
+xem điều gì xảy ra khi độ phân giải tăng lên.
+
+45
+00:03:16,766 --> 00:03:24,091
+Tuy nhiên, nếu giữ nguyên một bức ảnh độ phân giải 2880 nhân 1800 ở
+
+46
+00:03:24,191 --> 00:03:30,850
+dạng ma trận RGB nguyên bản, nó đã có kích thước xấp xỉ 47MB.
+
+47
+00:03:30,900 --> 00:03:34,787
+Tức là một video 60fps dài một giây với độ
+
+48
+00:03:34,887 --> 00:03:39,344
+phân giải này sẽ nặng gần 3GB. Thật khủng khiếp!
+
+49
+00:03:39,433 --> 00:03:43,731
+Đó là lý do các tiêu chuẩn nén ảnh như J P G và P N G
+
+50
+00:03:43,831 --> 00:03:50,205
+ra đời. Chúng đại diện cho hai trường phái toán học hoàn toàn trái ngược nhau!
+
+51
+00:03:51,300 --> 00:03:56,120
+Đầu tiên là J P G – đại diện cho cơ chế nén tổn hao.
+
+52
+00:03:56,166 --> 00:03:59,781
+Thuật toán này dựa trên một lỗ hổng sinh lý của
+
+53
+00:03:59,881 --> 00:04:03,574
+mắt người: Võng mạc cực kỳ nhạy cảm với độ sáng,
+
+54
+00:04:03,674 --> 00:04:07,130
+nhưng lại kém nhận diện chi tiết màu sắc nhỏ.
+
+55
+00:04:07,230 --> 00:04:10,927
+J P G bóc tách không gian RGB sang không gian
+
+56
+00:04:11,027 --> 00:04:15,146
+màu YCbCr bằng hệ phương trình ma trận tuyến tính.
+
+57
+00:04:15,197 --> 00:04:20,932
+Lớp cường độ sáng Y được giữ lại gần như nguyên vẹn, còn dữ liệu ở hai
+
+58
+00:04:21,032 --> 00:04:26,017
+lớp sắc độ Cb và Cr bị hệ thống thẳng tay loại bỏ đi một nửa.
+
+59
+00:04:27,117 --> 00:04:30,761
+Bức ảnh sẽ được băm thành các khối ma trận nhỏ 8
+
+60
+00:04:30,861 --> 00:04:35,129
+nhân 8. Đây là một khối điển hình trong miền không gian.
+
+61
+00:04:35,229 --> 00:04:41,752
+Phương trình 2D-DCT sẽ chuyển đổi tín hiệu từ miền không gian sang miền
+
+62
+00:04:41,852 --> 00:04:46,697
+phổ tần số F(u,v). Đây là cốt lõi sức mạnh của J P G.
+
+63
+00:04:46,797 --> 00:04:50,641
+Hiện tượng tuyệt mỹ gọi là Hội tụ năng lượng: Thông
+
+64
+00:04:50,741 --> 00:04:54,430
+tin quan trọng nhất dồn về góc trên trái, còn các
+
+65
+00:04:54,530 --> 00:04:57,833
+nhiễu hạt chi tiết nhỏ bị đẩy sang góc phải.
+
+66
+00:04:58,933 --> 00:05:04,257
+Tiếp đó, J P G kích hoạt cỗ máy hủy diệt mang tên Lượng tử
+
+67
+00:05:04,357 --> 00:05:09,681
+hóa: Lấy các hệ số tần số chia cho ma trận Q rồi làm tròn.
+
+68
+00:05:09,781 --> 00:05:13,547
+Kết quả: hàng loạt dữ liệu tần số cao bị nghiền
+
+69
+00:05:13,647 --> 00:05:17,413
+nát thành các số 0 tròn trĩnh. Chính chuỗi số 0
+
+70
+00:05:17,513 --> 00:05:21,609
+này giúp dung lượng file co ngót lại hàng chục lần.
+
+71
+00:05:22,709 --> 00:05:27,398
+Để đo lường sự biến dạng này, khoa học sử dụng công thức Hệ số
+
+72
+00:05:27,498 --> 00:05:32,497
+Sai số Trung bình Bình phương MSE giữa ảnh gốc và ảnh đã giải nén.
+
+73
+00:05:32,597 --> 00:05:35,379
+Đổi lại, dữ liệu bị mất vĩnh viễn –
+
+74
+00:05:35,479 --> 00:05:38,425
+đó chính là bản chất của nén tổn hao.
+
+75
+00:05:39,525 --> 00:05:43,778
+Nếu sự hao hụt của J P G là bản án tử đối với các
+
+76
+00:05:43,878 --> 00:05:48,665
+bản vẽ kỹ thuật hay ảnh y khoa, thì P N G xuất hiện như
+
+77
+00:05:48,765 --> 00:05:53,729
+một đấng cứu thế. P N G sử dụng cơ chế nén không tổn hao.
+
+78
+00:05:53,792 --> 00:05:58,705
+Thay vì dùng phương trình tần số và cắt xén dữ liệu, P N G
+
+79
+00:05:58,805 --> 00:06:03,892
+phân tích cấu trúc bức ảnh bằng các Màng lọc nội suy dự báo.
+
+80
+00:06:03,958 --> 00:06:08,735
+Nguyên lý của nó rất thanh lịch: Trong một mảng màu thực tế,
+
+81
+00:06:08,835 --> 00:06:13,530
+các pixel nằm kề nhau thường có cường độ gần như bằng nhau.
+
+82
+00:06:13,630 --> 00:06:18,297
+Thuật toán của P N G sẽ chạy phương trình phỏng đoán giá trị
+
+83
+00:06:18,397 --> 00:06:23,064
+của pixel tiếp theo. Sau đó, hệ thống chỉ lưu trữ hiệu số vi
+
+84
+00:06:23,164 --> 00:06:27,354
+phân Delta giữa giá trị thực tế và giá trị phỏng đoán.
+
+85
+00:06:28,404 --> 00:06:34,296
+Bước đầu tiên của DEFLATE là LZ77: tìm kiếm các chuỗi ký tự lặp lại
+
+86
+00:06:34,396 --> 00:06:40,736
+trong luồng delta và thay thế bằng một cặp số nhỏ gọn: offset và length.
+
+87
+00:06:41,836 --> 00:06:46,293
+Bước thứ hai của DEFLATE là mã hóa Huffman: Xây dựng một cây
+
+88
+00:06:46,393 --> 00:06:50,698
+nhị phân dựa trên tần suất xuất hiện của từng giá trị. Giá
+
+89
+00:06:50,798 --> 00:06:55,104
+trị nào xuất hiện nhiều nhất sẽ được gán mã bit ngắn nhất.
+
+90
+00:06:56,204 --> 00:07:01,537
+Kết quả cuối cùng: Thuật toán P N G có thể co ngót kích thước tệp
+
+91
+00:07:01,637 --> 00:07:06,970
+từ 25 đến 50 phần trăm mà không đánh rơi dù chỉ một hạt nhiễu nhỏ
+
+92
+00:07:07,070 --> 00:07:13,072
+nhất, cho phép khôi phục hình ảnh với độ sắc nét tuyệt đối 100 phần trăm.
+
+93
+00:07:13,737 --> 00:07:18,415
+PNG còn hỗ trợ kênh Alpha, cho phép tách nền trong suốt
+
+94
+00:07:18,515 --> 00:07:22,759
+với độ sắc nét tuyệt đối, không viền mờ. Đây là lý
+
+95
+00:07:22,859 --> 00:07:26,669
+do PNG không thể thiếu trong đồ họa thiết kế.
+
+96
+00:07:27,369 --> 00:07:31,364
+Tóm lại: J P G và P N G là hai trường phái hoàn toàn
+
+97
+00:07:31,464 --> 00:07:36,957
+khác nhau phục vụ những mục tiêu khác nhau. Hiểu bản chất toán học phía
+
+98
+00:07:37,057 --> 00:07:41,525
+sau giúp bạn lựa chọn định dạng phù hợp cho từng bài toán.
+
