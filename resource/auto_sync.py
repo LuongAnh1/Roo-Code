@@ -17,7 +17,7 @@ def sync():
         print(f"[{datetime.now()}] Không có tài nguyên mới.")
         return
 
-    print("Đang phát hiện tài nguyên mới trong B.F.E Alliance Resource...")
+    print("Đang phát hiện tài nguyên mới Resource...")
     run_git(["add", "."])
 
     msg = f"Auto-sync Resource: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
