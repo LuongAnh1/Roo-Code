@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:05,146
+Tại đây, tùy vào cách ta gom nhóm dữ liệu để tính toán, sẽ có
+
+2
+00:00:05,246 --> 00:00:11,684
+4 biến thể phổ biến là: Batch Norm, Layer Norm, Instance Norm và Group Norm.
+
+3
+00:00:11,784 --> 00:00:17,348
+Dù cách triển khai khác nhau, nhưng mục tiêu cuối cùng của các lớp này vẫn
+
+4
+00:00:17,448 --> 00:00:22,400
+là duy trì sự ổn định cho toàn bộ hệ thống, giúp AI học nhanh hơn,
+
+5
+00:00:22,500 --> 00:00:27,452
+chính xác hơn và không bao giờ bị loạn giữa biển số liệu khổng lồ!
+

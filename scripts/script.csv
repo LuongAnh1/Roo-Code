@@ -1,15 +1,3 @@
 ﻿Hook;Main Body;Takeaways;CTA
-Làm sao để dự đoán giá một căn nhà khi bạn chỉ biết diện tích của nó?;"Tóm lại, hồi quy tuyến tính giúp ta tìm ra quy luật từ dữ liệu quá khứ, bằng cách vẽ các đường hoặc mặt phẳng, để tự tin dự báo cho tương lai. 
-Thông qua đó ta có thể dữ đoán giá nhà với sai lệch nhỏ nhất.";"Và để tìm ra hàm tối ưu đó, bạn hãy tìm kiếm các từ khóa này ngay đó là:
-Bình phương tối thiểu
-Hàm mất mát
-Và Thuật toán giảm dốc";"Ở video trước chúng ta đã nói đến BEP dùng để kiểm tra độ chính xác của dữ liệu truyền đi.
-Và có 1 thứ liên quan mật thiết đến BEP đó là SNR dùng để xác định chất lượng môi trường. Về cách xác định thì chúng ta sẽ dùng Hồi quy tuyến tính + OLS.
-Vậy chúng ta sẽ thực hiện như nào, hãy xem video tiếp theo về SNR nhé!"
-"Mở đầu bằng hình ảnh icon một căn nhà. Một mũi tên trỏ từ biểu tượng ""Thước đo diện tích"" (VD: 50m^2) sang biểu tượng ""Cọc tiền"" với một Dấu hỏi chấm lớn nhấp nháy";"[Tóm lại…nhỏ nhất] Đồ thị 3D thu nhỏ lại, nằm gọn vào trong một màn hình điện thoại/máy tính có giao diện ""App dự báo bất động sản"", hiển thị con số dự đoán chạy (VD: $3.5 Tỷ VNĐ) với dấu checkmark xanh.";"[Và … giảm dốc]: Cáctext box nổi lên theo hiệu ứng pop-up
-1. Ordinary Least Squares (OLS) (Bình phương tối thiểu)
-2. Cost Function (Hàm mất mát)
-3. Gradient Descent (Thuật toán giảm dốc)";"[Trong các … truyền đi]: Hiện 1 tháp truyền tin kèm radio và giưuax chúng là 1 dãy bit, cùng đó hiện chữ BEP
-[Và có … môi trường]: Hiện chữ SNR
-[Về cách …. OLS]: Hiện bên dưới SNR là “Hồi quy tuyến tính + OLS”, có thể dùng ảnh minh họa nếu có thể
-[Vậy … nhé!]: Dấu hỏi chấm xuất hiện"
+Khi bạn nhìn một con mèo… bạn thấy tai, mắt, bộ lông. Nhưng với AI thì sao?;Biến đổi màu sắc, biến đổi không gian và chuẩn hóa phân phối – đây chính là bộ ba sức mạnh giúp chúng ta tối ưu hóa dòng chảy của các con số. Khi dữ liệu được xử lý qua lăng kính của Đại số tuyến tính, nó không còn là những pixel rời rạc, mà đã trở thành một cấu trúc logic hoàn hảo. Đây chính là bước đệm quyết định, biến những bức ảnh thô thành một nguồn tri thức sẵn sàng để mạng nơ-ron khai phá.;Và đừng quên lưu lại các từ khóa này để tìm hiểu sâu hơn nhé!;Dữ liệu đã xong, tập sau chúng ta sẽ giải mã Convolutional Layer – nơi phép Nhân ma trận vận hành trên cấu trúc trượt của Morphology để tạo nên thị giác cho AI. Hẹn gặp lại bạn!
+[Anim 1] Hình ảnh một con mèo, sau đó quét một đường ánh sáng biến bức ảnh thành một ma trận số bay lơ lửng.;;Text Pop-up:1. 1x1 Convolution 2. Affine Transformation 3. Spatial Transformer Networks (STN) 4. Data Augmentation 5. Normalization Layer;

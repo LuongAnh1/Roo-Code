@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:03,563
+Cụ thể, ta sẽ ép dữ liệu của ảnh đang được biểu
+
+2
+00:00:03,663 --> 00:00:08,084
+diễn dưới dạng mảng 3 chiều xuống thành ma trận 2 chiều...
+
+3
+00:00:08,133 --> 00:00:12,787
+bằng cách nhân với các trọng số cố định: không phẩy hai
+
+4
+00:00:12,887 --> 00:00:17,801
+chín chín, không phẩy năm tám bảy, không phẩy một một bốn.
+
+5
+00:00:17,866 --> 00:00:20,787
+Các con số này được kỹ sư tính toán sẵn
+
+6
+00:00:20,887 --> 00:00:23,886
+dựa trên độ nhạy của sinh học mắt người.
+

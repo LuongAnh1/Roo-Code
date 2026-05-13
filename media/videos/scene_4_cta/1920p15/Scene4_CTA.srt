@@ -1,24 +1,12 @@
 1
-00:00:00,000 --> 00:00:03,516
-Ở video trước chúng ta đã nói đến BEP dùng để
+00:00:00,000 --> 00:00:05,088
+Dữ liệu đã xong, tập sau chúng ta sẽ giải mã Convolutional Layer,
 
 2
-00:00:03,616 --> 00:00:07,052
-kiểm tra độ chính xác của dữ liệu truyền đi.
+00:00:05,188 --> 00:00:10,276
+nơi phép Nhân ma trận vận hành trên cấu trúc trượt của Morphology
 
 3
-00:00:07,115 --> 00:00:10,715
-Và có 1 thứ liên quan mật thiết đến BEP đó
-
-4
-00:00:10,815 --> 00:00:14,767
-là SNR dùng để xác định chất lượng môi trường.
-
-5
-00:00:14,848 --> 00:00:20,268
-Về cách xác định thì chúng ta sẽ dùng Hồi quy tuyến tính + OLS.
-
-6
-00:00:20,315 --> 00:00:26,311
-Vậy chúng ta sẽ thực hiện như nào, hãy xem video tiếp theo về SNR nhé!
+00:00:10,376 --> 00:00:14,108
+để tạo nên thị giác cho AI nhé. Hẹn gặp lại bạn!
 

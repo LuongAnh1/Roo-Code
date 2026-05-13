@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/Roo Code/media/videos/Scene3/1920p15/partial_movie_files/Scene3_Part1_ColorCorrection/1710730845_990661062_3084187950.mp4'
+file 'file:D:/Roo Code/media/videos/Scene3/1920p15/partial_movie_files/Scene3_Part1_ColorCorrection/1121882698_289729523_345964318.mp4'
+file 'file:D:/Roo Code/media/videos/Scene3/1920p15/partial_movie_files/Scene3_Part1_ColorCorrection/1121882698_2598957787_3306502547.mp4'
+file 'file:D:/Roo Code/media/videos/Scene3/1920p15/partial_movie_files/Scene3_Part1_ColorCorrection/1121882698_2026664094_453289628.mp4'
+file 'file:D:/Roo Code/media/videos/Scene3/1920p15/partial_movie_files/Scene3_Part1_ColorCorrection/1121882698_4217992463_2740269854.mp4'

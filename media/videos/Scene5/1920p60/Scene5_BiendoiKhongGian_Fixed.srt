@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:06,221
+Thao tác thứ hai: Biến đổi không gian. Như đã nói, bản chất bức ảnh là
+
+2
+00:00:06,321 --> 00:00:12,092
+một ma trận, và mỗi điểm ảnh đều có một tọa độ (x, y) riêng biệt.
+
+3
+00:00:12,183 --> 00:00:15,575
+Để thay đổi hình dáng hay vị trí của ảnh, chúng
+
+4
+00:00:15,675 --> 00:00:19,067
+ta chính là đang tác động vào những tọa độ này.
+
+5
+00:00:19,166 --> 00:00:23,335
+Hãy bắt đầu từ cơ bản: Trong không gian 2D, khi
+
+6
+00:00:23,435 --> 00:00:27,058
+nhân tọa độ điểm ảnh với một ma trận 2x2,
+
+7
+00:00:27,150 --> 00:00:32,882
+ta có thể làm được 3 việc: Co giãn, Xoay và làm Biến dạng hình ảnh.
+
+8
+00:00:32,966 --> 00:00:36,681
+Nhưng có một vấn đề: Phép nhân ma trận 2x2 không
+
+9
+00:00:36,781 --> 00:00:40,018
+thể giúp ta di chuyển bức ảnh đi chỗ khác.
+
+10
+00:00:40,116 --> 00:00:43,851
+Để dịch chuyển, ta buộc phải dùng phép CỘNG
+
+11
+00:00:43,951 --> 00:00:46,616
+với một Vector độ dời t x, t y.
+
+12
+00:00:46,716 --> 00:00:51,413
+Để đưa tất cả về duy nhất một phép nhân cho gọn nhẹ, các
+
+13
+00:00:51,513 --> 00:00:55,952
+nhà toán học dùng một mẹo: Thêm số 1 vào cuối tọa độ.
+
+14
+00:00:56,050 --> 00:01:00,266
+Lúc này, phép cộng tịnh tiến ban nãy đã được 'nhốt'
+
+15
+00:01:00,366 --> 00:01:03,822
+gọn vào cột thứ 3 của một ma trận 3x3 mới.
+
+16
+00:01:03,916 --> 00:01:09,058
+Và đây chính là Ma trận biến đổi A phin. Một ma trận chứa đựng sức
+
+17
+00:01:09,158 --> 00:01:14,856
+mạnh tổng hợp: Vừa xoay, co giãn, vừa dịch chuyển chỉ bằng một phép nhân.
+
+18
+00:01:14,950 --> 00:01:17,837
+Đây là trái tim của việc sinh ra
+
+19
+00:01:17,937 --> 00:01:21,666
+dữ liệu mới (Data Augmentation) trong AI.
+

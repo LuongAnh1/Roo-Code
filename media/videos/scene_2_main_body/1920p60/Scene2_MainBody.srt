@@ -1,16 +1,36 @@
 1
-00:00:00,000 --> 00:00:03,748
-Tóm lại, hồi quy tuyến tính giúp ta tìm ra quy
+00:00:00,000 --> 00:00:04,593
+Vậy là, thay vì nhìn thấy tai hay mắt mèo như chúng ta,
 
 2
-00:00:03,848 --> 00:00:07,680
-luật từ dữ liệu quá khứ, bằng cách vẽ các đường
+00:00:04,693 --> 00:00:09,116
+AI bắt đầu hành trình bằng việc giải mã những con số.
 
 3
-00:00:07,780 --> 00:00:11,612
-hoặc mặt phẳng, để tự tin dự báo cho tương lai.
+00:00:09,200 --> 00:00:14,260
+Biến đổi màu sắc, biến đổi không gian và chuẩn hóa, đây chính là bộ
 
 4
-00:00:11,700 --> 00:00:16,568
-Thông qua đó ta có thể dữ đoán giá nhà với sai lệch nhỏ nhất.
+00:00:14,360 --> 00:00:19,036
+ba sức mạnh giúp chúng ta tối ưu hóa dòng chảy của các con số.
+
+5
+00:00:19,133 --> 00:00:23,641
+Khi dữ liệu được xử lý qua lăng kính của Đại số tuyến tính
+
+6
+00:00:23,733 --> 00:00:26,956
+nó không còn là những pixel rời rạc, mà
+
+7
+00:00:27,056 --> 00:00:30,449
+đã trở thành một cấu trúc logic hoàn hảo.
+
+8
+00:00:30,533 --> 00:00:34,524
+Đây chính là bước đệm quyết định, biến những bức ảnh thô
+
+9
+00:00:34,624 --> 00:00:38,761
+thành một nguồn tri thức sẵn sàng để mạng nơ-ron khai phá.
 

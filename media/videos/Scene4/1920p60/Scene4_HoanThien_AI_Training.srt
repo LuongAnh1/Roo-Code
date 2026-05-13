@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:02,468
+NHƯNG, với AI thì khác!
+
+2
+00:00:02,566 --> 00:00:05,950
+Một lớp Convolution 1 nhân 1 trong mạng
+
+3
+00:00:06,050 --> 00:00:08,898
+CNN cũng làm y hệt phép toán này.
+
+4
+00:00:08,983 --> 00:00:14,043
+Điểm khác biệt là: AI không dùng số cố định, nó tự học!
+
+5
+00:00:14,133 --> 00:00:18,208
+Ví dụ bạn dạy nó nhận diện quả cà chua chín, thuật
+
+6
+00:00:18,308 --> 00:00:22,217
+toán sẽ tự động ép trọng số màu Đỏ tăng vọt lên,
+
+7
+00:00:22,316 --> 00:00:25,576
+biến lớp Convolution này thành một bộ lọc
+
+8
+00:00:25,676 --> 00:00:27,952
+màu tối ưu riêng cho cà chua!
+
+9
+00:00:28,050 --> 00:00:32,152
+Sức mạnh của CNN không chỉ dừng ở đó mà còn
+
+10
+00:00:32,252 --> 00:00:37,430
+ở các lớp Convolution lớn hơn như Conv 3x3, Conv 6x6,…
+
+11
+00:00:37,516 --> 00:00:40,968
+Vấn đề này ta sẽ bàn sâu ở video sau.
+

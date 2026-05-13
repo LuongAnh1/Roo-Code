@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:04,230
+Trong thực tế với PyTorch, ta thường dùng kỹ thuật Input
+
+2
+00:00:04,330 --> 00:00:08,948
+Normalization dựa trên các thông số của tập dữ liệu ImageNet.
+
+3
+00:00:09,033 --> 00:00:13,126
+Điều này giúp mọi bức ảnh, dù được chụp từ bất kỳ thiết
+
+4
+00:00:13,226 --> 00:00:17,396
+bị nào, cũng đều được đưa về cùng một hệ quy chiếu chung
+
+5
+00:00:17,496 --> 00:00:21,437
+mà các mô hình AI lớn nhất thế giới đã được làm quen.
+
+6
+00:00:22,133 --> 00:00:26,617
+Nhưng chờ đã, chuẩn hóa ở đầu vào thôi là chưa đủ!
+
+7
+00:00:26,733 --> 00:00:31,260
+Khi dữ liệu đi sâu vào hàng chục lớp nơ-ron bên trong,
+
+8
+00:00:31,360 --> 00:00:35,201
+các con số lại bắt đầu bị biến động và méo mó.
+
+9
+00:00:35,300 --> 00:00:38,075
+Giải pháp của các kỹ sư là chèn hẳn
+
+10
+00:00:38,175 --> 00:00:41,608
+những lớp chuẩn hóa vào ngay giữa mạng CNN.
+

@@ -1,4 +1,8 @@
 1
-00:00:00,000 --> 00:00:05,444
-Làm sao để dự đoán giá một căn nhà khi bạn chỉ biết diện tích của nó?
+00:00:00,000 --> 00:00:04,964
+Khi bạn nhìn một con mèo… bạn thấy tai, mắt, bộ lông.
+
+2
+00:00:05,064 --> 00:00:07,268
+Nhưng với AI thì sao?
 

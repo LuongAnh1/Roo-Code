@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1710730845_3292853000_532423228.mp4'
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1121882698_352354399_3753383423.mp4'
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1121882698_1070141256_3047874894.mp4'
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1121882698_2490538044_2292570338.mp4'
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1121882698_3740830691_625577660.mp4'
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1121882698_2967095032_2219102471.mp4'
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1121882698_3372323764_1511989723.mp4'
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1121882698_2116572652_3879328590.mp4'
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1121882698_4217992463_3289002033.mp4'
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1121882698_2565320495_2009692579.mp4'
+file 'file:D:/Roo Code/media/videos/Scene8/1920p15/partial_movie_files/Scene8_Normalization_Variants/1121882698_4217992463_3260702525.mp4'

@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:02,948
+Khía cạnh cuối cùng là biến đổi Quy mô.
+
+2
+00:00:03,048 --> 00:00:09,572
+Khi đưa ảnh vào AI, các pixel mang giá trị từ 0 đến 255.
+
+3
+00:00:09,672 --> 00:00:12,547
+Nếu nhân các số lớn này qua hàng chục lớp
+
+4
+00:00:12,647 --> 00:00:15,596
+mạng sẽ gây ra hiện tượng bùng nổ Gradient
+
+5
+00:00:15,696 --> 00:00:19,889
+Cách đơn giản nhất là lấy ma trận chia cho 255
+
+6
+00:00:19,989 --> 00:00:23,156
+để ép mọi con số về khoảng 0 đến 1.
+
+7
+00:00:23,196 --> 00:00:26,521
+Tuy nhiên, mạng nơ-ron thực sự thích dữ liệu
+
+8
+00:00:26,621 --> 00:00:29,168
+có tính cân bằng quanh điểm 0 hơn.
+
+9
+00:00:29,262 --> 00:00:32,728
+Đó là lúc ta dùng công thức Z-score: Trừ đi
+
+10
+00:00:32,828 --> 00:00:36,626
+Trung bình miu, chia cho Độ lệch chuẩn xích-ma.
+
+11
+00:00:36,662 --> 00:00:41,410
+Dữ liệu sẽ tập trung quanh số 0, có cả âm và dương.
+

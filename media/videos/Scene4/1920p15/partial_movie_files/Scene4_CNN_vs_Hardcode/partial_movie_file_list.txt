@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_CNN_vs_Hardcode/1710730845_1957032965_2836698133.mp4'
+file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_CNN_vs_Hardcode/1121882698_3412149593_4007778286.mp4'
+file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_CNN_vs_Hardcode/1121882698_2658246036_1789974647.mp4'
+file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_CNN_vs_Hardcode/1121882698_3303423197_3589718096.mp4'
+file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_CNN_vs_Hardcode/1121882698_2926902295_3536761994.mp4'
+file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_CNN_vs_Hardcode/1121882698_4123609473_417723390.mp4'
+file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_CNN_vs_Hardcode/1121882698_2074261748_4027956256.mp4'
+file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_CNN_vs_Hardcode/1121882698_584641886_309136363.mp4'
+file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_CNN_vs_Hardcode/1121882698_1690945425_716973558.mp4'
+file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_CNN_vs_Hardcode/1121882698_1777394418_3954903867.mp4'

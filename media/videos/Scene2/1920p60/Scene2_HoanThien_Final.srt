@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:03,013
+Trong thị giác máy tính, bức ảnh không
+
+2
+00:00:03,113 --> 00:00:05,636
+phải là hình ảnh, nó là Ma trận.
+
+3
+00:00:05,733 --> 00:00:09,698
+Và để AI có thể nhìn và hiểu một bức ảnh, đại số
+
+4
+00:00:09,798 --> 00:00:14,441
+tuyến tính là công cụ không thể thiếu để dọn dẹp dữ liệu
+
+5
+00:00:15,133 --> 00:00:18,681
+Ở đây ta tìm hiểu 3 thao tác cốt lõi: Biến
+
+6
+00:00:18,781 --> 00:00:22,329
+đổi giá trị, Biến đổi vị trí và Chuẩn hóa.
+
+7
+00:00:22,450 --> 00:00:27,534
+Từ đây, ta mới có nền tảng để tiến vào các mạng Nơ-ron phức tạp.
+
