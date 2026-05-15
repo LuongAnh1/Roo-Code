@@ -1,6 +1,66 @@
 # 🗺️ SƠ ĐỒ LUỒNG LÀM VIỆC: AI MANIM VIDEO PRODUCER
 
-## 📊 Sơ đồ Khối (Workflow Diagram)
+## � Tổng quan dự án
+
+**AI Manim Video Producer** là một hệ thống tự động hóa việc tạo video animation giáo dục từ kịch bản văn bản. Dự án sử dụng công nghệ Manim (Mathematical Animation Engine) kết hợp với trí tuệ nhân tạo để chuyển đổi script CSV thành video chất lượng cao với giọng nói tự nhiên.
+
+### 🎯 Mục đích:
+- Tự động hóa quy trình sản xuất video animation
+- Giảm thời gian từ ý tưởng đến sản phẩm cuối
+- Tạo video giáo dục chất lượng chuyên nghiệp với chi phí thấp
+
+### 🛠️ Công nghệ chính:
+- **Manim 0.18.0**: Engine animation toán học
+- **Manim-Voiceover**: Tích hợp giọng nói tự nhiên (gTTS)
+- **Python 3.9+**: Ngôn ngữ lập trình chính
+- **AI Agent**: Xử lý tự động với human-in-the-loop
+
+### 📁 Cấu trúc dự án:
+- `scripts/`: Code Python cho từng scene
+- `assets/`: Tài nguyên hình ảnh và icon
+- `media/`: Output video (không sync với Git)
+- `knowledge/`: Tài liệu hướng dẫn
+
+---
+
+## ⚙️ Cách cài đặt, setup
+
+### 📋 Yêu cầu hệ thống:
+- **Python 3.9** trở lên
+- **Git** (để clone repository)
+- **Windows/macOS/Linux** (hỗ trợ đầy đủ)
+
+### 🚀 Hướng dẫn nhanh:
+
+1. **Clone repository:**
+   ```bash
+   git clone https://github.com/LuongAnh1/Roo-Code.git
+   cd Roo-Code
+   ```
+
+2. **Tạo môi trường ảo:**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate  # Windows
+   # source venv/bin/activate  # macOS/Linux
+   ```
+
+3. **Cài đặt dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Kiểm tra cài đặt:**
+   ```bash
+   python -c "import manim; print('OK')"
+   ```
+
+### 📖 Chi tiết đầy đủ:
+Xem file [SETUP.md](SETUP.md) để có hướng dẫn chi tiết về cài đặt môi trường ảo, troubleshooting và các mẹo sử dụng.
+
+---
+
+## �📊 Sơ đồ Khối (Workflow Diagram)
 
 ```text
 =======================================================================
