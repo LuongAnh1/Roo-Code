@@ -1,49 +1,49 @@
-# SETUP - Huong dan Cai dat Moi truong
+# SETUP - Hướng dẫn Cài đặt Môi trường
 
-## Muc luc
-1. [Tong quan](#tong-quan)
+## Mục lục
+1. [Tổng quan](#tổng-quan)
 2. [Python & Git](#python--git)
-3. [Cach 1: Virtual Environment (venv)](#cach-1-virtual-environment-venv-don-gian-nhat)
-4. [Cach 2: Conda (Tuy chon)](#cach-2-conda-tuy-chon)
-5. [Cai dat Dependencies](#cai-dat-dependencies)
-6. [Kiem tra Cai dat](#kiem-tra-cai-dat)
+3. [Cách 1: Virtual Environment (venv)](#cách-1-virtual-environment-venv-đơn-giản-nhất)
+4. [Cách 2: Conda (Tùy chọn)](#cách-2-conda-tùy-chọn)
+5. [Cài đặt Dependencies](#cài-đặt-dependencies)
+6. [Kiểm tra Cài đặt](#kiểm-tra-cài-đặt)
 
 ---
 
-## Tong quan
+## Tổng quan
 
-**Van de:**
-- Cai truc tiep (`pip install` chung) se anh huong toan bo he thong Python
-- Du an nay dung nhieu package lon (manim, pytorch, ...) co the xung dot voi du an khac
+**Vấn đề:**
+- Cài trực tiếp (`pip install` chung) sẽ ảnh hưởng toàn bộ hệ thống Python
+- Dự án này dùng nhiều package lớn (manim, pytorch, ...) có thể xung đột với dự án khác
 
-**Giai phap:**
-- Tao **moi truong ao (Virtual Environment)** rieng cho du an nay
-- Cai dependencies vao do → **an toan, doc lap, de quan ly**
+**Giải pháp:**
+- Tạo **môi trường ảo (Virtual Environment)** riêng cho dự án này
+- Cài dependencies vào đó → **an toàn, độc lập, dễ quản lý**
 
 ---
 
 ## Python & Git
 
-### [OK] Kiem tra da cai chua:
+### [OK] Kiểm tra đã cài chưa:
 ```bash
-python --version      # Phai >= 3.9
-git --version         # Bat ky phien ban gan day
+python --version      # Phải >= 3.9
+git --version         # Bất kỳ phiên bản gần đây
 ```
 
-### [ERROR] Neu chua cai:
-- **Python:** https://www.python.org/downloads/ (chon "Add Python to PATH")
+### [ERROR] Nếu chưa cài:
+- **Python:** https://www.python.org/downloads/ (chọn "Add Python to PATH")
 - **Git:** https://git-scm.com/download/win
 
 ---
 
-## Cach 1: Virtual Environment (venv) - DON GIAN NHAT
+## Cách 1: Virtual Environment (venv) - ĐƠN GIẢN NHẤT
 
-### Buoc 1: Clone hoac mo du an
+### Bước 1: Clone hoặc mở dự án
 ```bash
-cd d:\Roo Code    # Hoac duong dan cua ban
+cd d:\Roo Code    # Hoặc đường dẫn của bạn
 ```
 
-### Buoc 2: Tao moi truong ao
+### Bước 2: Tạo môi trường ảo
 ```bash
 # Windows:
 python -m venv venv
@@ -52,15 +52,15 @@ python -m venv venv
 python3 -m venv venv
 ```
 
-**Ket qua:** Thu muc `venv/` se duoc tao (chua Python, pip, va dependencies)
+**Kết quả:** Thư mục `venv/` sẽ được tạo (chứa Python, pip, và dependencies)
 
-### Buoc 3: Activate moi truong ao
+### Bước 3: Activate môi trường ảo
 
 #### Windows:
 ```bash
 venv\Scripts\activate
 ```
-[OK] Luc nay command prompt se co `(venv)` o dau:
+[OK] Lúc này command prompt sẽ có `(venv)` ở đầu:
 ```
 (venv) D:\Roo Code>
 ```
@@ -70,61 +70,61 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### Buoc 4: Cai dat tat ca dependencies
+### Bước 4: Cài đặt tất cả dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-Doi cho den khi ket thuc (co the mat vai phut, dependencies kha nang)
+Đợi cho đến khi kết thúc (có thể mất vài phút, dependencies khá nặng)
 
-### Buoc 5: Kiem tra cai dat
+### Bước 5: Kiểm tra cài đặt
 ```bash
 python -c "import manim; print('OK Manim')"
 python -c "import numpy; print('OK NumPy')"
 python -c "from gtts import gTTS; print('OK gTTS')"
 ```
 
-### Khi muon tat moi truong ao:
+### Khi muốn tắt môi trường ảo:
 ```bash
 deactivate
 ```
 
 ---
 
-## Cach 2: Conda (Tuy chon)
+## Cách 2: Conda (Tùy chọn)
 
-Neu ban da cai [Anaconda](https://www.anaconda.com/products/individual) hoac [Miniconda](https://docs.conda.io/en/latest/miniconda.html):
+Nếu bạn đã cài [Anaconda](https://www.anaconda.com/products/individual) hoặc [Miniconda](https://docs.conda.io/en/latest/miniconda.html):
 
-### Buoc 1: Tao moi truong Conda
+### Bước 1: Tạo môi trường Conda
 ```bash
 conda create --name roo_code python=3.11
 ```
 
-### Buoc 2: Activate
+### Bước 2: Activate
 ```bash
 conda activate roo_code
 ```
 
-### Buoc 3: Cai dependencies
+### Bước 3: Cài dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### Khi muon tat:
+### Khi muốn tắt:
 ```bash
 conda deactivate
 ```
 
 ---
 
-## Cai dat Dependencies
+## Cài đặt Dependencies
 
-### [OK] Cai tat ca cung luc (RECOMMENDED):
+### [OK] Cài tất cả cùng lúc (RECOMMENDED):
 ```bash
 pip install -r requirements.txt
 ```
 
-### [CONFIG] Hoac cai tung package (neu muon chi tiet):
+### [CONFIG] Hoặc cài từng package (nếu muốn chi tiết):
 ```bash
 pip install manim==0.18.0
 pip install manim-voiceover>=0.3.4
@@ -133,16 +133,16 @@ pip install googletrans>=4.0.0
 # ... v.v
 ```
 
-### [PACKAGE] Xem nhung gi da cai:
+### [PACKAGE] Xem những gì đã cài:
 ```bash
 pip list
 ```
 
 ---
 
-## Kiem tra Cai dat
+## Kiểm tra Cài đặt
 
-### 1. Kiem tra tung package:
+### 1. Kiểm tra từng package:
 ```bash
 # Manim
 python -c "from manim import *; print('OK Manim')"
@@ -160,100 +160,84 @@ python -c "import numpy; print('OK NumPy')"
 python -c "from PIL import Image; print('OK Pillow')"
 ```
 
-### 2. Chay mot Script test:
+### 2. Chạy một Script test:
 ```bash
-# Tu thu muc du an (voi venv activated):
+# Từ thư mục dự án (với venv activated):
 python scripts/Scene2.py -pql
 ```
 
-**Lenh nay se:**
-- `-p`: Preview (mo preview video)
-- `-q`: Quiet (it log)
-- `-l`: Low quality (nhanh, chat luong thap, dung de test)
+**Lệnh này sẽ:**
+- `-p`: Preview (mở preview video)
+- `-q`: Quiet (ít log)
+- `-l`: Low quality (nhanh, chất lượng thấp, dùng để test)
 
 ---
 
 ## Troubleshooting
 
 ### [ERROR] "ModuleNotFoundError: No module named 'manim'"
-**Nguyen nhan:** Chua activate venv hoac dependencies chua cai
+**Nguyên nhân:** Chưa activate venv hoặc dependencies chưa cài
 
-**Cach sua:**
+**Cách sửa:**
 ```bash
-# Kiem tra venv co activate khong (co (venv) o dau khong?)
-# Neu khong, chay:
+# Kiểm tra venv có activate không (có (venv) ở đầu không?)
+# Nếu không, chạy:
 venv\Scripts\activate    # Windows
 source venv/bin/activate # macOS/Linux
 
-# Roi cai lai:
+# Rồi cài lại:
 pip install -r requirements.txt
 ```
 
 ### [ERROR] "ImportError: cannot import name 'GTTSService'"
-**Nguyen nhan:** Thieu gTTS
+**Nguyên nhân:** Thiếu gTTS
 
-**Cach sua:**
+**Cách sửa:**
 ```bash
 pip install gTTS>=2.2.4
 ```
 
 ### [ERROR] "Module 'googletrans' not found"
-**Nguyen nhan:** Thieu googletrans
+**Nguyên nhân:** Thiếu googletrans
 
-**Cach sua:**
+**Cách sửa:**
 ```bash
 pip install googletrans>=4.0.0
 ```
 
-### [ERROR] venv cham hoac bi loi
-**Cach sua:** Xoa venv cu va tao lai
+### [ERROR] venv chậm hoặc bị lỗi
+**Cách sửa:** Xóa venv cũ và tạo lại
 ```bash
 rmdir /s venv                    # Windows
 rm -rf venv                      # macOS/Linux
 
 python -m venv venv
-venv\Scripts\activate            # Windows hoac source venv/bin/activate
+venv\Scripts\activate            # Windows hoặc source venv/bin/activate
 pip install -r requirements.txt
 ```
 
 ---
 
-## Meo
+## Mẹo
 
-### 1. Luu danh sach dependencies (sau khi cai moi):
+### 1. Lưu danh sách dependencies (sau khi cài mới):
 ```bash
 pip freeze > requirements.txt
 ```
 
-### 2. Xoa packages khong dung:
+### 2. Xóa packages không dùng:
 ```bash
 pip uninstall package_name
 ```
 
-### 3. Upgrade pip (tuy chon):
+### 3. Upgrade pip (tùy chọn):
 ```bash
 python -m pip install --upgrade pip
 ```
 
-### 4. Cai dependencies khi collaborate:
-Moi nguoi clone repo moi deu chay:
+### 4. Cài dependencies khi collaborate:
+Mỗi người clone repo mới đều chạy:
 ```bash
 pip install -r requirements.txt
 ```
-**Tat ca se co dung cung phien ban dependencies!**
-
----
-
-## Ket luan
-
-| Phuong phap | Uu diem | Nhược diem |
-|-----------|---------|-----------|
-| **venv** | Don gian, built-in Python | Chi cho 1 du an |
-| **Conda** | De quan ly nhieu phien ban Python | Can cai Anaconda |
-| **Cai truc tiep** | Nhanh | RUI RO xung dot |
-
-**KHUYEN CAO:** Dung **venv** cho du an nay - don gian va du!
-
----
-
-Ban co cau hoi? Hoi toi!
+**Tất cả sẽ có đúng cùng phiên bản dependencies!**
