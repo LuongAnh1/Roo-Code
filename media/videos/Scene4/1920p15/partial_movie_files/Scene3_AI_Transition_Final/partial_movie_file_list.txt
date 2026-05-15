@@ -1,9 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene3_AI_Transition_Final/1710730845_484125780_754610153.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene3_AI_Transition_Final/1121882698_1311372707_1466299127.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene3_AI_Transition_Final/1121882698_475488788_421857239.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene3_AI_Transition_Final/1121882698_3866747737_1690967922.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene3_AI_Transition_Final/1121882698_2761041633_1501121835.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene3_AI_Transition_Final/1121882698_3836249864_3607467452.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene3_AI_Transition_Final/1121882698_1438409740_1800714001.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene3_AI_Transition_Final/1121882698_4217992463_3444301530.mp4'

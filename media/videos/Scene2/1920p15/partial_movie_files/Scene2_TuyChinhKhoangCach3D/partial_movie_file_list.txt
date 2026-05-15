@@ -1,8 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:D:/Roo Code/media/videos/Scene2/1920p15/partial_movie_files/Scene2_TuyChinhKhoangCach3D/1710730845_1991739856_1811742656.mp4'
-file 'file:D:/Roo Code/media/videos/Scene2/1920p15/partial_movie_files/Scene2_TuyChinhKhoangCach3D/1121882698_3953592378_1839005301.mp4'
-file 'file:D:/Roo Code/media/videos/Scene2/1920p15/partial_movie_files/Scene2_TuyChinhKhoangCach3D/1121882698_2318836581_304586957.mp4'
-file 'file:D:/Roo Code/media/videos/Scene2/1920p15/partial_movie_files/Scene2_TuyChinhKhoangCach3D/1121882698_2212835391_1537503863.mp4'
-file 'file:D:/Roo Code/media/videos/Scene2/1920p15/partial_movie_files/Scene2_TuyChinhKhoangCach3D/1121882698_4217992463_3140246061.mp4'
-file 'file:D:/Roo Code/media/videos/Scene2/1920p15/partial_movie_files/Scene2_TuyChinhKhoangCach3D/1121882698_817784357_1673833037.mp4'
-file 'file:D:/Roo Code/media/videos/Scene2/1920p15/partial_movie_files/Scene2_TuyChinhKhoangCach3D/1121882698_4217992463_2191446023.mp4'

@@ -1,6 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_Final_with_Video/1710730845_2575784548_3729122659.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_Final_with_Video/1121882698_2844347191_1638464760.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_Final_with_Video/1121882698_1927598531_4040701781.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_Final_with_Video/1121882698_66981626_657620568.mp4'
-file 'file:D:/Roo Code/media/videos/Scene4/1920p15/partial_movie_files/Scene4_Final_with_Video/1121882698_4217992463_3596284767.mp4'
