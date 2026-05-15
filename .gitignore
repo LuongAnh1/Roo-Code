@@ -1,2 +1,39 @@
-# Ignore media folder
+# ============================================================================
+# .gitignore - Cấu hình các file/folder mà Git sẽ bỏ qua khi commit/push
+# ============================================================================
+# Cách dùng:
+# 1. Mỗi dòng là một pattern để bỏ qua
+# 2. folder/ - bỏ qua toàn bộ folder
+# 3. *.ext - bỏ qua các file có đuôi .ext
+# 4. file.txt - bỏ qua file cụ thể
+# 5. !file.txt - ngoại lệ, GIT sẽ KHÔNG bỏ qua file này
+# 
+# Ví dụ:
+# media/          -> bỏ qua toàn bộ thư mục media
+# *.pyc          -> bỏ qua tất cả file .pyc
+# .env           -> bỏ qua file .env
+# .vscode/       -> bỏ qua folder .vscode
+# 
+# Khi nào phát huy tác dụng:
+# - Tự động khi chạy: git add, git commit, git push
+# - Không cần phải nhớ hay lo lắng
+# - Sẽ ở mãi trên máy cục bộ, chỉ không được commit lên GitHub
+# ============================================================================
+
+# Ignore media folder (các file do manim sinh ra)
 media/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment
+.env
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
