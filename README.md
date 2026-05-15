@@ -31,8 +31,7 @@
 - `knowledge/`: Tài liệu hướng dẫn
 
 ### Chi tiết đầy đủ:
-
-Xem file [project_structure.txt](project_structure.txt) để biết thêm chi tiết về các file quan trọng trong dự án.
+Xem file [SETUP.md](SETUP.md) để có hướng dẫn chi tiết về cài đặt môi trường ảo, troubleshooting và các mẹo sử dụng.
 ---
 
 ## 2. Cách cài đặt, setup
