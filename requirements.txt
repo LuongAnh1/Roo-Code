@@ -24,9 +24,22 @@ pydub>=0.25.1              # Audio processing (yêu cầu của manim)
 # ============================================================================
 # VOICEOVER & TEXT-TO-SPEECH
 # ============================================================================
-manim-voiceover>=0.3.4     # Voiceover support cho manim scenes
-gTTS>=2.2.4                # Google Text-to-Speech (dùng trong GTTSService)
-googletrans>=4.0.0         # Google Translate API (dùng để dịch phụ đề)
+# 📌 QUAN TRỌNG: manim-voiceover vs gTTS
+#
+# manim-voiceover chỉ là FRAMEWORK quản lý voiceover (timing, sync animation với audio)
+# gTTS mới là backend thực tế để chuyển TEXT → AUDIO
+#
+# Quy trình:
+# 1. Code: with self.voiceover(text="Xin chào") as tracker:
+# 2. manim-voiceover gọi: GTTSService.generate_speech()
+# 3. gTTS nhận text "Xin chào" → gửi tới Google Speech API
+# 4. Google trả về file MP3 → phát trong video
+#
+# Nếu xóa gTTS, bạn sẽ gặp lỗi: ImportError: cannot import name 'GTTSService'
+# ============================================================================
+manim-voiceover>=0.3.4     # Framework quản lý voiceover (chỉ là "khuôn khổ")
+gTTS>=2.2.4                # Backend thực tế: chuyển text → giọng nói (KHÔNG THỂ XÓA!)
+googletrans>=4.0.0         # Google Translate API (dùng để dịch phụ đề tự động)
 
 # ============================================================================
 # VIDEO & MEDIA PROCESSING
