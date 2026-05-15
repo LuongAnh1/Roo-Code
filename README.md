@@ -24,14 +24,13 @@
 - **Python 3.9+**: Ngôn ngữ lập trình chính
 - **AI Agent**: Xử lý tự động với human-in-the-loop
 
-### Cấu trúc dự án:
+### Cấu trúc dự án: [project_structure.txt](project_structure.txt)
+Sơ lược
 - `scripts/`: Code Python cho từng scene
 - `assets/`: Tài nguyên hình ảnh và icon
 - `media/`: Output video (không sync với Git)
 - `knowledge/`: Tài liệu hướng dẫn
 
-### Chi tiết đầy đủ:
-Xem file [SETUP.md](SETUP.md) để có hướng dẫn chi tiết về cài đặt môi trường ảo, troubleshooting và các mẹo sử dụng.
 ---
 
 ## 2. Cách cài đặt, setup
