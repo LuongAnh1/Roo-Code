@@ -30,7 +30,8 @@
 - `media/`: Output video (không sync với Git)
 - `knowledge/`: Tài liệu hướng dẫn
 
-### 📖 Chi tiết đầy đủ:
+### Chi tiết đầy đủ:
+
 Xem file [project_structure.txt](project_structure.txt) để biết thêm chi tiết.
 ---
 
