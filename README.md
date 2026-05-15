@@ -30,6 +30,8 @@
 - `media/`: Output video (không sync với Git)
 - `knowledge/`: Tài liệu hướng dẫn
 
+### 📖 Chi tiết đầy đủ:
+Xem file [project_structure.txt](project_structure.txt) để biết thêm chi tiết.
 ---
 
 ## 2. Cách cài đặt, setup
@@ -64,7 +66,7 @@
    python -c "import manim; print('OK')"
    ```
 
-### 📖 Chi tiết đầy đủ:
+### Chi tiết đầy đủ:
 Xem file [SETUP.md](SETUP.md) để có hướng dẫn chi tiết về cài đặt môi trường ảo, troubleshooting và các mẹo sử dụng.
 
 ---
