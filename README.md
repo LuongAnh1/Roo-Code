@@ -5,10 +5,7 @@
 1. [Tổng quan dự án](#1-tổng-quan-dự-án)
 2. [Cách cài đặt, setup](#2-cách-cài-đặt-setup)
 3. [Sơ đồ làm việc của Agent](#3-sơ-đồ-làm-việc)
-4. [Vai trò của Người dùng (Human-in-the-loop)](#4-vai-trò-của-người-dùng-human-in-the-loop)
-5. [Chốt chặn 1: Duyệt Kịch bản](#5-chốt-chặn-1-duyệt-kịch-bản)
-6. [Chốt chặn 2: Duyệt Ý tưởng (Storyboard)](#6-chốt-chặn-2-duyệt-ý-tưởng-storyboard)
-7. [Chốt chặn 3: Nghiệm thu Video Nháp](#7-chốt-chặn-3-nghiệm-thu-video-nháp)
+4. [Vai trò của Người dùng](#4-vai-trò-của-người-dùng)
 
 ---
 
@@ -152,19 +149,17 @@ CHU THICH KY HIEU:
 -----------------------------------------------------------------------
 ```
 
-# 4. Vai trò của Người dùng (Human-in-the-loop) {#4-vai-trò-của-người-dùng-human-in-the-loop}
+# 4. Vai trò của Người dùng {#4-vai-trò-của-người-dùng}
 
-Hệ thống được thiết kế để tự động hóa 90% công việc lập trình. 10% còn lại là quyết định của bạn. Bạn chỉ cần lên tiếng tại 3 điểm chốt chặn (Nút nét đứt trên sơ đồ):
-
-## 5. Chốt chặn 1: Duyệt Kịch bản {#5-chốt-chặn-1-duyệt-kịch-bản}
+## Chốt chặn 1: Duyệt Kịch bản 
 - **Agent làm gì**: Đọc file CSV, ghép Lời thoại với Mô tả hình ảnh.
 - **Bạn làm gì**: Kiểm tra xem Agent có lấy nhầm dòng tiêu đề làm kịch bản không. Bấm OK để Agent bắt đầu nghĩ ý tưởng cho Phân cảnh 1.
 
-## 6. Chốt chặn 2: Duyệt Ý tưởng (Storyboard) {#6-chốt-chặn-2-duyệt-ý-tưởng-storyboard}
+## Chốt chặn 2: Duyệt Ý tưởng 
 - **Agent làm gì**: Trình bày ý tưởng thay thế Text bằng Hình ảnh/Đồ thị, báo cáo các Icon lấy từ thư mục assets/.
 - **Bạn làm gì**: Nếu bạn thấy ý tưởng hay, gõ OK, code đi. Nếu bạn muốn đổi, gõ ví dụ: "Đừng vẽ hình tròn, hãy vẽ một cái bập bênh". Agent sẽ sửa kế hoạch trước khi code.
 
-## 7. Chốt chặn 3: Nghiệm thu Video Nháp {#7-chốt-chặn-3-nghiệm-thu-video-nháp}
+## Chốt chặn 3: Nghiệm thu Video Nháp
 - **Agent làm gì**: Nó sẽ tự động đánh vật với Terminal. Nếu có lỗi Code, nó tự đọc log và tự sửa. Nó CHỈ GỌI BẠN khi video nháp chất lượng thấp (-pql) đã được render thành công.
 - **Bạn làm gì**: Mở file video nháp lên xem.
     Nếu chữ bị lệch, gõ: "Chữ bị lệch, đẩy lên trên 1 chút".
