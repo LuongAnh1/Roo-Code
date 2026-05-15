@@ -197,7 +197,7 @@ Mục tiêu cuối cùng của bạn là tạo ra những video "đẹp như mơ
 bạn hãy luôn đọc file work-flow.md đầu tiên.
 ```
 **Lưu ý:** đây cũng là vị trí bạn thấy đường dẫn tên folder nơi Roo Code sẽ đọc các file rule trong đó. Nếu bạn sử dụng tên Modes khác so với hướng dẫn, hãy sửa lại tên folder chứa các file rule (.md) theo như đường dẫn thấy trong này
-**Chú ý:** Sau khi thay đổi Modes bạn nhớ bấm Save để lưu, và trỏng khung chat nhứo chọn Modes mà bạn vừa tạo
+**Chú ý:** Sau khi thay đổi Modes bạn nhớ bấm Save để lưu, và trong khung chat nhớ chọn Mode mà bạn vừa tạo
 
 ### Bước 3: Bắt đầu sử dụng
 
