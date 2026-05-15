@@ -4,7 +4,7 @@
 
 1. [Tổng quan dự án](#1-tổng-quan-dự-án)
 2. [Cách cài đặt, setup](#2-cách-cài-đặt-setup)
-3. [Sơ đồ Khối (Workflow Diagram)](#3-sơ-đồ-làm-việc)
+3. [Sơ đồ làm việc của Agent](#3-sơ-đồ-làm-việc)
 4. [Vai trò của Người dùng (Human-in-the-loop)](#4-vai-trò-của-người-dùng-human-in-the-loop)
 5. [Chốt chặn 1: Duyệt Kịch bản](#5-chốt-chặn-1-duyệt-kịch-bản)
 6. [Chốt chặn 2: Duyệt Ý tưởng (Storyboard)](#6-chốt-chặn-2-duyệt-ý-tưởng-storyboard)
