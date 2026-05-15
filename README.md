@@ -30,7 +30,6 @@ Sơ lược
 - `scripts/`: Code Python cho từng scene
 - `assets/`: Tài nguyên hình ảnh và icon
 - `media/`: Output video (không sync với Git)
-- `knowledge/`: Tài liệu hướng dẫn
 
 ---
 
