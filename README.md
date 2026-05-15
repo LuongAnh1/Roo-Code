@@ -32,7 +32,7 @@
 
 ### Chi tiết đầy đủ:
 
-Xem file [project_structure.txt](project_structure.txt) để biết thêm chi tiết.
+Xem file [project_structure.txt](project_structure.txt) để biết thêm chi tiết về các file quan trọng trong dự án.
 ---
 
 ## 2. Cách cài đặt, setup
