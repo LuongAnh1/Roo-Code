@@ -61,85 +61,16 @@ class FaMIBaseScene(VoiceoverScene):
         self.subtitle_obj = Text("", font="Segoe UI", font_size=35).move_to(POS_SUBTITLE)
         self.add_foreground_mobject(self.subtitle_obj)
 
-    # --- SKILL: CẬP NHẬT PHỤ ĐỀ ---
-    
-    # Skill cũ 1: Hiển thị phụ đề song ngữ đơn giản (Đã cải tiến để có nền và màu sắc đẹp hơn)
-    # def update_subtitle(self, vi_text):
-    #     """Skill: Tự động dịch và hiển thị song ngữ"""
-    #     try:
-    #         en_text = translator.translate(vi_text, src='vi', dest='en').text
-    #     except:
-    #         en_text = ""
-        
-    #     vi = Paragraph(vi_text, font="Segoe UI", font_size=20, color=WHITE, weight=BOLD, alignment="center")
-    #     en = Paragraph(en_text, font="Segoe UI", font_size=18, color=FAMI_SUB, slant=ITALIC, alignment="center")
-        
-    #     sub_group = VGroup(vi, en).arrange(DOWN, buff=0.1)
-    #     if sub_group.width > 7.5:
-    #         sub_group.scale_to_fit_width(7.5)
-            
-    #     sub_group.move_to(POS_SUBTITLE)
-    #     self.subtitle_obj.become(sub_group)
-
-    # Skill cũ 2: Hiển thị phụ đề song ngữ với nền đẹp và màu sắc chuẩn hơn (Đã cải tiến để có nền và màu sắc đẹp hơn)
-    # def update_subtitle(self, vi_text):
-    #     try:
-    #         en_text = translator.translate(vi_text, src='vi', dest='en').text
-    #     except:
-    #         en_text = ""
-        
-    #     # Font chữ nên chọn loại không chân (Sans-serif) như Inter, Roboto hoặc Arial cho giống phim
-    #     vi = Paragraph(
-    #         vi_text, 
-    #         font="Arial", # Hoặc "Inter" nếu máy bạn có
-    #         font_size=22, 
-    #         color=WHITE, 
-    #         weight=BOLD, 
-    #         alignment="center"
-    #     )
-        
-    #     # Tiếng Anh dùng màu vàng đặc trưng của phụ đề phim (Movie Yellow)
-    #     # Màu này cực kỳ nổi và sang trên nền đen
-    #     en = Paragraph(
-    #         en_text, 
-    #         font="Arial", 
-    #         font_size=17, 
-    #         color="#F9D71C", # Màu vàng phụ đề phim chuẩn
-    #         slant=ITALIC, 
-    #         alignment="center"
-    #     )
-        
-    #     text_group = VGroup(vi, en).arrange(DOWN, buff=0.15)
-        
-    #     if text_group.width > 8:
-    #         text_group.scale_to_fit_width(8)
-
-    #     # TẠO NỀN: Trên nền đen, ta dùng màu xám cực đậm để tạo chiều sâu
-    #     sub_bg = RoundedRectangle(
-    #         corner_radius=0.1,
-    #         width=text_group.width + 0.6,
-    #         height=text_group.height + 0.4,
-    #         fill_color="#1A1A1A", # Xám rất tối
-    #         fill_opacity=0.7,     # Độ mờ vừa phải
-    #         stroke_width=1,       # Thêm một chút viền mỏng
-    #         stroke_color=GRAY_D   # Viền xám nhẹ
-    #     ).move_to(text_group.get_center())
-
-    #     # Gộp lại: sub_bg nằm dưới, text_group nằm trên
-    #     full_sub = VGroup(sub_bg, text_group)
-    #     full_sub.move_to(POS_SUBTITLE)
-        
-    #     self.subtitle_obj.become(full_sub)
-
     # Skill mới: Hiển thị phụ đề với nhiều style khác nhau (Đã cải tiến để có nhiều phong cách hiển thị hơn, phù hợp với từng loại nội dung)
     def update_subtitle(self, vi_text, style="default"):
         """
         Skill: Hiển thị phụ đề với nhiều style khác nhau.
         Styles: 'default', 'neon', 'banner', 'minimal', 'cinema'
         """
+        # Use synchronous translate (googletrans is synchronous). Avoid asyncio.run on non-coroutines.
         try:
-            en_text = asyncio.run(translator.translate(vi_text, src='vi', dest='en')).text
-        except:
+            en_text = translator.translate(vi_text, src='vi', dest='en').text
+        except Exception:
             en_text = ""
 
         # 1. Tạo Text Objects cơ bản
