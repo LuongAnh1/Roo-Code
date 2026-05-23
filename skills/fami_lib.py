@@ -4,68 +4,9 @@ from manim_voiceover.services.gtts import GTTSService
 from googletrans import Translator
 import os
 import asyncio
-from pydub import AudioSegment
-from pathlib import Path
-import numpy as np
 
 # Khởi tạo Translator
 translator = Translator()
-
-# ========== AUDIO NORMALIZATION FOR STABLE VOICEOVER ==========
-# Vấn đề: Mỗi lần gTTS tạo voiceover, mức âm lượng khác nhau
-# Giải pháp: Normalize audio level + compress dynamic range
-# =============================================================
-
-class NormalizedGTTSService(GTTSService):
-    """Cải tiến GTTSService với Audio Normalization"""
-    
-    def generate_speech(self, text, cache_dir="./voiceovers"):
-        """Override: Tạo voiceover và normalize ngay"""
-        # 1. Gọi hàm gốc của GTTSService
-        audio_file = super().generate_speech(text, cache_dir)
-        
-        # 2. Normalize audio nếu file tồn tại
-        if audio_file and os.path.exists(audio_file):
-            try:
-                self._normalize_audio_file(audio_file)
-            except Exception as e:
-                print(f"⚠️ Warning: Không normalize được audio: {e}")
-        
-        return audio_file
-    
-    def _normalize_audio_file(self, filepath):
-        """Normalize audio: chuẩn hóa mức âm + compress dynamic range"""
-        try:
-            # 1. Load audio
-            audio = AudioSegment.from_file(filepath)
-            
-            # 2. Tính toán mức normalize
-            # dBFS = decibels relative to full scale
-            current_db = audio.dBFS
-            target_db = -20  # Mục tiêu: -20dB (mức chuẩn cho voiceover)
-            gain = target_db - current_db
-            
-            # 3. Áp dụng gain (tăng/giảm âm lượng)
-            normalized = audio.apply_gain(gain)
-            
-            # 4. Compress dynamic range (giảm chênh lệch âm cao/thấp)
-            # Tìm samples max, min để biết range hiện tại
-            samples = np.array(normalized.get_array_of_samples())
-            
-            # Soft compression: nếu mức quá cao, giảm nhẹ
-            if normalized.dBFS > -15:  # Quá to
-                compressed = normalized.apply_gain(-3)  # Giảm 3dB
-                # Export lại
-                compressed.export(filepath, format="mp3", bitrate="128k")
-            elif normalized.dBFS < -25:  # Quá nhỏ
-                boosted = normalized.apply_gain(2)  # Tăng 2dB
-                boosted.export(filepath, format="mp3", bitrate="128k")
-            else:
-                # Level vừa vặn, chỉ export lại để đảm bảo format
-                normalized.export(filepath, format="mp3", bitrate="128k")
-                
-        except Exception as e:
-            print(f"❌ Error normalizing {filepath}: {e}")
 
 # ==========================================================
 # 1. HỆ TỌA ĐỘ KHÓA CỨNG (Đã nới rộng không gian nội dung)
@@ -105,8 +46,7 @@ def apply_fami_gradient(mobject, colors=None):
 class FaMIBaseScene(VoiceoverScene):
     def setup(self):
         super().setup()
-        # 🔧 SỬA LỖI: Thay GTTSService bằng NormalizedGTTSService
-        self.set_speech_service(NormalizedGTTSService(lang="vi"))
+        self.set_speech_service(GTTSService(lang="vi"))
         
         # Logo FaMI (Đã thu nhỏ và đẩy cao)
         logo_path = "assets/fami_logo_1.png"

@@ -26,5 +26,12 @@ Bạn là một AI Agent chuyên nghiệp sản xuất video Manim định dạn
 
 *(Lặp lại Bước 2 và Bước 3 cho đến khi xong cả 4 Scene)*
 
-### 🟥 BƯỚC 4: XUẤT BẢN HOÀN THIỆN
-- **Nhiệm vụ:** Chạy 4 lệnh render chất lượng cao (`-pqh --resolution 1080,1920`) cho 4 Class. Thông báo hoàn thành dự án.
+### 🟥 BƯỚC 4: XUẤT BẢN HOÀN THIỆN (HIGH QUALITY & SPEED UP x1.5)
+- **Nhiệm vụ:** Hoàn thiện và xuất file video cuối cùng ở chất lượng cao nhất (1080x1920, 60fps) và tăng tốc độ video lên 1.5x.
+- **Hành động cụ thể:**
+  1. **Render HQ:** Chạy lệnh Manim render chất lượng cao (`-pqh --resolution 1080,1920`) cho lần lượt 4 Class.
+  2. **Tăng tốc x1.5:** Ngay sau khi render xong mỗi video, BẮT BUỘC sử dụng Terminal chạy lệnh `ffmpeg` để xử lý tăng tốc video và audio lên 1.5x.
+     *Cú pháp mẫu (Agent cần tự thay thế đúng đường dẫn thực tế):*
+     `ffmpeg -i "media/videos/<Tên_File>/1920p60/<Tên_Class>.mp4" -filter:v "setpts=0.667*PTS" -filter:a "atempo=1.5" -y "media/videos/<Tên_File>/1920p60/<Tên_Class>_1.5x.mp4"`
+  3. **Bàn giao:** Cung cấp đường dẫn của 4 file video cuối cùng (bản có hậu tố `_1.5x.mp4`) cho người dùng.
+🔴 **DỪNG LẠI (STOP):** Thông báo hoàn thành toàn bộ dự án và kết thúc quy trình.

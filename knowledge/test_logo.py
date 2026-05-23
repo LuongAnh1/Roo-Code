@@ -3,54 +3,6 @@ from manim_voiceover import VoiceoverScene
 from manim_voiceover.services.gtts import GTTSService
 import os
 
-# ========== AUDIO NORMALIZATION FOR STABLE VOICEOVER ==========
-from pydub import AudioSegment
-import numpy as np
-
-class NormalizedGTTSService(GTTSService):
-    """Cải tiến GTTSService với Audio Normalization"""
-    
-    def generate_speech(self, text, cache_dir="./voiceovers"):
-        """Override: Tạo voiceover và normalize ngay"""
-        # 1. Gọi hàm gốc của GTTSService
-        audio_file = super().generate_speech(text, cache_dir)
-        
-        # 2. Normalize audio nếu file tồn tại
-        if audio_file and os.path.exists(audio_file):
-            try:
-                self._normalize_audio_file(audio_file)
-            except Exception as e:
-                print(f"⚠️ Warning: Không normalize được audio: {e}")
-        
-        return audio_file
-    
-    def _normalize_audio_file(self, filepath):
-        """Normalize audio: chuẩn hóa mức âm + compress dynamic range"""
-        try:
-            # 1. Load audio
-            audio = AudioSegment.from_file(filepath)
-            
-            # 2. Tính toán mức normalize
-            current_db = audio.dBFS
-            target_db = -20  # Mục tiêu: -20dB (mức chuẩn cho voiceover)
-            gain = target_db - current_db
-            
-            # 3. Áp dụng gain (tăng/giảm âm lượng)
-            normalized = audio.apply_gain(gain)
-            
-            # 4. Compress dynamic range
-            if normalized.dBFS > -15:  # Quá to
-                compressed = normalized.apply_gain(-3)
-                compressed.export(filepath, format="mp3", bitrate="128k")
-            elif normalized.dBFS < -25:  # Quá nhỏ
-                boosted = normalized.apply_gain(2)
-                boosted.export(filepath, format="mp3", bitrate="128k")
-            else:
-                normalized.export(filepath, format="mp3", bitrate="128k")
-                
-        except Exception as e:
-            print(f"❌ Error normalizing {filepath}: {e}")
-
 # ==========================================================
 # CẤU HÌNH GLOBAL (9:16 TIKTOK/SHORTS)
 # ===========================================================
@@ -69,7 +21,7 @@ FAMI_CYAN = "#45C4D9"
 class FaMIBaseScene(VoiceoverScene):
     def setup(self):
         super().setup()
-        self.set_speech_service(NormalizedGTTSService(lang="vi"))
+        self.set_speech_service(GTTSService(lang="vi"))
         
         # Đường dẫn tới file ảnh
         logo_path = "assets/fami_logo.png" 
