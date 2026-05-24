@@ -160,10 +160,10 @@ python -c "import numpy; print('OK NumPy')"
 python -c "from PIL import Image; print('OK Pillow')"
 ```
 
-### 2. Chạy một Script test:
+### 2. Chạy một Script test (ví dụ có file scripts/Scene2.py):
 ```bash
-# Từ thư mục dự án (với venv activated):
-python scripts/Scene2.py -pql
+# Từ thư mục dự án (với venv activated) ví dụ:
+manim -pql scripts/Scene2.py 
 ```
 
 **Lệnh này sẽ:**
