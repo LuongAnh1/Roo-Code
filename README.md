@@ -38,32 +38,80 @@ Sơ lược
 ### Yêu cầu hệ thống:
 - **Python 3.9** trở lên
 - **Git** (để clone repository)
+- **LaTeX** (MiKTeX hoặc TeX Live) - **BẮT BUỘC** để Manim render công thức toán
+- **FFmpeg** - **BẮT BUỘC** để xử lý video
 - **Windows/macOS/Linux** (hỗ trợ đầy đủ)
 
 ### Hướng dẫn nhanh:
 
-1. **Clone repository:**
-   ```bash
-   git clone https://github.com/LuongAnh1/Roo-Code.git
-   cd Roo-Code
-   ```
+#### **Bước 0: Cài đặt LaTeX và FFmpeg (BẮT BUỘC)**
 
-2. **Tạo môi trường ảo:**
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate  # Windows
-   # source venv/bin/activate  # macOS/Linux
-   ```
+**Windows:**
+- **LaTeX (MiKTeX):** 
+  1. Tải từ https://miktex.org/download
+  2. Chạy installer và chọn "Install MiKTeX for all users" (hoặc chỉ người dùng hiện tại)
+  3. Đặt đường dẫn cài vào thư mục có quyền ghi (ví dụ: `C:\MiKTeX`)
+  4. Hoàn tất cài đặt
 
-3. **Cài đặt dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+- **FFmpeg:**
+  1. Tải từ https://ffmpeg.org/download.html hoặc https://www.gyan.dev/ffmpeg/builds/
+  2. Tải bản "full" hoặc "essentials"
+  3. Giải nén vào thư mục (ví dụ: `C:\ffmpeg`)
+  4. Thêm vào **PATH**:
+     - Mở **Environment Variables** (Tìm kiếm: "Environment Variables" trong Start Menu)
+     - Thêm `C:\ffmpeg\bin` vào **PATH** trong **System Variables**
+     - Khởi động lại Terminal/PowerShell
+  5. Kiểm tra: `ffmpeg -version` (nếu hiện version là OK)
 
-4. **Kiểm tra cài đặt:**
-   ```bash
-   python -c "import manim; print('OK')"
-   ```
+**macOS:**
+```bash
+# Cài LaTeX (TeX Live)
+brew install --cask mactex
+
+# Cài FFmpeg
+brew install ffmpeg
+```
+
+**Linux (Ubuntu/Debian):**
+```bash
+# Cài LaTeX
+sudo apt-get install texlive-full
+
+# Cài FFmpeg
+sudo apt-get install ffmpeg
+```
+
+#### **Bước 1: Clone repository:**
+```bash
+git clone https://github.com/LuongAnh1/Roo-Code.git
+cd Roo-Code
+```
+
+#### **Bước 2: Tạo môi trường ảo:**
+```bash
+python -m venv venv
+venv\Scripts\activate  # Windows
+# source venv/bin/activate  # macOS/Linux
+```
+
+#### **Bước 3: Cài đặt Python dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+#### **Bước 4: Kiểm tra cài đặt:**
+```bash
+# Kiểm tra Python packages
+python -c "import manim; print('Manim OK')"
+
+# Kiểm tra FFmpeg (Windows)
+ffmpeg -version
+
+# Kiểm tra LaTeX (tùy chọn)
+pdflatex --version  # Windows/macOS/Linux
+```
+
+Nếu tất cả các lệnh trên chạy thành công mà không lỗi, bạn đã sẵn sàng!
 
 ### Chi tiết đầy đủ:
 Xem file [SETUP.md](SETUP.md) để có hướng dẫn chi tiết về cài đặt môi trường ảo, troubleshooting và các mẹo sử dụng.
